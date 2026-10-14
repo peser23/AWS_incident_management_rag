@@ -1,0 +1,77 @@
+2026-10-14 03:42:29,484 INFO botocore.credentials Found credentials from IAM Role: daimo-ec2-role
+2026-10-14 03:42:29,535 INFO daimo.chunk_embed run 20261014T034229Z-cfb6f8e3 start inputs=['/home/ec2-user/daimo/data/samples/daimo-synthetic-5.json'] index=/home/ec2-user/daimo/data/index/incidents model=amazon.titan-embed-text-v2:0 dim=1024 dry_run=True
+2026-10-14 03:42:29,544 ERROR daimo.chunk_embed failure incident=INC40012785 reason=residual_pii_detected:DATE_OF_BIRTH,PHONE_NUMBER,US_SSN error=None
+--- INC40118934#symptom (901 chars)
+Incident INC40118934: Beneficiaries Denied Service Connected Rating 0% From Member Profile
+Affected service: eCoverage
+Description: Expected vs actual behavior when checking eligibility in the Coverage web application via Member Profile. Beneficiaries reported as eligible in the Benefits Determination Service are receiving an ineligible result from Member Profile. Expected: GIVEN a qualified applicant with a Service-Connected Rating of 0% AND Service-Connected = TRUE, THEN eligible. Actual: same conditions return NOT eligible. A set of affected internal ParticipantIds is retained in the related ticket (withheld here due to PII).
+Initial notes: Does not correlate to known gateway outages; would expect clustering around the mid-month network events otherwise. Devs still investigating. | Running down what BDS sees on their end and determining whether the affected records may be future-dated.
+
+--- INC40118934#resolution (321 chars)
+Incident INC40118934: Beneficiaries Denied Service Connected Rating 0% From Member Profile
+Resolution code: Solved (Work Around)
+Caused by change: No
+Resolution notes: Redirect to INC40012785 (duplicate but provides clearer explanations).
+Final work note: redirect to INC40012785 (duplicate but with clearer explanation).
+
+--- INC40118934#full_narrative (1197 chars)
+Incident INC40118934: Beneficiaries Denied Service Connected Rating 0% From Member Profile
+Description: Expected vs actual behavior when checking eligibility in the Coverage web application via Member Profile. Beneficiaries reported as eligible in the Benefits Determination Service are receiving an ineligible result from Member Profile. Expected: GIVEN a qualified applicant with a Service-Connected Rating of 0% AND Service-Connected = TRUE, THEN eligible. Actual: same conditions return NOT eligible. A set of affected internal ParticipantIds is retained in the related ticket (withheld here due to PII).
+[2023-01-18 11:34:28] Does not correlate to known gateway outages; would expect clustering around the mid-month network events otherwise. Devs still investigating.
+[2023-01-19 06:04:10] Running down what BDS sees on their end and determining whether the affected records may be future-dated.
+[2023-02-03 04:34:21] Tracking via internal Jira MPS-5601; placing on hold pending resolution from the BDS team IPT meetings.
+[2023-03-07 05:27:01] redirect to INC40012785 (duplicate but with clearer explanation).
+Resolution: Redirect to INC40012785 (duplicate but provides clearer explanations).
+
+2026-10-14 03:42:29,546 ERROR daimo.chunk_embed failure incident=INC39875510 reason=residual_pii_detected:DATE_OF_BIRTH,MEMBER_ICN,STREET_ADDRESS error=None
+--- INC39644027#symptom (1093 chars)
+Incident INC39644027: Member DOB displaying incorrectly in EHR Chart View
+Description: Application Impacted: EHR Chart View. Member date of birth is displaying incorrectly in the chart but appears correct in the identity source and clinical record of truth. Issue reported as leaving member demographic information in an inconsistent state across systems.
+Initial notes: The member's Member Profile record has the wrong birthday being sent to the EHR. The value needs to match the identity source. Transfer reason: needs correction in Member Profile and verification that the identity feed value is also correct. | No attachments visible and we were only assigned this ticket yesterday. Member Profile is a proxy for anything other than address/email/phone (the only attributes we master), so we would not be storing or mastering DOB. At most we forward DOB from downstream partners in response to a demographic request. With no stored data and no member registry ID, we cannot query audit records. Given the age of the ticket and the lack of identifiers, there is nothing actionable to offer.
+
+--- INC39644027#resolution (407 chars)
+Incident INC39644027: Member DOB displaying incorrectly in EHR Chart View
+Resolution code: Not Solved (Not Reproducible)
+Caused by change: No
+Resolution notes: Ticket was too old when it reached Member Profile, and supporting information (namely the member IDs required to search) is not present in the ticket.
+Final work note: Taking the requester's suggestion and closing as unresolved - cannot reproduce.
+
+--- INC39644027#full_narrative (1385 chars)
+Incident INC39644027: Member DOB displaying incorrectly in EHR Chart View
+Description: Application Impacted: EHR Chart View. Member date of birth is displaying incorrectly in the chart but appears correct in the identity source and clinical record of truth. Issue reported as leaving member demographic information in an inconsistent state across systems.
+[2022-09-27 12:05:05] The member's Member Profile record has the wrong birthday being sent to the EHR. The value needs to match the identity source. Transfer reason: needs correction in Member Profile and verification that the identity feed value is also correct.
+[2023-04-13 07:51:10] No attachments visible and we were only assigned this ticket yesterday. Member Profile is a proxy for anything other than address/email/phone (the only attributes we master), so we would not be storing or mastering DOB. At most we forward DOB from downstream partners in response to a demographic request. With no stored data and no member registry ID, we cannot query audit records. Given the age of the ticket and the lack of identifiers, there is nothing actionable to offer.
+[2023-04-13 08:09:52] Taking the requester's suggestion and closing as unresolved - cannot reproduce.
+Resolution: Ticket was too old when it reached Member Profile, and supporting information (namely the member IDs required to search) is not present in the ticket.
+
+--- INC41220398#symptom (1129 chars)
+Incident INC41220398: System will not allow member check-in due to insurance profile problems
+Affected service: Member Profile
+Description: A prior ticket was submitted for this problem and mistakenly marked resolved. On check-in for a single member, a pop-up states the member has not successfully retrieved a profile from the enrollment system. This is occurring for only one member; local enrollment staff confirm all fields are populated correctly on their end and believe it is a platform-level defect.
+Initial notes: On check-in a pop-up appears: 'The current member has not successfully retrieved a profile from the enrollment system.' This member has been seen before and enrollment co-workers report everything is correct on their end. | Transferring to Member Profile. The correlation identifier does not exist and the integration engine treats this as an error, producing a correlation-not-found error rather than sending partial demographic data. Proposed action: Member Profile sends the correlation add to the identity registry. Broader effort: reconciliation of the correlation-to-registry-ID gap remains in scope.
+
+--- INC41220398#resolution (371 chars)
+Incident INC41220398: System will not allow member check-in due to insurance profile problems
+Resolution code: Solved (Permanently)
+Technical cause: Errors/Drops
+Caused by change: No
+Resolution notes: Correlation sent to the identity registry to resolve the correlation issue.
+Final work note: Correlation add sent to the identity registry to resolve the correlation gap.
+
+--- INC41220398#full_narrative (1484 chars)
+Incident INC41220398: System will not allow member check-in due to insurance profile problems
+Description: A prior ticket was submitted for this problem and mistakenly marked resolved. On check-in for a single member, a pop-up states the member has not successfully retrieved a profile from the enrollment system. This is occurring for only one member; local enrollment staff confirm all fields are populated correctly on their end and believe it is a platform-level defect.
+[2023-06-21 10:41:56] On check-in a pop-up appears: 'The current member has not successfully retrieved a profile from the enrollment system.' This member has been seen before and enrollment co-workers report everything is correct on their end.
+[2023-07-28 10:57:52] Transferring to Member Profile. The correlation identifier does not exist and the integration engine treats this as an error, producing a correlation-not-found error rather than sending partial demographic data. Proposed action: Member Profile sends the correlation add to the identity registry. Broader effort: reconciliation of the correlation-to-registry-ID gap remains in scope.
+[2024-01-22 05:38:19] Checking again for verified resolution. This was reportedly addressed with an identity registry sync; requesting final confirmation from the reporter.
+[2024-02-01 07:58:37] Correlation add sent to the identity registry to resolve the correlation gap.
+Resolution: Correlation sent to the identity registry to resolve the correlation issue.
+
+2026-10-14 03:42:29,548 INFO daimo.chunk_embed run_summary {"event": "run_summary", "run_id": "20261014T034229Z-cfb6f8e3", "aborted": false, "duration_seconds": 0.08, "index_chunk_total": null, "files": 1, "records": 5, "skipped_unchanged": 0, "incidents_indexed": 3, "chunks_embedded": 0, "failures": 2, "embed_seconds": 0.0, "chunk_types": {}}
+2026-10-14 03:56:06,672 INFO botocore.credentials Found credentials from IAM Role: daimo-ec2-role
+2026-10-14 03:56:06,825 INFO daimo.chunk_embed run 20261014T035606Z-4078a03a start input=s3://daimo-s3-clean/ index=/home/ec2-user/daimo/data/index model=amazon.titan-embed-text-v2:0 dim=1024 pii_guard=warn dry_run=False
+2026-10-14 03:56:07,785 WARNING daimo.chunk_embed residual PII pattern(s) in incident=INC39875510 types=STREET_ADDRESS; indexing anyway (DAIMO_PII_GUARD=warn)
+2026-10-14 03:56:08,874 INFO daimo.chunk_embed run_summary {"event": "run_summary", "run_id": "20261014T035606Z-4078a03a", "aborted": false, "duration_seconds": 2.22, "index_chunk_total": 15, "files": 1, "files_unchanged": 0, "records": 5, "records_with_pii_warning": 1, "skipped_unchanged": 0, "incidents_indexed": 5, "chunks_embedded": 15, "failures": 0, "embed_seconds": 1.85, "chunk_types": {"symptom": 5, "resolution": 5, "full_narrative": 5}}
+2026-10-14 03:56:15,710 INFO botocore.credentials Found credentials from IAM Role: daimo-ec2-role
+2026-10-14 03:56:15,863 INFO daimo.chunk_embed run 20261014T035615Z-eb958f45 start input=s3://daimo-s3-clean/ index=/home/ec2-user/daimo/data/index model=amazon.titan-embed-text-v2:0 dim=1024 pii_guard=warn dry_run=False
+2026-10-14 03:56:16,009 INFO daimo.chunk_embed run_summary {"event": "run_summary", "run_id": "20261014T035615Z-eb958f45", "aborted": false, "duration_seconds": 0.32, "index_chunk_total": 15, "files": 1, "files_unchanged": 1, "records": 0, "records_with_pii_warning": 0, "skipped_unchanged": 0, "incidents_indexed": 0, "chunks_embedded": 0, "failures": 0, "embed_seconds": 0.0, "chunk_types": {}}

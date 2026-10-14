@@ -1,0 +1,56 @@
+{
+  "embedding_model": "amazon.titan-embed-text-v2:0",
+  "embedding_dimensions": 1024,
+  "incidents": {
+    "INC40012785": {
+      "content_hash": "b6cddf25924e1371bd3434375c0307d208da6720eb48f171ba054cb306f648b8",
+      "chunk_ids": [
+        "INC40012785#symptom",
+        "INC40012785#resolution",
+        "INC40012785#full_narrative"
+      ],
+      "indexed_at": "2026-10-14T03:56:07.396169+00:00"
+    },
+    "INC40118934": {
+      "content_hash": "1db4b16e4b9793beb468bf22f007d1f9edc3ba35e97ca4a5cc13c40b8ca9f5f6",
+      "chunk_ids": [
+        "INC40118934#symptom",
+        "INC40118934#resolution",
+        "INC40118934#full_narrative"
+      ],
+      "indexed_at": "2026-10-14T03:56:07.784795+00:00"
+    },
+    "INC39875510": {
+      "content_hash": "34804b93dae79fee19019febad1aaade99117f7517e42e4e34fb1edefa63f08f",
+      "chunk_ids": [
+        "INC39875510#symptom",
+        "INC39875510#resolution",
+        "INC39875510#full_narrative"
+      ],
+      "indexed_at": "2026-10-14T03:56:08.154992+00:00"
+    },
+    "INC39644027": {
+      "content_hash": "c2229789e6a0e5e7fc681aef24d2bb013441fffd17cc8c92d933a689fadd3070",
+      "chunk_ids": [
+        "INC39644027#symptom",
+        "INC39644027#resolution",
+        "INC39644027#full_narrative"
+      ],
+      "indexed_at": "2026-10-14T03:56:08.515236+00:00"
+    },
+    "INC41220398": {
+      "content_hash": "1c127a9ceb0b131febce67b7f19dd16f70e5ba9b8875299682bf1cfb2322e24f",
+      "chunk_ids": [
+        "INC41220398#symptom",
+        "INC41220398#resolution",
+        "INC41220398#full_narrative"
+      ],
+      "indexed_at": "2026-10-14T03:56:08.873593+00:00"
+    }
+  },
+  "s3_objects": {
+    "s3://daimo-s3-clean/daimo-synthetic-5.json": "\"dd1bf85edbe80071c783e1efb8a9aad5\""
+  },
+  "updated_at": "2026-10-14T03:56:08.873737+00:00",
+  "chunk_count": 15
+}

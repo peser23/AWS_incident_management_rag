@@ -1,0 +1,362 @@
+[
+  {
+    "incident_number": "INC40012785",
+    "submitted_by": "Marcus Dellwood (SITEXMDEL)",
+    "opened_by": "Marcus Dellwood (SITEXMDEL)",
+    "created_by": "SITEXMDEL",
+    "location": "Cascade Regional Benefit Office (WA)",
+    "location_service_area": "Region North",
+    "affected_end_user": "Marcus Dellwood (SITEXMDEL)",
+    "telework": true,
+    "best_contact_method": "Instant Messaging",
+    "follow_up_phone": "5550142200",
+    "category": "Affected Service",
+    "subcategory": "",
+    "affected_service": "Member Profile Service",
+    "portfolio": "Beneficiary Experience Services",
+    "product_line": "Data and Analytics",
+    "contact_type": "Self-service",
+    "state": "Closed",
+    "impact": "2 - High - Impacts Regional",
+    "urgency": "3 (Medium) - Resolution scheduled when resources are available. Workaround available.",
+    "priority": "3 - Moderate",
+    "assignment_group": "Member Profile",
+    "assigned_to": "Alan Prescott (SITEXAPRE.old_002)",
+    "queue_manager": "Nadia Okonkwo (410NOKON)",
+    "backup_queue_manager": "Terrence Vaughn (SITEXTVAU)",
+    "affects_patient_safety": false,
+    "reason_reopened": "Scope Creep",
+    "customer_contacted": "Yes",
+    "short_description": "Life Coverage Automated Applications - Erroneous Denials from Benefits Determination Service",
+    "detailed_description": "The automated intake process for the new coverage program validates applicant eligibility by querying the Member Profile Service, which in turn proxies service-connection status from the downstream Benefits Determination Service (BDS). Recently, applicants with a granted rating decision from earlier in the enrollment cycle are being returned as having no qualifying rating, producing an erroneous denial at web submission. A member escalated by phone: applicant Gregory Halverson (SSN 512-04-9987, DOB 1979-03-14) was denied despite a granted rating; contact number on file is 555-0173-2245.",
+    "affected_system_name": "Member Profile - Coverage Web Application",
+    "work_notes": [
+      {
+        "timestamp": "2024-02-19 05:56:43",
+        "author": "SITEXAPRE",
+        "note": "Still pending architecture review."
+      },
+      {
+        "timestamp": "2024-01-08 05:31:14",
+        "author": "SITEXAPRE",
+        "note": "MPS-7112 tracks our portion internally; this is a multi-partner effort with BDS engaged as well. IPT meets biweekly. BDS deployed an omnibus fix in the December release resolving most of the original defect (MPS-5601, Zero% Service-Connected mapping issue). Residual legacy-record analysis split into MPS-7112 and remains in analysis."
+      },
+      {
+        "timestamp": "2023-11-01 05:49:51",
+        "author": "Priya Sundaram (BDSHQSUNDP)",
+        "note": "Increasing priority - beneficiaries are being denied coverage who should be eligible."
+      },
+      {
+        "timestamp": "2023-03-07 05:42:59",
+        "author": "SITEXAPRE",
+        "note": "Current understanding: Member Profile acts as a proxy to BDS for eligibility and does not alter the downstream response. The BDS endpoints were not originally intended for eligibility lookups and the backing data was not fully migrated to support that use. Different BDS endpoints can return divergent results. IPT owns tracking of cause, impact, and remediation."
+      }
+    ],
+    "related_kb_articles": [
+      "KB0210455 : Member Profile: Application Assistance"
+    ],
+    "closure_information": {
+      "caused_by_change": "No",
+      "resolution_code": "Solved (Permanently)",
+      "closed": "2024-03-20 21:43:15",
+      "resolution_notes": "BDS tested and deployed the resolution in the weekend release; this ticket to Member Profile requested that approval/clearance, which has been granted."
+    },
+    "impacted_cis": [
+      {
+        "configuration_item": "Member Profile",
+        "managed_by": "Rebecca Aldridge (SITEXRALD)",
+        "owned_by": "Barbara Fenn (410BFENN)",
+        "operational_status": "Operational"
+      }
+    ],
+    "evaluation_metadata": {
+      "has_sensitive_data": true,
+      "detected_types": [
+        "PERSON",
+        "US_SSN",
+        "DATE_OF_BIRTH",
+        "PHONE_NUMBER"
+      ],
+      "field_location": "description"
+    }
+  },
+  {
+    "incident_number": "INC40118934",
+    "submitted_by": "Joel Kaminski (SDEVJKAM)",
+    "opened_by": "Joel Kaminski (SDEVJKAM)",
+    "created_by": "SDEVJKAM",
+    "location": "Cascade Regional Benefit Office (WA)",
+    "location_service_area": "Region North",
+    "affected_end_user": "Joel Kaminski (SDEVJKAM)",
+    "telework": false,
+    "best_contact_method": "Instant Messaging",
+    "follow_up_phone": "5550188100",
+    "category": "Software",
+    "subcategory": "Server",
+    "affected_service": "",
+    "contact_type": "Email",
+    "state": "Closed",
+    "impact": "3 - Medium - Impacts Office / Floor",
+    "urgency": "3 (Medium) - Resolution scheduled when resources are available. Workaround available.",
+    "priority": "3 - Moderate",
+    "assignment_group": "Member Profile",
+    "assigned_to": "Alan Prescott (SITEXAPRE.old_002)",
+    "queue_manager": "Nadia Okonkwo (410NOKON)",
+    "backup_queue_manager": "Terrence Vaughn (SITEXTVAU)",
+    "affects_patient_safety": false,
+    "short_description": "Beneficiaries Denied Service Connected Rating 0% From Member Profile",
+    "detailed_description": "Expected vs actual behavior when checking eligibility in the Coverage web application via Member Profile. Beneficiaries reported as eligible in the Benefits Determination Service are receiving an ineligible result from Member Profile. Expected: GIVEN a qualified applicant with a Service-Connected Rating of 0% AND Service-Connected = TRUE, THEN eligible. Actual: same conditions return NOT eligible. A set of affected internal ParticipantIds is retained in the related ticket (withheld here due to PII).",
+    "affected_system_name": "eCoverage",
+    "work_notes": [
+      {
+        "timestamp": "2023-03-07 05:27:01",
+        "author": "SITEXAPRE",
+        "note": "Resolution Note - redirect to INC40012785 (duplicate but with clearer explanation)."
+      },
+      {
+        "timestamp": "2023-02-03 04:34:21",
+        "author": "SITEXAPRE",
+        "note": "Tracking via internal Jira MPS-5601; placing on hold pending resolution from the BDS team IPT meetings."
+      },
+      {
+        "timestamp": "2023-01-19 06:04:10",
+        "author": "SITEXAPRE",
+        "note": "Running down what BDS sees on their end and determining whether the affected records may be future-dated."
+      },
+      {
+        "timestamp": "2023-01-18 11:34:28",
+        "author": "SITEXAPRE",
+        "note": "Does not correlate to known gateway outages; would expect clustering around the mid-month network events otherwise. Devs still investigating."
+      }
+    ],
+    "closure_information": {
+      "caused_by_change": "No",
+      "resolution_code": "Solved (Work Around)",
+      "closed_by": "System Administrator (admin)",
+      "closed": "2023-03-10 21:05:04",
+      "resolution_notes": "Redirect to INC40012785 (duplicate but provides clearer explanations)."
+    },
+    "evaluation_metadata": {
+      "has_sensitive_data": false,
+      "detected_types": [],
+      "field_location": null
+    }
+  },
+  {
+    "incident_number": "INC39875510",
+    "submitted_by": "Devon Ashby (SITFLDASH.old_003)",
+    "opened_by": "Devon Ashby (SITFLDASH.old_003)",
+    "created_by": "SITFLDASH",
+    "location": "Palmetto Community Clinic (FL)",
+    "location_service_area": "Region South",
+    "affected_end_user": "Devon Ashby (SITFLDASH.old_003)",
+    "telework": true,
+    "best_contact_method": "Email",
+    "follow_up_phone": "5550173300",
+    "category": "Software",
+    "subcategory": "Server",
+    "affected_service": "",
+    "contact_type": "Self-service",
+    "state": "Closed",
+    "impact": "4 - Low - Impact is one or more, but not all users.",
+    "urgency": "4 (Low) - Convenience vs function.",
+    "priority": "4 - Low",
+    "assignment_group": "Member Profile",
+    "assigned_to": "Alan Prescott (SITEXAPRE.old_002)",
+    "queue_manager": "Nadia Okonkwo (410NOKON)",
+    "backup_queue_manager": "Terrence Vaughn (SITEXTVAU)",
+    "affects_patient_safety": false,
+    "reason_reopened": "Unintentionally Reopened",
+    "customer_contacted": "Yes",
+    "short_description": "Member Profile - Address Discrepancy",
+    "detailed_description": "Requesting an audit history on a member record. The address displayed in the Care CRM was incorrect and did not match the clinical record of truth; the member reports never having resided at the address, which was later confirmed to be a vacant parcel. The CRM subsequently self-corrected, but an audit is requested to determine the original source of the bad value.",
+    "affected_system_name": "None",
+    "work_notes": [
+      {
+        "timestamp": "2022-12-15 12:07:19",
+        "author": "SITEXAPRE",
+        "note": "Resolution Note - A bad address update was submitted to Member Profile in the spring; we rejected the update and no override was sent to force it. We have only ever returned the valid address, so the erroneous value did not originate from us. The consuming application should investigate which upstream partner surfaced it (an enrollment service appears to have forwarded updates from another partner)."
+      },
+      {
+        "timestamp": "2022-12-08 05:02:52",
+        "author": "SITEXAPRE",
+        "note": "Spoke with the requester over chat. The member is Franklin Ortega, member registry ID 1004872910V335071, DOB 1961-11-02. The incorrect address on file was 4471 Sablewood Ter, Lot 12, Meridian FL 33540. Our DB has retained the same valid addresses since 2019. Awaiting requester return to confirm and close."
+      },
+      {
+        "timestamp": "2022-12-05 05:42:47",
+        "author": "SITEXAPRE",
+        "note": "Requested a valid registry ID so audit history can be returned. Noted that partners can query their own history via API rather than pinging us directly."
+      }
+    ],
+    "closure_information": {
+      "caused_by_change": "No",
+      "resolution_code": "Solved (Permanently)",
+      "closed_by": "Devon Ashby (SITFLDASH.old_003)",
+      "closed": "2022-12-20 10:01:36",
+      "resolution_notes": "Bad address was submitted in spring but rejected; no override forced. We have retained valid addresses since 2019. Consuming application should investigate the source window."
+    },
+    "evaluation_metadata": {
+      "has_sensitive_data": true,
+      "detected_types": [
+        "PERSON",
+        "MEDICAL_RECORD_NUMBER",
+        "DATE_OF_BIRTH",
+        "LOCATION"
+      ],
+      "field_location": "work_notes"
+    }
+  },
+  {
+    "incident_number": "INC39644027",
+    "submitted_by": "Integration Partner (integration.partner)",
+    "opened_by": "Integration Partner (integration.partner)",
+    "created_by": "integration.partner",
+    "location": "Redwood Medical Center (OR)",
+    "location_service_area": "Region West",
+    "affected_end_user": "Harold Marsh (SITORHMAR1)",
+    "telework": false,
+    "best_contact_method": "",
+    "follow_up_phone": "5550166700",
+    "category": "Service",
+    "subcategory": "EHR Platform",
+    "affected_ci": "EHR Health Information Management",
+    "contact_type": "Phone",
+    "state": "Closed",
+    "impact": "4 - Low - Impact is one or more, but not all users.",
+    "urgency": "3 (Medium) - Resolution scheduled when resources are available. Workaround available.",
+    "priority": "4 - Low",
+    "assignment_group": "Member Profile",
+    "assigned_to": "Alan Prescott (SITEXAPRE.old_002)",
+    "queue_manager": "Nadia Okonkwo (410NOKON)",
+    "backup_queue_manager": "Terrence Vaughn (SITEXTVAU)",
+    "affects_patient_safety": false,
+    "initiative": "Electronic Health Record Modernization",
+    "short_description": "Member DOB displaying incorrectly in EHR Chart View",
+    "detailed_description": "Application Impacted: EHR Chart View. Member date of birth is displaying incorrectly in the chart but appears correct in the identity source and clinical record of truth. Issue reported as leaving member demographic information in an inconsistent state across systems.",
+    "affected_system_name": "N/A",
+    "work_notes": [
+      {
+        "timestamp": "2023-04-13 08:09:52",
+        "author": "SITEXAPRE",
+        "note": "Taking the requester's suggestion and closing as unresolved - cannot reproduce."
+      },
+      {
+        "timestamp": "2023-04-13 07:51:10",
+        "author": "SITEXAPRE",
+        "note": "No attachments visible and we were only assigned this ticket yesterday. Member Profile is a proxy for anything other than address/email/phone (the only attributes we master), so we would not be storing or mastering DOB. At most we forward DOB from downstream partners in response to a demographic request. With no stored data and no member registry ID, we cannot query audit records. Given the age of the ticket and the lack of identifiers, there is nothing actionable to offer."
+      },
+      {
+        "timestamp": "2022-09-27 12:05:05",
+        "author": "Integration Partner (integration.partner)",
+        "note": "Partner Update: The member's Member Profile record has the wrong birthday being sent to the EHR. The value needs to match the identity source. Transfer reason: needs correction in Member Profile and verification that the identity feed value is also correct."
+      }
+    ],
+    "related_kb_articles": [
+      "KB0209912 : EHR Chart View: Patient List Will Not Display Member Information"
+    ],
+    "closure_information": {
+      "caused_by_change": "No",
+      "resolution_code": "Not Solved (Not Reproducible)",
+      "closed_by": "System Administrator (admin)",
+      "closed": "2023-04-18 21:06:44",
+      "resolution_notes": "Ticket was too old when it reached Member Profile, and supporting information (namely the member IDs required to search) is not present in the ticket."
+    },
+    "external_ticket": {
+      "external_ticket_id": "550134001",
+      "external_state": "Closed",
+      "external_priority": "Medium",
+      "external_owner": "Karen Boyd",
+      "external_owner_email": "karen.boyd@partner.example"
+    },
+    "evaluation_metadata": {
+      "has_sensitive_data": false,
+      "detected_types": [],
+      "field_location": null
+    }
+  },
+  {
+    "incident_number": "INC41220398",
+    "submitted_by": "Denise Holloway (SITWCDHOL)",
+    "opened_by": "Denise Holloway (SITWCDHOL)",
+    "created_by": "SITWCDHOL",
+    "location": "Cedar Hollow Medical Center",
+    "location_service_area": "Region West",
+    "affected_end_user": "Denise Holloway (SITWCDHOL)",
+    "affected_user_building": "211",
+    "affected_user_room": "160",
+    "telework": false,
+    "best_contact_method": "Email",
+    "follow_up_phone": "5550159600",
+    "category": "Affected Service",
+    "subcategory": "",
+    "affected_service": "Member Profile",
+    "portfolio": "Beneficiary Experience Services",
+    "product_line": "Data and Analytics",
+    "contact_type": "Self-service",
+    "state": "Closed",
+    "impact": "4 - Low - Impact is one or more, but not all users.",
+    "urgency": "4 (Low) - Convenience vs function.",
+    "priority": "4 - Low",
+    "assignment_group": "Member Profile",
+    "assigned_to": "Alan Prescott (SITEXAPRE.old_002)",
+    "queue_manager": "Nadia Okonkwo (410NOKON)",
+    "backup_queue_manager": "Terrence Vaughn (SITEXTVAU)",
+    "affects_patient_safety": false,
+    "initiative": "Electronic Health Record Modernization",
+    "short_description": "System will not allow member check-in due to insurance profile problems",
+    "detailed_description": "A prior ticket was submitted for this problem and mistakenly marked resolved. On check-in for a single member, a pop-up states the member has not successfully retrieved a profile from the enrollment system. This is occurring for only one member; local enrollment staff confirm all fields are populated correctly on their end and believe it is a platform-level defect.",
+    "affected_system_name": "EHR Registration Management",
+    "work_notes": [
+      {
+        "timestamp": "2024-02-01 07:58:37",
+        "author": "SITEXAPRE",
+        "note": "Resolution Note - Correlation add sent to the identity registry to resolve the correlation gap."
+      },
+      {
+        "timestamp": "2024-01-22 05:38:19",
+        "author": "SITEXAPRE",
+        "note": "Checking again for verified resolution. This was reportedly addressed with an identity registry sync; requesting final confirmation from the reporter."
+      },
+      {
+        "timestamp": "2023-07-28 10:57:52",
+        "author": "Integration Partner (integration.partner)",
+        "note": "Partner Update: Transferring to Member Profile. The correlation identifier does not exist and the integration engine treats this as an error, producing a correlation-not-found error rather than sending partial demographic data. Proposed action: Member Profile sends the correlation add to the identity registry. Broader effort: reconciliation of the correlation-to-registry-ID gap remains in scope."
+      },
+      {
+        "timestamp": "2023-06-21 10:41:56",
+        "author": "SITWCTCARY",
+        "note": "On check-in a pop-up appears: 'The current member has not successfully retrieved a profile from the enrollment system.' This member has been seen before and enrollment co-workers report everything is correct on their end."
+      }
+    ],
+    "related_kb_articles": [
+      "KB0221880 : Tier 1 - Self-Service Ticket Processing: Contact Scenarios"
+    ],
+    "closure_information": {
+      "caused_by_change": "No",
+      "technical_cause": "Errors/Drops",
+      "resolution_code": "Solved (Permanently)",
+      "closed": "2024-02-06 21:06:54",
+      "resolution_notes": "Correlation sent to the identity registry to resolve the correlation issue."
+    },
+    "external_ticket": {
+      "external_ticket_id": "550134850",
+      "external_state": "In Progress",
+      "external_priority": "Medium",
+      "external_owner": "Samir Nadeem",
+      "external_owner_email": "samir.nadeem@partner.example"
+    },
+    "impacted_cis": [
+      {
+        "configuration_item": "Member Profile",
+        "managed_by": "Rebecca Aldridge (SITEXRALD)",
+        "owned_by": "Barbara Fenn (410BFENN)",
+        "operational_status": "Operational"
+      }
+    ],
+    "evaluation_metadata": {
+      "has_sensitive_data": false,
+      "detected_types": [],
+      "field_location": null
+    }
+  }
+]
