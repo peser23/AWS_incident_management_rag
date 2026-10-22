@@ -1,0 +1,29 @@
+[Unit]
+Description=DAIMO retrieval service (hybrid retrieval + confidence gate)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=daimo
+Group=daimo
+RuntimeDirectory=daimo
+RuntimeDirectoryMode=0750
+RuntimeDirectoryPreserve=yes
+Environment=AWS_REGION=us-east-1
+# '+' runs this one step as root so it can write the env file; the file is group-readable by daimo only
+ExecStartPre=+/opt/daimo-retrieval/venv/bin/python /opt/daimo-retrieval/deploy/load_ssm_env.py
+EnvironmentFile=-/run/daimo/retrieval.env
+ExecStart=/opt/daimo-retrieval/venv/bin/uvicorn daimo_retrieval.api:app --host 127.0.0.1 --port 8000 --workers 2
+Restart=always
+RestartSec=3
+TimeoutStartSec=60
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

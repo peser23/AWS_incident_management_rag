@@ -1,0 +1,25 @@
+[project]
+name = "daimo-retrieval"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi", "uvicorn", "langchain-aws>=1.0", "langgraph", "opensearch-py>=2.6",
+  "boto3>=1.35", "pydantic>=2.7", "pydantic-settings>=2.3", "numpy", "structlog",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+daimo_retrieval = ["prompts/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: needs real AWS (run on EC2)"]

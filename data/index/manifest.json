@@ -1,6 +1,7 @@
 {
   "embedding_model": "amazon.titan-embed-text-v2:0",
   "embedding_dimensions": 1024,
+  "opensearch_index": "daimo-incidents",
   "incidents": {
     "INC40012785": {
       "content_hash": "b6cddf25924e1371bd3434375c0307d208da6720eb48f171ba054cb306f648b8",
@@ -9,7 +10,7 @@
         "INC40012785#resolution",
         "INC40012785#full_narrative"
       ],
-      "indexed_at": "2026-10-14T03:56:07.396169+00:00"
+      "indexed_at": "2026-10-21T14:24:49.951843+00:00"
     },
     "INC40118934": {
       "content_hash": "1db4b16e4b9793beb468bf22f007d1f9edc3ba35e97ca4a5cc13c40b8ca9f5f6",
@@ -18,7 +19,7 @@
         "INC40118934#resolution",
         "INC40118934#full_narrative"
       ],
-      "indexed_at": "2026-10-14T03:56:07.784795+00:00"
+      "indexed_at": "2026-10-21T14:24:55.816910+00:00"
     },
     "INC39875510": {
       "content_hash": "34804b93dae79fee19019febad1aaade99117f7517e42e4e34fb1edefa63f08f",
@@ -27,7 +28,7 @@
         "INC39875510#resolution",
         "INC39875510#full_narrative"
       ],
-      "indexed_at": "2026-10-14T03:56:08.154992+00:00"
+      "indexed_at": "2026-10-21T14:24:57.189047+00:00"
     },
     "INC39644027": {
       "content_hash": "c2229789e6a0e5e7fc681aef24d2bb013441fffd17cc8c92d933a689fadd3070",
@@ -36,7 +37,7 @@
         "INC39644027#resolution",
         "INC39644027#full_narrative"
       ],
-      "indexed_at": "2026-10-14T03:56:08.515236+00:00"
+      "indexed_at": "2026-10-21T14:24:57.857827+00:00"
     },
     "INC41220398": {
       "content_hash": "1c127a9ceb0b131febce67b7f19dd16f70e5ba9b8875299682bf1cfb2322e24f",
@@ -45,12 +46,4513 @@
         "INC41220398#resolution",
         "INC41220398#full_narrative"
       ],
-      "indexed_at": "2026-10-14T03:56:08.873593+00:00"
+      "indexed_at": "2026-10-21T14:24:58.831023+00:00"
+    },
+    "INC62682989": {
+      "content_hash": "0ade54c358deabb83e37de1691c7048a093efd84ae9fe27f5c578d3bcc5b8a1c",
+      "chunk_ids": [
+        "INC62682989#symptom",
+        "INC62682989#resolution",
+        "INC62682989#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:09.189230+00:00"
+    },
+    "INC87971488": {
+      "content_hash": "fedc38388d57ee1bffd3834629b1bc78dc04cc556eadacfed0f4436b3775ea0a",
+      "chunk_ids": [
+        "INC87971488#symptom",
+        "INC87971488#resolution",
+        "INC87971488#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:12.350564+00:00"
+    },
+    "INC88231132": {
+      "content_hash": "45ce52521edade149fe16048fa86c4c5d7fce366a3e48786881fa6321866b398",
+      "chunk_ids": [
+        "INC88231132#symptom",
+        "INC88231132#resolution",
+        "INC88231132#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:18.862433+00:00"
+    },
+    "INC30728046": {
+      "content_hash": "7bac44fb0451ccc9f391f850db1cae74bf207a6f5139cfb93cb16d19382ef5c0",
+      "chunk_ids": [
+        "INC30728046#symptom",
+        "INC30728046#resolution",
+        "INC30728046#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:23.079148+00:00"
+    },
+    "INC10576383": {
+      "content_hash": "024fe9e27d567a15c8352a94d4ffd08511fcd022c601af7b56052f774fbe5785",
+      "chunk_ids": [
+        "INC10576383#symptom",
+        "INC10576383#resolution",
+        "INC10576383#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:23.643147+00:00"
+    },
+    "INC77337818": {
+      "content_hash": "e8c25a56a7a3783384ab34b24ab1931e5697c8653d4702f2dcd3630fadae6885",
+      "chunk_ids": [
+        "INC77337818#symptom",
+        "INC77337818#resolution",
+        "INC77337818#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:24.223850+00:00"
+    },
+    "INC17566185": {
+      "content_hash": "b52a409e2adbeb5d7c5ef0e00db91787876ef83ba921c3473dee09d1cbcb8c63",
+      "chunk_ids": [
+        "INC17566185#symptom",
+        "INC17566185#resolution",
+        "INC17566185#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:24.762458+00:00"
+    },
+    "INC15492573": {
+      "content_hash": "40fe05dd1d47946d0f7b84c7c1e83366c2bbaf4de7a64bddb1b37f9a041a000b",
+      "chunk_ids": [
+        "INC15492573#symptom",
+        "INC15492573#resolution",
+        "INC15492573#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:25.328884+00:00"
+    },
+    "INC26687537": {
+      "content_hash": "1c6ee4d474ddea294eb1314f7513573af72e3981cfab95dde849a921438a73c1",
+      "chunk_ids": [
+        "INC26687537#symptom",
+        "INC26687537#resolution",
+        "INC26687537#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:25.942576+00:00"
+    },
+    "INC53551839": {
+      "content_hash": "93aea878f128d015d7ea28cf79702536b09ffc6e5282aaf3238df61fecd62d9a",
+      "chunk_ids": [
+        "INC53551839#symptom",
+        "INC53551839#resolution",
+        "INC53551839#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:26.479431+00:00"
+    },
+    "INC12517517": {
+      "content_hash": "faf7f9e5618332702c0b226c5cc8a31de22142b0c3aa52d1950c44d150f029b8",
+      "chunk_ids": [
+        "INC12517517#symptom",
+        "INC12517517#resolution",
+        "INC12517517#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:27.003241+00:00"
+    },
+    "INC44585178": {
+      "content_hash": "df322f86702d2dc889d9816e5a46274a4c073d2dbae393f4e4b9223c76b7b0ef",
+      "chunk_ids": [
+        "INC44585178#symptom",
+        "INC44585178#resolution",
+        "INC44585178#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:27.778358+00:00"
+    },
+    "INC60855700": {
+      "content_hash": "e5a30b13a6bdcce7d865f9efb437470c063b043c13e7b54cf768eed2574d2fc4",
+      "chunk_ids": [
+        "INC60855700#symptom",
+        "INC60855700#resolution",
+        "INC60855700#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:28.419673+00:00"
+    },
+    "INC35431319": {
+      "content_hash": "cf59d19cbe47346134ff5fe104695ba6559ab16206cde996f165a571aa64a0a6",
+      "chunk_ids": [
+        "INC35431319#symptom",
+        "INC35431319#resolution",
+        "INC35431319#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:28.937930+00:00"
+    },
+    "INC29920292": {
+      "content_hash": "5265475ba942cdb1555fc90c503dec6f75e2f548ac3264494dc66f4840afde33",
+      "chunk_ids": [
+        "INC29920292#symptom",
+        "INC29920292#resolution",
+        "INC29920292#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:29.514985+00:00"
+    },
+    "INC88588154": {
+      "content_hash": "3d9a54e3d41b3c92a9d33c03a45e7e1a33823f19c9c6bd955dabc5fa7fef852c",
+      "chunk_ids": [
+        "INC88588154#symptom",
+        "INC88588154#resolution",
+        "INC88588154#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:30.002421+00:00"
+    },
+    "INC69467853": {
+      "content_hash": "2e64a21a0eda669af2f3bd237a5b0decf2b3faff92646d00b30e00734aeb4abd",
+      "chunk_ids": [
+        "INC69467853#symptom",
+        "INC69467853#resolution",
+        "INC69467853#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:30.562291+00:00"
+    },
+    "INC60291817": {
+      "content_hash": "2a4d7821ee1bf016a9c2ed6108a8a4c5708fcd110c68fb0a88b878b83d656ee6",
+      "chunk_ids": [
+        "INC60291817#symptom",
+        "INC60291817#resolution",
+        "INC60291817#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:31.128627+00:00"
+    },
+    "INC67005685": {
+      "content_hash": "29c966fb11c127f718fe373ee1034456f99650e009eeba77d2739f44bb1f3213",
+      "chunk_ids": [
+        "INC67005685#symptom",
+        "INC67005685#resolution",
+        "INC67005685#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:31.642655+00:00"
+    },
+    "INC45377076": {
+      "content_hash": "38c053184fcffa40561bf5254f4827a46ef4b80030e5b7e84ff1f9ca707a9325",
+      "chunk_ids": [
+        "INC45377076#symptom",
+        "INC45377076#resolution",
+        "INC45377076#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:32.177757+00:00"
+    },
+    "INC42091325": {
+      "content_hash": "629df550d54242de80644f058e1e47e0359ffcef91665a602400a40b6b678b3e",
+      "chunk_ids": [
+        "INC42091325#symptom",
+        "INC42091325#resolution",
+        "INC42091325#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:32.722615+00:00"
+    },
+    "INC37135391": {
+      "content_hash": "534b83f53c228d1f71b3e3fffe75c9deca7f685f20fea4bbd719d82de7a92dc8",
+      "chunk_ids": [
+        "INC37135391#symptom",
+        "INC37135391#resolution",
+        "INC37135391#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:33.378791+00:00"
+    },
+    "INC33308443": {
+      "content_hash": "f2b772eda49e10a90560465c489252c0da74a638a8e11e6dcf408574ff81ccb9",
+      "chunk_ids": [
+        "INC33308443#symptom",
+        "INC33308443#resolution",
+        "INC33308443#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:33.980978+00:00"
+    },
+    "INC02823170": {
+      "content_hash": "b88addd72c6aa4abf0ed0e22acbd4dca95a1e6345b147c5aa68de68caeee8314",
+      "chunk_ids": [
+        "INC02823170#symptom",
+        "INC02823170#resolution",
+        "INC02823170#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:34.415177+00:00"
+    },
+    "INC32787299": {
+      "content_hash": "0370a38810a22cadf0fffd569dc712cd48bc04e9c44bf85c2f78c350d404492b",
+      "chunk_ids": [
+        "INC32787299#symptom",
+        "INC32787299#resolution",
+        "INC32787299#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:34.932007+00:00"
+    },
+    "INC18024248": {
+      "content_hash": "5b2c0d66637e5fbe029f7f7aef1f1465b837fa86f2f892e5ac68fb9ece06954f",
+      "chunk_ids": [
+        "INC18024248#symptom",
+        "INC18024248#resolution",
+        "INC18024248#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:35.471755+00:00"
+    },
+    "INC98748972": {
+      "content_hash": "1ea27bcac94df6ce75666e1c69af9c884254d78901c91204d152a5cf2cadaaba",
+      "chunk_ids": [
+        "INC98748972#symptom",
+        "INC98748972#resolution",
+        "INC98748972#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:35.993139+00:00"
+    },
+    "INC37338124": {
+      "content_hash": "2561d8affd21b9d281df3b6e9a014f5e7440fe2e1c6124c7cc5f85d5d8816df7",
+      "chunk_ids": [
+        "INC37338124#symptom",
+        "INC37338124#resolution",
+        "INC37338124#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:36.468602+00:00"
+    },
+    "INC96356822": {
+      "content_hash": "5f5a21656277b7050829030c91803683c699749e2f8009a3647348100e9a4efc",
+      "chunk_ids": [
+        "INC96356822#symptom",
+        "INC96356822#resolution",
+        "INC96356822#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:37.078305+00:00"
+    },
+    "INC17758595": {
+      "content_hash": "fe7f13c8b430fc188fa6df64152706e23b2e17e03d25fabffbc685e427ce5b4e",
+      "chunk_ids": [
+        "INC17758595#symptom",
+        "INC17758595#resolution",
+        "INC17758595#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:37.622709+00:00"
+    },
+    "INC98860009": {
+      "content_hash": "cd5d561322381f779a055ad213d2e74b815f60ed91c025f7019ee16c3c529aeb",
+      "chunk_ids": [
+        "INC98860009#symptom",
+        "INC98860009#resolution",
+        "INC98860009#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:38.228576+00:00"
+    },
+    "INC98234974": {
+      "content_hash": "ed2a330b54739378f4d71128dfa56b251be12381dd021951e15ef1363f9c894b",
+      "chunk_ids": [
+        "INC98234974#symptom",
+        "INC98234974#resolution",
+        "INC98234974#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:38.802112+00:00"
+    },
+    "INC30158366": {
+      "content_hash": "459d4abddb1a64e0b64d7408418d2d297e8b04bf75318c4a03ca9843ce2bfcd3",
+      "chunk_ids": [
+        "INC30158366#symptom",
+        "INC30158366#resolution",
+        "INC30158366#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:39.384308+00:00"
+    },
+    "INC94427530": {
+      "content_hash": "4c1c4c3135f40c7254a5589bff40bc34d1d6a1a028c107c228f769189f0ed4ba",
+      "chunk_ids": [
+        "INC94427530#symptom",
+        "INC94427530#resolution",
+        "INC94427530#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:39.878199+00:00"
+    },
+    "INC46930359": {
+      "content_hash": "9aa17844639bf165a826a0555c7a9aa1f76cb6aad69241d97255e2d642b36297",
+      "chunk_ids": [
+        "INC46930359#symptom",
+        "INC46930359#resolution",
+        "INC46930359#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:40.429020+00:00"
+    },
+    "INC44349361": {
+      "content_hash": "faeda04edb20d33617bedd0cb46d31a38ce1405e01b003090160039832d7ae70",
+      "chunk_ids": [
+        "INC44349361#symptom",
+        "INC44349361#resolution",
+        "INC44349361#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:40.951515+00:00"
+    },
+    "INC68387461": {
+      "content_hash": "b9cfc078d147c7a0f638bafd4ba68dbee9552d5f8b08b56ee92da753dd38fc6f",
+      "chunk_ids": [
+        "INC68387461#symptom",
+        "INC68387461#resolution",
+        "INC68387461#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:41.490814+00:00"
+    },
+    "INC56306997": {
+      "content_hash": "916361b775f21a1b5bf2abe20fa1e0c72b8a1b57575f40341adb9b6b80965242",
+      "chunk_ids": [
+        "INC56306997#symptom",
+        "INC56306997#resolution",
+        "INC56306997#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:41.978332+00:00"
+    },
+    "INC22097220": {
+      "content_hash": "5ed95be48ff5c3b949aa1a94eab6662870899ad44caada8b93aa44b2f623ae3b",
+      "chunk_ids": [
+        "INC22097220#symptom",
+        "INC22097220#resolution",
+        "INC22097220#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:43.871806+00:00"
+    },
+    "INC12448136": {
+      "content_hash": "bbf92e6bf71df493484a87e91871686182a40295a1b22ab282b5d32869b54188",
+      "chunk_ids": [
+        "INC12448136#symptom",
+        "INC12448136#resolution",
+        "INC12448136#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:44.398069+00:00"
+    },
+    "INC35575298": {
+      "content_hash": "622638a510162f386bc2231d95d4800b9495a008cee9867c0213c31a7a2bffd3",
+      "chunk_ids": [
+        "INC35575298#symptom",
+        "INC35575298#resolution",
+        "INC35575298#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:44.914147+00:00"
+    },
+    "INC40264926": {
+      "content_hash": "fdc434d38dc73dbc8c64bf1f658785d143e3c640eb28c6bca6d105f09b52d175",
+      "chunk_ids": [
+        "INC40264926#symptom",
+        "INC40264926#resolution",
+        "INC40264926#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:45.391540+00:00"
+    },
+    "INC39349722": {
+      "content_hash": "8bd408794e357ed2eab7778772b516a479337dcbf62be9942c9e03f9df3c2541",
+      "chunk_ids": [
+        "INC39349722#symptom",
+        "INC39349722#resolution",
+        "INC39349722#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:45.909980+00:00"
+    },
+    "INC72160068": {
+      "content_hash": "baceb5140aaeba446cfa0afb002210b8503a62662650855608d1fd4b60ee1304",
+      "chunk_ids": [
+        "INC72160068#symptom",
+        "INC72160068#resolution",
+        "INC72160068#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:46.413667+00:00"
+    },
+    "INC44446182": {
+      "content_hash": "0dab822cf511947f165da762db1da8bad8e995adf158cfa8de1bc56cd19795cf",
+      "chunk_ids": [
+        "INC44446182#symptom",
+        "INC44446182#resolution",
+        "INC44446182#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:47.015952+00:00"
+    },
+    "INC63993471": {
+      "content_hash": "bb8a6c63bfe733513caaa03a09136d9442079123c701df2096749746e446b5b3",
+      "chunk_ids": [
+        "INC63993471#symptom",
+        "INC63993471#resolution",
+        "INC63993471#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:47.625190+00:00"
+    },
+    "INC11496211": {
+      "content_hash": "1ee8bf23d51b6bc51fc283046e9711f22f165d2f8d93bddcfb40c6846ef837db",
+      "chunk_ids": [
+        "INC11496211#symptom",
+        "INC11496211#resolution",
+        "INC11496211#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:48.211517+00:00"
+    },
+    "INC33273328": {
+      "content_hash": "04bac6b25082443f10661054a9ce167fd6cf72e37ba11e912057db5a3b072fab",
+      "chunk_ids": [
+        "INC33273328#symptom",
+        "INC33273328#resolution",
+        "INC33273328#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:48.821685+00:00"
+    },
+    "INC29219319": {
+      "content_hash": "4a1c0e6bff63db47d8fe37fd0483cb5c04f4af1629e6406ff8a2c0d6c7742b80",
+      "chunk_ids": [
+        "INC29219319#symptom",
+        "INC29219319#resolution",
+        "INC29219319#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:49.679213+00:00"
+    },
+    "INC68139880": {
+      "content_hash": "ab130056a2168df69a1aaf2237af8334f3722b277b0b273f32477bd744bdb089",
+      "chunk_ids": [
+        "INC68139880#symptom",
+        "INC68139880#resolution",
+        "INC68139880#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:50.215790+00:00"
+    },
+    "INC00435578": {
+      "content_hash": "84b200afd491cfaf2d7c72f215c097a889b8a3bb855e340205437e75b9c0e327",
+      "chunk_ids": [
+        "INC00435578#symptom",
+        "INC00435578#resolution",
+        "INC00435578#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:50.731374+00:00"
+    },
+    "INC92363534": {
+      "content_hash": "bb3aa6b849c8df1cb1da0d2fe91294dcfd1004a5f0d91cd383d2bbcaef302adb",
+      "chunk_ids": [
+        "INC92363534#symptom",
+        "INC92363534#resolution",
+        "INC92363534#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:51.215487+00:00"
+    },
+    "INC18740864": {
+      "content_hash": "e8e9f47ad17630686cb4eae85ba1c15c3c17e44cd9ed3275a732643aa19d0ecf",
+      "chunk_ids": [
+        "INC18740864#symptom",
+        "INC18740864#resolution",
+        "INC18740864#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:51.665288+00:00"
+    },
+    "INC08526544": {
+      "content_hash": "268dc4c24d8fde28606bf337e7c85c052d801bbf1f7bcd37d915f9b6935c2db3",
+      "chunk_ids": [
+        "INC08526544#symptom",
+        "INC08526544#resolution",
+        "INC08526544#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:52.154984+00:00"
+    },
+    "INC25921441": {
+      "content_hash": "47020e11d6e01b353102f75ab93d7d7ce27984e8273d4aa1f0a15267170981ae",
+      "chunk_ids": [
+        "INC25921441#symptom",
+        "INC25921441#resolution",
+        "INC25921441#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:52.647558+00:00"
+    },
+    "INC86098221": {
+      "content_hash": "a8272f80c00d68b88e3da560e8a7687b27ffa451bdfeb1ed289af8fbff16a261",
+      "chunk_ids": [
+        "INC86098221#symptom",
+        "INC86098221#resolution",
+        "INC86098221#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:53.163312+00:00"
+    },
+    "INC09046318": {
+      "content_hash": "c84e1dde0376c7931de1f212c17d1f4127aeefe83f137a5976de06427082166d",
+      "chunk_ids": [
+        "INC09046318#symptom",
+        "INC09046318#resolution",
+        "INC09046318#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:53.647968+00:00"
+    },
+    "INC32614537": {
+      "content_hash": "1c955f33a1f34ff7d360dfadec70308e14285803a270a2a567af843e2b0cc972",
+      "chunk_ids": [
+        "INC32614537#symptom",
+        "INC32614537#resolution",
+        "INC32614537#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:54.216641+00:00"
+    },
+    "INC75863473": {
+      "content_hash": "3948a1b1abddb6f4f94a4f35b35b63e20456e2f0cfc65b80d1f1ee387b3798bf",
+      "chunk_ids": [
+        "INC75863473#symptom",
+        "INC75863473#resolution",
+        "INC75863473#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:54.684005+00:00"
+    },
+    "INC13796726": {
+      "content_hash": "320bee05a1c018a032fb3b4432d7ab46fd7798695d362081b6f376cdb3e1221e",
+      "chunk_ids": [
+        "INC13796726#symptom",
+        "INC13796726#resolution",
+        "INC13796726#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:55.175014+00:00"
+    },
+    "INC17232410": {
+      "content_hash": "0cab4abfc18a85f0118fbf074b517f9d453676e147ec6092bde8ed71f11bc2f8",
+      "chunk_ids": [
+        "INC17232410#symptom",
+        "INC17232410#resolution",
+        "INC17232410#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:55.657650+00:00"
+    },
+    "INC76644106": {
+      "content_hash": "71536a4973481e69d7deb7ca258882004047b83b1a4db93ef7cbf1efe35a504b",
+      "chunk_ids": [
+        "INC76644106#symptom",
+        "INC76644106#resolution",
+        "INC76644106#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:56.100097+00:00"
+    },
+    "INC73227889": {
+      "content_hash": "b4286bfb0c672bbe68daaaf32c886e19eab89ef0d703a26f4c2d60a047ba8a25",
+      "chunk_ids": [
+        "INC73227889#symptom",
+        "INC73227889#resolution",
+        "INC73227889#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:56.572078+00:00"
+    },
+    "INC77736262": {
+      "content_hash": "e0d0b57aebf67f84281ee702cb1373a047299ca1afe51c16151d34ca81484f18",
+      "chunk_ids": [
+        "INC77736262#symptom",
+        "INC77736262#resolution",
+        "INC77736262#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:57.095830+00:00"
+    },
+    "INC51019678": {
+      "content_hash": "2c63c0ba651aff3c7fca34e623bd980b6302a032103275c15a4670565ef11be7",
+      "chunk_ids": [
+        "INC51019678#symptom",
+        "INC51019678#resolution",
+        "INC51019678#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:57.575230+00:00"
+    },
+    "INC90152735": {
+      "content_hash": "b0560448358a3ff5cc602b9b3224ba70f798381d8d6a10b556690e7357bf2352",
+      "chunk_ids": [
+        "INC90152735#symptom",
+        "INC90152735#resolution",
+        "INC90152735#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:58.174475+00:00"
+    },
+    "INC07774584": {
+      "content_hash": "a27810658ac35c5f255ada6854802a6fa7d31d432ac6d179fef32b112edceea4",
+      "chunk_ids": [
+        "INC07774584#symptom",
+        "INC07774584#resolution",
+        "INC07774584#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:58.715413+00:00"
+    },
+    "INC29587039": {
+      "content_hash": "52d893bba3d4f44e3ad38f3e5f21d58960a81808406361cbd9eccfa6b5ce7def",
+      "chunk_ids": [
+        "INC29587039#symptom",
+        "INC29587039#resolution",
+        "INC29587039#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:59.243425+00:00"
+    },
+    "INC10752378": {
+      "content_hash": "d4bbc6f0810746a6d1ce32e26ed70345612b97fc47e745ca6bbae069db4daa6b",
+      "chunk_ids": [
+        "INC10752378#symptom",
+        "INC10752378#resolution",
+        "INC10752378#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:43:59.760406+00:00"
+    },
+    "INC05354599": {
+      "content_hash": "cb322ccceed3c89137de9ab86cfea4342452dafc0a80301879aa35b179e60164",
+      "chunk_ids": [
+        "INC05354599#symptom",
+        "INC05354599#resolution",
+        "INC05354599#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:00.253341+00:00"
+    },
+    "INC99486328": {
+      "content_hash": "a1be5fede01cb481108d3865db92b8c4b6c6132e1b69fd1a46b64ed32d94bc27",
+      "chunk_ids": [
+        "INC99486328#symptom",
+        "INC99486328#resolution",
+        "INC99486328#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:00.728511+00:00"
+    },
+    "INC87529405": {
+      "content_hash": "0644c1977102dd2e63c7ad54fbcc05c6876e49cd1f6c559841519c3e4cbf06dc",
+      "chunk_ids": [
+        "INC87529405#symptom",
+        "INC87529405#resolution",
+        "INC87529405#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:01.239095+00:00"
+    },
+    "INC65579548": {
+      "content_hash": "4f5d026e1476874e1f97d0b087784764211e602c680f57a1b5bd7338268a4299",
+      "chunk_ids": [
+        "INC65579548#symptom",
+        "INC65579548#resolution",
+        "INC65579548#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:01.756404+00:00"
+    },
+    "INC39823450": {
+      "content_hash": "8a228af28ab6d6126e5968becf3c15a5e80f53ceb62240cc6229230e64b1da60",
+      "chunk_ids": [
+        "INC39823450#symptom",
+        "INC39823450#resolution",
+        "INC39823450#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:02.253206+00:00"
+    },
+    "INC56851760": {
+      "content_hash": "0cefa5f46b656723fb6baa5b40bacf4b760850ed6733fc1b152c288b8db938ad",
+      "chunk_ids": [
+        "INC56851760#symptom",
+        "INC56851760#resolution",
+        "INC56851760#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:02.803236+00:00"
+    },
+    "INC35594951": {
+      "content_hash": "e3983f1e0c94315bcbbe28a397ec48f4e200a54d68dc97d749d0ba7c2cf30ac0",
+      "chunk_ids": [
+        "INC35594951#symptom",
+        "INC35594951#resolution",
+        "INC35594951#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:03.319338+00:00"
+    },
+    "INC67187530": {
+      "content_hash": "b78becb507e4fe0caf5ec1b22640c0ef928d284ab8922ed9ed1d32608c449d9c",
+      "chunk_ids": [
+        "INC67187530#symptom",
+        "INC67187530#resolution",
+        "INC67187530#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:03.896612+00:00"
+    },
+    "INC63481353": {
+      "content_hash": "12b3ed73dec4196a763cb639fb1ae384b6adf71e64b3af6295e0eb6c524bf810",
+      "chunk_ids": [
+        "INC63481353#symptom",
+        "INC63481353#resolution",
+        "INC63481353#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:04.360344+00:00"
+    },
+    "INC70993218": {
+      "content_hash": "d8be385a1b7e79290f86c6de005edfab3a864786b312e0773bf8db5144eb6dc4",
+      "chunk_ids": [
+        "INC70993218#symptom",
+        "INC70993218#resolution",
+        "INC70993218#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:04.856401+00:00"
+    },
+    "INC08883684": {
+      "content_hash": "1e6ce7d3a8705614dc0857d5e176edb445bcb71123489f191f92fef5fd8a0334",
+      "chunk_ids": [
+        "INC08883684#symptom",
+        "INC08883684#resolution",
+        "INC08883684#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:05.369760+00:00"
+    },
+    "INC49597086": {
+      "content_hash": "208e7a04cbc498ca7b850ae8312ec2b130a056dbbe6a3f3193db8d9e315e54b6",
+      "chunk_ids": [
+        "INC49597086#symptom",
+        "INC49597086#resolution",
+        "INC49597086#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:05.858171+00:00"
+    },
+    "INC26786211": {
+      "content_hash": "6c8cf83327e2d069d266f70131187a99e3035dd55f4387681e11a4854b80b1d7",
+      "chunk_ids": [
+        "INC26786211#symptom",
+        "INC26786211#resolution",
+        "INC26786211#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:06.334435+00:00"
+    },
+    "INC37376585": {
+      "content_hash": "b6f83e91631cc3861cb576d88b1cb4bef2ddd742e48228b6d16a5fe4d9e07783",
+      "chunk_ids": [
+        "INC37376585#symptom",
+        "INC37376585#resolution",
+        "INC37376585#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:06.856192+00:00"
+    },
+    "INC11003626": {
+      "content_hash": "6632e564062e6f2b5e5248caf3bd43956db5250e24f44975b32690d37497aa99",
+      "chunk_ids": [
+        "INC11003626#symptom",
+        "INC11003626#resolution",
+        "INC11003626#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:07.512222+00:00"
+    },
+    "INC85511909": {
+      "content_hash": "225c7514ae0f661e11b9ede5d7be71499e9849a7b7dcca6a5d5f5c43ba1145ca",
+      "chunk_ids": [
+        "INC85511909#symptom",
+        "INC85511909#resolution",
+        "INC85511909#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:08.100506+00:00"
+    },
+    "INC25808537": {
+      "content_hash": "5daf342946566e74de99bdc99bed0490ea30e76c33423796fc6e331c98c3cc3b",
+      "chunk_ids": [
+        "INC25808537#symptom",
+        "INC25808537#resolution",
+        "INC25808537#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:08.717944+00:00"
+    },
+    "INC13209423": {
+      "content_hash": "593b44c4722455dbc248c43700dc7e3b1e078b2dedf80c9d41477ece6f724c75",
+      "chunk_ids": [
+        "INC13209423#symptom",
+        "INC13209423#resolution",
+        "INC13209423#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:09.183260+00:00"
+    },
+    "INC07672593": {
+      "content_hash": "4e9dd20d72aa840dac01cc7b34b9ca9e11ef8191add5c3359a53b428a02ac001",
+      "chunk_ids": [
+        "INC07672593#symptom",
+        "INC07672593#resolution",
+        "INC07672593#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:09.707695+00:00"
+    },
+    "INC25487660": {
+      "content_hash": "422bac20f0d2457cd040164535320eda07156984543e7238eef07e6852fd99cf",
+      "chunk_ids": [
+        "INC25487660#symptom",
+        "INC25487660#resolution",
+        "INC25487660#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:10.178030+00:00"
+    },
+    "INC33704923": {
+      "content_hash": "34ba790a0087e35593c081550dcd9aa1ba05b92ee493ddf249155098636d2557",
+      "chunk_ids": [
+        "INC33704923#symptom",
+        "INC33704923#resolution",
+        "INC33704923#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:10.677121+00:00"
+    },
+    "INC05614174": {
+      "content_hash": "4dfe88276f70c23771c05a5a0ce288d6840d86f614df51288cd35b7762d671a4",
+      "chunk_ids": [
+        "INC05614174#symptom",
+        "INC05614174#resolution",
+        "INC05614174#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:11.207248+00:00"
+    },
+    "INC24627347": {
+      "content_hash": "e2c13d128b6299a313a312a641908f64cdf8864de0704082ae8048eb7ebbb4b6",
+      "chunk_ids": [
+        "INC24627347#symptom",
+        "INC24627347#resolution",
+        "INC24627347#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:11.674498+00:00"
+    },
+    "INC35810056": {
+      "content_hash": "e19ba79aebe68b6364cc9f7e3118ed6a57716a7dd6cd5b475fdfe4628478c4f6",
+      "chunk_ids": [
+        "INC35810056#symptom",
+        "INC35810056#resolution",
+        "INC35810056#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:12.150475+00:00"
+    },
+    "INC75345555": {
+      "content_hash": "5d1e1b4694c162719ee8480cbaf2f4a514bec3f3cc6e9918551fb57f6abc3f90",
+      "chunk_ids": [
+        "INC75345555#symptom",
+        "INC75345555#resolution",
+        "INC75345555#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:12.624693+00:00"
+    },
+    "INC05831819": {
+      "content_hash": "ae5bb1a36494d5c79a3a95e075209f7d871edc6cf1038590050846ee938bd891",
+      "chunk_ids": [
+        "INC05831819#symptom",
+        "INC05831819#resolution",
+        "INC05831819#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:13.145566+00:00"
+    },
+    "INC14508349": {
+      "content_hash": "17d46fe6047f0bdbddfc25ba21bdb38ce8a757421dd4fb35f6f7c993023a1f1c",
+      "chunk_ids": [
+        "INC14508349#symptom",
+        "INC14508349#resolution",
+        "INC14508349#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:13.672618+00:00"
+    },
+    "INC16879290": {
+      "content_hash": "830a8a8faa6e22ecc483823f5807ba74ea71fe992b1fdd6567771fc33b31cf07",
+      "chunk_ids": [
+        "INC16879290#symptom",
+        "INC16879290#resolution",
+        "INC16879290#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:14.268487+00:00"
+    },
+    "INC10570592": {
+      "content_hash": "f4657179daf5349aa272edb1b2c258a5e72af6398ddfb6a7736aa0f95249a36e",
+      "chunk_ids": [
+        "INC10570592#symptom",
+        "INC10570592#resolution",
+        "INC10570592#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:14.835166+00:00"
+    },
+    "INC85132217": {
+      "content_hash": "0817e55676a3284ae44d11ae44a73d3473df81bdcd2b3fb3803867dab40c50b1",
+      "chunk_ids": [
+        "INC85132217#symptom",
+        "INC85132217#resolution",
+        "INC85132217#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:15.312127+00:00"
+    },
+    "INC13718431": {
+      "content_hash": "d3f70d6fb2c83900bdc667b6a79c7b1dcd33e00a8ecfefc0173436dec877005b",
+      "chunk_ids": [
+        "INC13718431#symptom",
+        "INC13718431#resolution",
+        "INC13718431#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:15.818551+00:00"
+    },
+    "INC10117988": {
+      "content_hash": "21b10ea1813cdcfdf7bf71ec7f8270140de921df46488499791138259b0c5e3d",
+      "chunk_ids": [
+        "INC10117988#symptom",
+        "INC10117988#resolution",
+        "INC10117988#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:16.308028+00:00"
+    },
+    "INC86028436": {
+      "content_hash": "e3bb63c677d0b4349b619b23e9b36107cf2d69b62928a314e55594172c45065f",
+      "chunk_ids": [
+        "INC86028436#symptom",
+        "INC86028436#resolution",
+        "INC86028436#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:16.811768+00:00"
+    },
+    "INC80048665": {
+      "content_hash": "e955d95b914785021c695bb3293230984d5841dbc2d6643e515e0b364068d4c6",
+      "chunk_ids": [
+        "INC80048665#symptom",
+        "INC80048665#resolution",
+        "INC80048665#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:17.282843+00:00"
+    },
+    "INC13556182": {
+      "content_hash": "0087afabf7bc0de5898d01ecfd2c60b77b03d5a2ae2c64603650c6710eb6e88b",
+      "chunk_ids": [
+        "INC13556182#symptom",
+        "INC13556182#resolution",
+        "INC13556182#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:17.826900+00:00"
+    },
+    "INC21472420": {
+      "content_hash": "1f51aa82d5b04a5fd859768f2c174b45f2578c4441798299372828a3c138000b",
+      "chunk_ids": [
+        "INC21472420#symptom",
+        "INC21472420#resolution",
+        "INC21472420#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:18.481231+00:00"
+    },
+    "INC47683626": {
+      "content_hash": "a37690d7368ef2f351100ad6a14134dd5bd3b79f257ccbe6dfb9297864252d42",
+      "chunk_ids": [
+        "INC47683626#symptom",
+        "INC47683626#resolution",
+        "INC47683626#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:19.025691+00:00"
+    },
+    "INC26697396": {
+      "content_hash": "75b97622c0738dbe8671d868fc3e9543295aac15483fbae0a31b9c7baff6e5f3",
+      "chunk_ids": [
+        "INC26697396#symptom",
+        "INC26697396#resolution",
+        "INC26697396#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:19.558353+00:00"
+    },
+    "INC17778019": {
+      "content_hash": "d996c6a3c9bc3db169368eb8d0c9bf8331fea408f15d30721017cfededa9094b",
+      "chunk_ids": [
+        "INC17778019#symptom",
+        "INC17778019#resolution",
+        "INC17778019#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:20.157831+00:00"
+    },
+    "INC86977837": {
+      "content_hash": "ca5e62d68fe2793fe0388e45d6d4f064b8256963a2f531e794091d9c0020d138",
+      "chunk_ids": [
+        "INC86977837#symptom",
+        "INC86977837#resolution",
+        "INC86977837#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:20.601263+00:00"
+    },
+    "INC35159040": {
+      "content_hash": "df05e4856ed43ccdfb52145d84f80bbd02400373949284fca0846320e81b8331",
+      "chunk_ids": [
+        "INC35159040#symptom",
+        "INC35159040#resolution",
+        "INC35159040#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:21.132177+00:00"
+    },
+    "INC35594597": {
+      "content_hash": "169511f5ab986aa15a80b3bf83323d49003d9ecf0b40cbb3178bdae4bc60a664",
+      "chunk_ids": [
+        "INC35594597#symptom",
+        "INC35594597#resolution",
+        "INC35594597#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:21.604559+00:00"
+    },
+    "INC72374753": {
+      "content_hash": "1e379088ee406e483c39bd96a38dfb22098ffa36c57e5760fc9d9ffdbf7aaef2",
+      "chunk_ids": [
+        "INC72374753#symptom",
+        "INC72374753#resolution",
+        "INC72374753#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:22.144660+00:00"
+    },
+    "INC30742311": {
+      "content_hash": "8185ee5a740f9c5ec6aebf6566bfaeab1f42f156f085012d65cc86ad47ce8a14",
+      "chunk_ids": [
+        "INC30742311#symptom",
+        "INC30742311#resolution",
+        "INC30742311#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:22.666244+00:00"
+    },
+    "INC12981052": {
+      "content_hash": "b1fe5fbba30c58811cc0cbcdda0a4d0131e7599f98e7baafd190b0ad9b44b304",
+      "chunk_ids": [
+        "INC12981052#symptom",
+        "INC12981052#resolution",
+        "INC12981052#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:23.178229+00:00"
+    },
+    "INC29557077": {
+      "content_hash": "beb37db0b3448798373a7f44ea4c081cf0857903395a27f2dc26ec98144aef40",
+      "chunk_ids": [
+        "INC29557077#symptom",
+        "INC29557077#resolution",
+        "INC29557077#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:23.623296+00:00"
+    },
+    "INC14665841": {
+      "content_hash": "4d9d6d3f76ee1ea2a961972ea106d07db24a9179f2a9cc2ac0c1a16506d3ee6b",
+      "chunk_ids": [
+        "INC14665841#symptom",
+        "INC14665841#resolution",
+        "INC14665841#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:24.421237+00:00"
+    },
+    "INC89639081": {
+      "content_hash": "38469f83fc9a3fdcb506372d7bc53b2477b2bb92dc2f1a21d5e8c79b30c1615d",
+      "chunk_ids": [
+        "INC89639081#symptom",
+        "INC89639081#resolution",
+        "INC89639081#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:24.890631+00:00"
+    },
+    "INC35264581": {
+      "content_hash": "8a59f983f9e25cd65fc0134e76e75357521d00869aa26ac8affadd6f422f3a53",
+      "chunk_ids": [
+        "INC35264581#symptom",
+        "INC35264581#resolution",
+        "INC35264581#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:25.372529+00:00"
+    },
+    "INC94196727": {
+      "content_hash": "ab071bc15e1afe33e1594ed2515f8a23a2e284ecf560eb761dbcf60743ae1398",
+      "chunk_ids": [
+        "INC94196727#symptom",
+        "INC94196727#resolution",
+        "INC94196727#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:25.841287+00:00"
+    },
+    "INC62043515": {
+      "content_hash": "c8ddd112b3888af2721a830b7494df8c9e5d195c5b2797ab311eff2053f45ae2",
+      "chunk_ids": [
+        "INC62043515#symptom",
+        "INC62043515#resolution",
+        "INC62043515#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:26.418291+00:00"
+    },
+    "INC15014631": {
+      "content_hash": "768a783b1bc0b2fcd8ec78686a045f3efe205169cb32b2f818116d6afcdf48dd",
+      "chunk_ids": [
+        "INC15014631#symptom",
+        "INC15014631#resolution",
+        "INC15014631#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:26.906430+00:00"
+    },
+    "INC81030736": {
+      "content_hash": "d2815e479dc216b289e6290e7f6179d16fd17bf6112e3b8147fd96caefb2d8ed",
+      "chunk_ids": [
+        "INC81030736#symptom",
+        "INC81030736#resolution",
+        "INC81030736#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:27.390464+00:00"
+    },
+    "INC21227574": {
+      "content_hash": "06d8d45e7f4a6bd2bb0b99d9238868cfc7c71d5681938dc6b143817418e07414",
+      "chunk_ids": [
+        "INC21227574#symptom",
+        "INC21227574#resolution",
+        "INC21227574#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:27.925401+00:00"
+    },
+    "INC85225343": {
+      "content_hash": "0b5f102d897ad987d42881ac4cc5b98783ac3d5cd6fb96f521c05636350c81bc",
+      "chunk_ids": [
+        "INC85225343#symptom",
+        "INC85225343#resolution",
+        "INC85225343#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:28.558434+00:00"
+    },
+    "INC35351479": {
+      "content_hash": "5a1184a0ace09b89b17598dc0a562d3efa27bb860c4bcbceae99b1cb62dc30db",
+      "chunk_ids": [
+        "INC35351479#symptom",
+        "INC35351479#resolution",
+        "INC35351479#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:29.031812+00:00"
+    },
+    "INC35935572": {
+      "content_hash": "64bc1438b90e2d64b2f6dea5d52211f35262d2bda0f4aedae994043a93c5cdb0",
+      "chunk_ids": [
+        "INC35935572#symptom",
+        "INC35935572#resolution",
+        "INC35935572#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:29.519530+00:00"
+    },
+    "INC53643924": {
+      "content_hash": "3c71f8f49b4392351fa13c811c6952f4e4a815f9188064d8a4d2fd40b36bf2b1",
+      "chunk_ids": [
+        "INC53643924#symptom",
+        "INC53643924#resolution",
+        "INC53643924#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:30.053596+00:00"
+    },
+    "INC09233013": {
+      "content_hash": "971ebed33e04fd4975045e595d0018bcdef5637e994a59cca8d4b511b682ba7e",
+      "chunk_ids": [
+        "INC09233013#symptom",
+        "INC09233013#resolution",
+        "INC09233013#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:30.568739+00:00"
+    },
+    "INC64606833": {
+      "content_hash": "431f7ba35a112b98e63fee3d0b48a8df170c453a238f475b87509d4f49fdba0b",
+      "chunk_ids": [
+        "INC64606833#symptom",
+        "INC64606833#resolution",
+        "INC64606833#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:31.056459+00:00"
+    },
+    "INC79978790": {
+      "content_hash": "c4a4d9772511dcaa169708c05e3c206ffed8afd956b1d36279170729dee8d998",
+      "chunk_ids": [
+        "INC79978790#symptom",
+        "INC79978790#resolution",
+        "INC79978790#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:31.543876+00:00"
+    },
+    "INC42436584": {
+      "content_hash": "9a37b196cdf18b7217b95b6f06b06073180e62b8d9b30a01a62cc6ecc25e50d7",
+      "chunk_ids": [
+        "INC42436584#symptom",
+        "INC42436584#resolution",
+        "INC42436584#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:32.017152+00:00"
+    },
+    "INC76125617": {
+      "content_hash": "62fece9a3afa02bf66038262b9b31e24836cf50214eb08cea86ca016d3b99a57",
+      "chunk_ids": [
+        "INC76125617#symptom",
+        "INC76125617#resolution",
+        "INC76125617#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:32.503575+00:00"
+    },
+    "INC91545441": {
+      "content_hash": "ba16ab7fc7837937a5bd0da4def641cc6ad7ac52a8828d8e57efc82798c31a9d",
+      "chunk_ids": [
+        "INC91545441#symptom",
+        "INC91545441#resolution",
+        "INC91545441#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:33.016328+00:00"
+    },
+    "INC61586053": {
+      "content_hash": "ce71d68afc33e8dc00ce57557e7ec6d16d7b0305bbce0d14b64ef056cd731c00",
+      "chunk_ids": [
+        "INC61586053#symptom",
+        "INC61586053#resolution",
+        "INC61586053#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:33.578583+00:00"
+    },
+    "INC22321899": {
+      "content_hash": "a3d62f07b85d462c830e8237ba204c83b5fbe205463f2652680c9d32906567e2",
+      "chunk_ids": [
+        "INC22321899#symptom",
+        "INC22321899#resolution",
+        "INC22321899#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:34.076233+00:00"
+    },
+    "INC01540956": {
+      "content_hash": "0f8cd805349cd7da62788242c23c83d7a0bff8c35b763c4c2cf2b2f133d3a1ec",
+      "chunk_ids": [
+        "INC01540956#symptom",
+        "INC01540956#resolution",
+        "INC01540956#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:34.545010+00:00"
+    },
+    "INC78339168": {
+      "content_hash": "8e585f073c525d5735752dcd96b590c4cb7538a31a91d9fcdc71aba36acb6d9a",
+      "chunk_ids": [
+        "INC78339168#symptom",
+        "INC78339168#resolution",
+        "INC78339168#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:35.055572+00:00"
+    },
+    "INC38250360": {
+      "content_hash": "ee05da3e011577348a35efe067765716486b8ce2f63060583cf596e052b93c2b",
+      "chunk_ids": [
+        "INC38250360#symptom",
+        "INC38250360#resolution",
+        "INC38250360#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:35.486525+00:00"
+    },
+    "INC03176186": {
+      "content_hash": "94054eb8c3c665a7a76aac5a189fcbd6bbbb98134991c5233deb1b9ef129d82a",
+      "chunk_ids": [
+        "INC03176186#symptom",
+        "INC03176186#resolution",
+        "INC03176186#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:35.967818+00:00"
+    },
+    "INC49555330": {
+      "content_hash": "d4dc0594f4995ba6e431fe4deaca8420ce3c868d32612f62caa8b835611ddcf6",
+      "chunk_ids": [
+        "INC49555330#symptom",
+        "INC49555330#resolution",
+        "INC49555330#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:36.404498+00:00"
+    },
+    "INC16090908": {
+      "content_hash": "663fe4b6c3a56c3684637f2ec70069dc9eaaf3487381ef25bac51494a881561e",
+      "chunk_ids": [
+        "INC16090908#symptom",
+        "INC16090908#resolution",
+        "INC16090908#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:36.898894+00:00"
+    },
+    "INC86728778": {
+      "content_hash": "5f50b8cec2cce8c847cd3cc63503b77d9cf29a01ece7f1f3fbb5efc101004447",
+      "chunk_ids": [
+        "INC86728778#symptom",
+        "INC86728778#resolution",
+        "INC86728778#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:37.398166+00:00"
+    },
+    "INC89913412": {
+      "content_hash": "54389edff6931edbceda6e7d4d557b0139c18dd9fcc79296dfc95a19d57a750f",
+      "chunk_ids": [
+        "INC89913412#symptom",
+        "INC89913412#resolution",
+        "INC89913412#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:38.020134+00:00"
+    },
+    "INC28119557": {
+      "content_hash": "70867fdfe4573b2ed2b004798b4ba02eefe7da8552e58f9446cc1f7757d34706",
+      "chunk_ids": [
+        "INC28119557#symptom",
+        "INC28119557#resolution",
+        "INC28119557#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:38.497852+00:00"
+    },
+    "INC61510041": {
+      "content_hash": "f3a8add7576eb55b0b0d8c89285d335492ea8c2a147703300075f88f6f4e65da",
+      "chunk_ids": [
+        "INC61510041#symptom",
+        "INC61510041#resolution",
+        "INC61510041#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:39.123531+00:00"
+    },
+    "INC87225156": {
+      "content_hash": "30b2cd7eff387a89a19c3df4d1680232dab287a81807b27d4ca5d04bf7911bc2",
+      "chunk_ids": [
+        "INC87225156#symptom",
+        "INC87225156#resolution",
+        "INC87225156#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:39.844102+00:00"
+    },
+    "INC33528453": {
+      "content_hash": "d4cc53edd7c94f2650431b34df4effdd0e774631eba55c8467d84a874821000b",
+      "chunk_ids": [
+        "INC33528453#symptom",
+        "INC33528453#resolution",
+        "INC33528453#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:40.286573+00:00"
+    },
+    "INC45657579": {
+      "content_hash": "0cce9bba7440f65ee78e145a4e8efd49b41f25df8165f9f1ac3173f8b829ad41",
+      "chunk_ids": [
+        "INC45657579#symptom",
+        "INC45657579#resolution",
+        "INC45657579#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:40.789507+00:00"
+    },
+    "INC13419256": {
+      "content_hash": "fcce45ddaed5c608276e9428a7d60b2c82a2299d80acdb8511c1c792a0a341d7",
+      "chunk_ids": [
+        "INC13419256#symptom",
+        "INC13419256#resolution",
+        "INC13419256#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:41.357810+00:00"
+    },
+    "INC67834855": {
+      "content_hash": "f0ba6faa072814f2b08b4b9ff9d169f43fea81baa3ef231cf5ce87b94ca4debd",
+      "chunk_ids": [
+        "INC67834855#symptom",
+        "INC67834855#resolution",
+        "INC67834855#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:41.790406+00:00"
+    },
+    "INC50119651": {
+      "content_hash": "723b999495a9d4a4531e85cd2088f7e5fdb749dbaa8ccfa191f6f7a8b25fc49a",
+      "chunk_ids": [
+        "INC50119651#symptom",
+        "INC50119651#resolution",
+        "INC50119651#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:42.230694+00:00"
+    },
+    "INC70166708": {
+      "content_hash": "aa2e969f7e35854a848abeb5a66c7a9b91b6899f3255525b806aa2c7a0809930",
+      "chunk_ids": [
+        "INC70166708#symptom",
+        "INC70166708#resolution",
+        "INC70166708#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:42.893196+00:00"
+    },
+    "INC85125977": {
+      "content_hash": "0b65a2b8e6a468fa62c6278c5d136d6ed717a4f1d01aff4e7513276bc8f5f985",
+      "chunk_ids": [
+        "INC85125977#symptom",
+        "INC85125977#resolution",
+        "INC85125977#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:43.402631+00:00"
+    },
+    "INC72556484": {
+      "content_hash": "1195ea5c0d6d3e2c17441b31964a7d242581bfd7363bcb35dc228ff86fab3611",
+      "chunk_ids": [
+        "INC72556484#symptom",
+        "INC72556484#resolution",
+        "INC72556484#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:43.783333+00:00"
+    },
+    "INC54547971": {
+      "content_hash": "1bdd7ac99424ef4c3cecb94144c53d924c2736dff68ecd49d5003fcbd3720378",
+      "chunk_ids": [
+        "INC54547971#symptom",
+        "INC54547971#resolution",
+        "INC54547971#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:44.324928+00:00"
+    },
+    "INC72772208": {
+      "content_hash": "1d295a57ca9151764575739d63c4b0a3fffa89c17063ae196c568a757d5ba935",
+      "chunk_ids": [
+        "INC72772208#symptom",
+        "INC72772208#resolution",
+        "INC72772208#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:44.876528+00:00"
+    },
+    "INC79089901": {
+      "content_hash": "eda0e8f941d78f5b6ff644d59f3c84c47f2ed69a781d6ad138a5f044ee27694b",
+      "chunk_ids": [
+        "INC79089901#symptom",
+        "INC79089901#resolution",
+        "INC79089901#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:45.815793+00:00"
+    },
+    "INC20513739": {
+      "content_hash": "5b008ce4291f372864a98ba1d04bc743fef527525a15c3a90cf4c1dbdd02a108",
+      "chunk_ids": [
+        "INC20513739#symptom",
+        "INC20513739#resolution",
+        "INC20513739#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:46.442384+00:00"
+    },
+    "INC00475894": {
+      "content_hash": "e568d734e0571dec828f9c266c34d966cb9ef2cec4ca3e56ab86d181b1fe022c",
+      "chunk_ids": [
+        "INC00475894#symptom",
+        "INC00475894#resolution",
+        "INC00475894#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:46.887670+00:00"
+    },
+    "INC27326368": {
+      "content_hash": "b9980bafde88a125030fd26f0d61d3382f8c2b029694b98c2e609a85e80c67e0",
+      "chunk_ids": [
+        "INC27326368#symptom",
+        "INC27326368#resolution",
+        "INC27326368#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:47.499501+00:00"
+    },
+    "INC97969689": {
+      "content_hash": "c555e2c3a8920e55c35cab068021504c28af41fba625c949647f72b53890cfa6",
+      "chunk_ids": [
+        "INC97969689#symptom",
+        "INC97969689#resolution",
+        "INC97969689#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:48.008404+00:00"
+    },
+    "INC84705205": {
+      "content_hash": "1b2ac1806ea94bf2b2f9e49c37eb695d28e559f8ec1d8aa7345c4b296bcdfc7f",
+      "chunk_ids": [
+        "INC84705205#symptom",
+        "INC84705205#resolution",
+        "INC84705205#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:48.499721+00:00"
+    },
+    "INC10099059": {
+      "content_hash": "5bb31a5ed28d20e82388d927c477ad45b423a695f31f7974be9c0f8573618bc1",
+      "chunk_ids": [
+        "INC10099059#symptom",
+        "INC10099059#resolution",
+        "INC10099059#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:48.960505+00:00"
+    },
+    "INC06789850": {
+      "content_hash": "69d7e48e4cabfb81a75bea0597a6efcc9f9406d88ae6ce0920d6253ee7e5c0cc",
+      "chunk_ids": [
+        "INC06789850#symptom",
+        "INC06789850#resolution",
+        "INC06789850#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:49.377963+00:00"
+    },
+    "INC46020613": {
+      "content_hash": "719aff291436507a464d9772a343d08d479c0f16f81dc874c6f64fbb10be0b51",
+      "chunk_ids": [
+        "INC46020613#symptom",
+        "INC46020613#resolution",
+        "INC46020613#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:49.888182+00:00"
+    },
+    "INC14366125": {
+      "content_hash": "1d862ad37eb77553e126d4ef7b102f3d9db8cf8476bf8740c32b9c9660feb48b",
+      "chunk_ids": [
+        "INC14366125#symptom",
+        "INC14366125#resolution",
+        "INC14366125#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:50.377550+00:00"
+    },
+    "INC05334035": {
+      "content_hash": "8a6bbbf66607903c595c3b4a8aac8e0f0b4e388eb213a4f63b01693b5c19f438",
+      "chunk_ids": [
+        "INC05334035#symptom",
+        "INC05334035#resolution",
+        "INC05334035#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:50.867242+00:00"
+    },
+    "INC21810617": {
+      "content_hash": "16271f849d8ec8e4001d6eeb54a2cca3c85738d9b53dc32ff720dff102c5676b",
+      "chunk_ids": [
+        "INC21810617#symptom",
+        "INC21810617#resolution",
+        "INC21810617#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:51.284082+00:00"
+    },
+    "INC85899313": {
+      "content_hash": "a89e6a01db0dd4f6ea60abb0245feaca1341fd602cfe84f5a68ffc51edf80227",
+      "chunk_ids": [
+        "INC85899313#symptom",
+        "INC85899313#resolution",
+        "INC85899313#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:51.736680+00:00"
+    },
+    "INC78320463": {
+      "content_hash": "1b98ac9efe2f5e19a58de4a8c6b0a4edf26736d7c6762a07d3ad388e2610558f",
+      "chunk_ids": [
+        "INC78320463#symptom",
+        "INC78320463#resolution",
+        "INC78320463#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:52.249018+00:00"
+    },
+    "INC22162965": {
+      "content_hash": "a9d9dd2408b09ca04a2bd36cb9dfeda216465d32849a15674421e5692355a8ba",
+      "chunk_ids": [
+        "INC22162965#symptom",
+        "INC22162965#resolution",
+        "INC22162965#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:52.746665+00:00"
+    },
+    "INC28270233": {
+      "content_hash": "35485f1b93ab41bc679b59735c30c3eb255e4323c59937ad5af683a4a1d77efc",
+      "chunk_ids": [
+        "INC28270233#symptom",
+        "INC28270233#resolution",
+        "INC28270233#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:53.314345+00:00"
+    },
+    "INC91306093": {
+      "content_hash": "58b5bc68dc7ae7cf9cbb0f128d31ff8abfcc878f06be002896aee35b9367036b",
+      "chunk_ids": [
+        "INC91306093#symptom",
+        "INC91306093#resolution",
+        "INC91306093#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:53.808791+00:00"
+    },
+    "INC63791320": {
+      "content_hash": "5ce5099757caced573a7c0d48738a17c33785578c0b697358061c4a05e8755de",
+      "chunk_ids": [
+        "INC63791320#symptom",
+        "INC63791320#resolution",
+        "INC63791320#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:54.392015+00:00"
+    },
+    "INC05917225": {
+      "content_hash": "9ab526adb9c6dc49870b7967cd2d70ec399ee067cc532c6e0b11c7fc7b691af7",
+      "chunk_ids": [
+        "INC05917225#symptom",
+        "INC05917225#resolution",
+        "INC05917225#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:54.900418+00:00"
+    },
+    "INC95004803": {
+      "content_hash": "d57ce1b28138bd2db5528896284bcd2bd9e5ba1a74164ade10b1311f8bdb5f04",
+      "chunk_ids": [
+        "INC95004803#symptom",
+        "INC95004803#resolution",
+        "INC95004803#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:55.357296+00:00"
+    },
+    "INC59302158": {
+      "content_hash": "dfd38feb3255de920cfb0a84ba4cd1439fceb0e82ad282e81e662d6548d4be51",
+      "chunk_ids": [
+        "INC59302158#symptom",
+        "INC59302158#resolution",
+        "INC59302158#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:55.848381+00:00"
+    },
+    "INC94566031": {
+      "content_hash": "43868ce8f6854585c7661f7c5c28e6cc941253171b80d227d5306c4a78c60b34",
+      "chunk_ids": [
+        "INC94566031#symptom",
+        "INC94566031#resolution",
+        "INC94566031#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:56.237031+00:00"
+    },
+    "INC85320121": {
+      "content_hash": "906debfff4b5cb1c7afccb12459288175d616684079eb69f67b22e00572fb1c1",
+      "chunk_ids": [
+        "INC85320121#symptom",
+        "INC85320121#resolution",
+        "INC85320121#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:59.233033+00:00"
+    },
+    "INC16240908": {
+      "content_hash": "61a26c02196e3e6ea54efbe7a5f12c0002d7495416ad6d1d3ba00a6db891f566",
+      "chunk_ids": [
+        "INC16240908#symptom",
+        "INC16240908#resolution",
+        "INC16240908#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:44:59.673341+00:00"
+    },
+    "INC21172421": {
+      "content_hash": "cee712b8659eec916251b4c458ebba1d53d96b752fc2ca544720dc2ac315704a",
+      "chunk_ids": [
+        "INC21172421#symptom",
+        "INC21172421#resolution",
+        "INC21172421#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:00.076868+00:00"
+    },
+    "INC45667651": {
+      "content_hash": "0f3dcb4ee123df4603afd7ba0e94e70824fb4fbd70124b9bdad8e64834cc90aa",
+      "chunk_ids": [
+        "INC45667651#symptom",
+        "INC45667651#resolution",
+        "INC45667651#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:00.528985+00:00"
+    },
+    "INC35650176": {
+      "content_hash": "15749be233281bc03646bc24c5a85e748475b3a179b83b3bddc2bfb3ad6a4cdc",
+      "chunk_ids": [
+        "INC35650176#symptom",
+        "INC35650176#resolution",
+        "INC35650176#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:00.943845+00:00"
+    },
+    "INC17558317": {
+      "content_hash": "3769d1ddba5e740cb0ebd946a0ab0bc00e51cc809bf2f216b9a70095246adc25",
+      "chunk_ids": [
+        "INC17558317#symptom",
+        "INC17558317#resolution",
+        "INC17558317#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:01.372653+00:00"
+    },
+    "INC77701200": {
+      "content_hash": "62c2b09c40f3e54421de080f8a553d7a117bf73e4f82ee979f87c0582ba471bd",
+      "chunk_ids": [
+        "INC77701200#symptom",
+        "INC77701200#resolution",
+        "INC77701200#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:01.874028+00:00"
+    },
+    "INC14716857": {
+      "content_hash": "05da0ec322b3304a917932ef51ee984526328df9b584ebb4e063da0dd2cf9f19",
+      "chunk_ids": [
+        "INC14716857#symptom",
+        "INC14716857#resolution",
+        "INC14716857#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:02.288412+00:00"
+    },
+    "INC79795010": {
+      "content_hash": "e1470e8cebff70c0f5b81c21e944feb50a79485e4af0584e9ffd7ac6a2637d3d",
+      "chunk_ids": [
+        "INC79795010#symptom",
+        "INC79795010#resolution",
+        "INC79795010#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:02.775413+00:00"
+    },
+    "INC93702683": {
+      "content_hash": "49ea8f12e1d2f7b4a903c7d2b8e90659b51848ba10798c38cee5eb24bbec38de",
+      "chunk_ids": [
+        "INC93702683#symptom",
+        "INC93702683#resolution",
+        "INC93702683#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:03.311011+00:00"
+    },
+    "INC46164955": {
+      "content_hash": "73247fa92edb385391ac15132827326323d1fcf8877fea999fb3ef66282ec218",
+      "chunk_ids": [
+        "INC46164955#symptom",
+        "INC46164955#resolution",
+        "INC46164955#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:03.821184+00:00"
+    },
+    "INC50185867": {
+      "content_hash": "42fa793b07bc374412ef61ca76124669e633bf557eb874e80dd9a4cf7326dcf5",
+      "chunk_ids": [
+        "INC50185867#symptom",
+        "INC50185867#resolution",
+        "INC50185867#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:04.274589+00:00"
+    },
+    "INC66238574": {
+      "content_hash": "80d15072e525795f74dc70e4f083a08bf88e15069b105cc531d32123462b20a3",
+      "chunk_ids": [
+        "INC66238574#symptom",
+        "INC66238574#resolution",
+        "INC66238574#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:04.709954+00:00"
+    },
+    "INC57854710": {
+      "content_hash": "5cad0f48a60a11755dd31cd484b1b04396d8b838c6b40f85d5e508d9adc97742",
+      "chunk_ids": [
+        "INC57854710#symptom",
+        "INC57854710#resolution",
+        "INC57854710#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:05.129563+00:00"
+    },
+    "INC04835614": {
+      "content_hash": "fafbd175fddb9f72378113a33f7e94e7256d5ef3b6ce1901b645f5c25e4cc044",
+      "chunk_ids": [
+        "INC04835614#symptom",
+        "INC04835614#resolution",
+        "INC04835614#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:06.307800+00:00"
+    },
+    "INC94123965": {
+      "content_hash": "c534387c1bd634803f25b647756da8e93d798c89d596a28faf87ce64e54f5de9",
+      "chunk_ids": [
+        "INC94123965#symptom",
+        "INC94123965#resolution",
+        "INC94123965#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:06.740442+00:00"
+    },
+    "INC54193837": {
+      "content_hash": "5011c63c1e741a79acff29fe60de571baa5e7f03d00b38279287dbd9e525a0d2",
+      "chunk_ids": [
+        "INC54193837#symptom",
+        "INC54193837#resolution",
+        "INC54193837#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:07.226233+00:00"
+    },
+    "INC33744231": {
+      "content_hash": "895de3348b9bb88a9320e64b0cbd43c78886b616e891f2ebf44e21f7d0a24092",
+      "chunk_ids": [
+        "INC33744231#symptom",
+        "INC33744231#resolution",
+        "INC33744231#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:07.654622+00:00"
+    },
+    "INC28195995": {
+      "content_hash": "5abc98184b9e21138a8ee974cf33f26990b9abce9ccf3c8bd69ef7552d827069",
+      "chunk_ids": [
+        "INC28195995#symptom",
+        "INC28195995#resolution",
+        "INC28195995#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:08.132980+00:00"
+    },
+    "INC96423126": {
+      "content_hash": "ba72f10597713cf34d5e4c55a1bd4f59f980c65156b505a28d946b1ec51bd9c6",
+      "chunk_ids": [
+        "INC96423126#symptom",
+        "INC96423126#resolution",
+        "INC96423126#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:08.694005+00:00"
+    },
+    "INC48966946": {
+      "content_hash": "f214f9d9dc133ac3a3aa57999a6432634d7f5fbad3244b02e754de503ed34691",
+      "chunk_ids": [
+        "INC48966946#symptom",
+        "INC48966946#resolution",
+        "INC48966946#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:09.209789+00:00"
+    },
+    "INC78979095": {
+      "content_hash": "05179e2c5995e021e80c168a1ac7a56a040ab87f9df547f8d5f6e7b95aa8743e",
+      "chunk_ids": [
+        "INC78979095#symptom",
+        "INC78979095#resolution",
+        "INC78979095#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:09.612392+00:00"
+    },
+    "INC92592466": {
+      "content_hash": "29c46eb0c54610f59b409bf44edc0435304bb1260934167f85b47e59580f1fed",
+      "chunk_ids": [
+        "INC92592466#symptom",
+        "INC92592466#resolution",
+        "INC92592466#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:10.132201+00:00"
+    },
+    "INC32035886": {
+      "content_hash": "c0a606fb4e75165e470ece040e8b93e180e2ea70cfd7ae404b8c89d1330b6ac1",
+      "chunk_ids": [
+        "INC32035886#symptom",
+        "INC32035886#resolution",
+        "INC32035886#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:10.712728+00:00"
+    },
+    "INC54543049": {
+      "content_hash": "a9f17231fd250e98f556b66f535614601d7d3521747f70845595df2d768600c7",
+      "chunk_ids": [
+        "INC54543049#symptom",
+        "INC54543049#resolution",
+        "INC54543049#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:11.163948+00:00"
+    },
+    "INC48586340": {
+      "content_hash": "20bee68daf2ea326c921c8329a1b87739dd999b3f6f2b76644d9d72ff7a60539",
+      "chunk_ids": [
+        "INC48586340#symptom",
+        "INC48586340#resolution",
+        "INC48586340#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:11.557517+00:00"
+    },
+    "INC89514287": {
+      "content_hash": "202a313142160221b4e696000fa761be61b401395bfa4bccb65a4810ac1f780f",
+      "chunk_ids": [
+        "INC89514287#symptom",
+        "INC89514287#resolution",
+        "INC89514287#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:12.124985+00:00"
+    },
+    "INC28538251": {
+      "content_hash": "9f8188e466945afb86bdc9141e00ab5b2868f033713bfbb3bc10f17204c45a0c",
+      "chunk_ids": [
+        "INC28538251#symptom",
+        "INC28538251#resolution",
+        "INC28538251#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:12.615537+00:00"
+    },
+    "INC23763566": {
+      "content_hash": "46f5a19d0eb93a6215cf048ee804d78c66bf9455584bf12c242a3fe17d47b14d",
+      "chunk_ids": [
+        "INC23763566#symptom",
+        "INC23763566#resolution",
+        "INC23763566#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:13.085181+00:00"
+    },
+    "INC53100814": {
+      "content_hash": "e5f942d5ae44a764a7c7d328562c42e18a8196ffcf8bddb4b1ef0733d0c7a83a",
+      "chunk_ids": [
+        "INC53100814#symptom",
+        "INC53100814#resolution",
+        "INC53100814#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:13.565193+00:00"
+    },
+    "INC90152297": {
+      "content_hash": "883e65af1ec4b1e3e466d8456925438ed6bcdfc198f41aa89120bcae9541c811",
+      "chunk_ids": [
+        "INC90152297#symptom",
+        "INC90152297#resolution",
+        "INC90152297#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:14.015994+00:00"
+    },
+    "INC43507489": {
+      "content_hash": "109c129bbd936e58a22f51d4523c180295638ae65b2edd51b667d06829506d28",
+      "chunk_ids": [
+        "INC43507489#symptom",
+        "INC43507489#resolution",
+        "INC43507489#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:14.439752+00:00"
+    },
+    "INC09121552": {
+      "content_hash": "1431a0d40f86e66d42a69333159cc7dec36d6d268ae6dccdb04b7449281c282a",
+      "chunk_ids": [
+        "INC09121552#symptom",
+        "INC09121552#resolution",
+        "INC09121552#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:14.980021+00:00"
+    },
+    "INC89038526": {
+      "content_hash": "1f9e4fa58bcaef889161a7c3d414439ce2d9aebf061567fcbe53e3e64ccabf20",
+      "chunk_ids": [
+        "INC89038526#symptom",
+        "INC89038526#resolution",
+        "INC89038526#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:15.507784+00:00"
+    },
+    "INC06818112": {
+      "content_hash": "939ba93aa71a17a032df74d4659368771dca13bebf6781dbb9afad8b304d4ff9",
+      "chunk_ids": [
+        "INC06818112#symptom",
+        "INC06818112#resolution",
+        "INC06818112#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:15.979544+00:00"
+    },
+    "INC65228535": {
+      "content_hash": "48f3e3a01e359c24d016ee79952899406bfa2cf47264d204842f46af7e130c36",
+      "chunk_ids": [
+        "INC65228535#symptom",
+        "INC65228535#resolution",
+        "INC65228535#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:16.441794+00:00"
+    },
+    "INC58812137": {
+      "content_hash": "57990b2fa36e8bc481ce74a71e6aa9780ecba519bb8e88c1d1032b552f18747f",
+      "chunk_ids": [
+        "INC58812137#symptom",
+        "INC58812137#resolution",
+        "INC58812137#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:16.916499+00:00"
+    },
+    "INC61662963": {
+      "content_hash": "2cdc77f9e7b9dc48680232e8251ce0ae0786b9a721c9134738822130a983616a",
+      "chunk_ids": [
+        "INC61662963#symptom",
+        "INC61662963#resolution",
+        "INC61662963#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:17.425588+00:00"
+    },
+    "INC33101783": {
+      "content_hash": "e23e4bb69bcff7bcbc7c52aee6a865767bf65940afe85f260dc7c8fd4834975f",
+      "chunk_ids": [
+        "INC33101783#symptom",
+        "INC33101783#resolution",
+        "INC33101783#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:17.948229+00:00"
+    },
+    "INC87705310": {
+      "content_hash": "5a12af508d5e3a619b51e80ca8f49337a5ca4bafa12308036d5589717e539aa0",
+      "chunk_ids": [
+        "INC87705310#symptom",
+        "INC87705310#resolution",
+        "INC87705310#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:18.402126+00:00"
+    },
+    "INC13141087": {
+      "content_hash": "135d67f3bfdc40ec0903bfae8ee055ddf2f374f1cbb04ccebea30ae9bb88dd74",
+      "chunk_ids": [
+        "INC13141087#symptom",
+        "INC13141087#resolution",
+        "INC13141087#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:18.892344+00:00"
+    },
+    "INC45176955": {
+      "content_hash": "70832871326d1affa047c1037b3cc9d0d6cdec442c02882532adeb4f68355a0c",
+      "chunk_ids": [
+        "INC45176955#symptom",
+        "INC45176955#resolution",
+        "INC45176955#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:19.380063+00:00"
+    },
+    "INC86282117": {
+      "content_hash": "9145d4cfd2e186ba6dccd3e738bee931874e65d66108a6a3e8b1ef13572fcb5f",
+      "chunk_ids": [
+        "INC86282117#symptom",
+        "INC86282117#resolution",
+        "INC86282117#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:19.802222+00:00"
+    },
+    "INC81415657": {
+      "content_hash": "e656f61b0e6937ad5cb2f8638adadf61b7b4a7917d09796fecb5e2508e2ef002",
+      "chunk_ids": [
+        "INC81415657#symptom",
+        "INC81415657#resolution",
+        "INC81415657#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:20.220474+00:00"
+    },
+    "INC94713081": {
+      "content_hash": "28b8947ee229ff2c01b7a3198cfcee0c77319e188a533fdbc14fecbc71cd6961",
+      "chunk_ids": [
+        "INC94713081#symptom",
+        "INC94713081#resolution",
+        "INC94713081#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:20.665186+00:00"
+    },
+    "INC55259205": {
+      "content_hash": "6f335eeb3fbde8a9ac94a304a758b157ff79265276b9cd0411a5bb923e0f9027",
+      "chunk_ids": [
+        "INC55259205#symptom",
+        "INC55259205#resolution",
+        "INC55259205#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:21.193032+00:00"
+    },
+    "INC69008866": {
+      "content_hash": "48d008a40cbb760d19ad432977bb7702908b1f85c7e4a5206c32508d602379bb",
+      "chunk_ids": [
+        "INC69008866#symptom",
+        "INC69008866#resolution",
+        "INC69008866#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:21.591115+00:00"
+    },
+    "INC09196777": {
+      "content_hash": "6d9a5d1415d1553d7dd6f83d4408133378f2bbbd1ce993a8974472f534d34b67",
+      "chunk_ids": [
+        "INC09196777#symptom",
+        "INC09196777#resolution",
+        "INC09196777#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:21.979983+00:00"
+    },
+    "INC21931511": {
+      "content_hash": "25c6ee0e1024b6eae71c3e04c4698ea2ab8fd4cc634155e717ed6b95bd010b90",
+      "chunk_ids": [
+        "INC21931511#symptom",
+        "INC21931511#resolution",
+        "INC21931511#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:22.415165+00:00"
+    },
+    "INC07901903": {
+      "content_hash": "e045bbbd9c8133303ce916bacaaee68e9dc88cb61d2f7303509178ad3dcef1c7",
+      "chunk_ids": [
+        "INC07901903#symptom",
+        "INC07901903#resolution",
+        "INC07901903#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:22.987288+00:00"
+    },
+    "INC42339391": {
+      "content_hash": "eda03cfc5823df63d43b30d029737463541944fef65ca3a15cb1631d4fe7910c",
+      "chunk_ids": [
+        "INC42339391#symptom",
+        "INC42339391#resolution",
+        "INC42339391#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:23.504139+00:00"
+    },
+    "INC76460539": {
+      "content_hash": "f2febe486a8a78f3883c4edd565b2302af5b4d3f7cc1f525a0381614fca61621",
+      "chunk_ids": [
+        "INC76460539#symptom",
+        "INC76460539#resolution",
+        "INC76460539#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:24.007437+00:00"
+    },
+    "INC56851377": {
+      "content_hash": "ecf67a3f2c4dfdf1c12ae63766c86cc534ea9fa5523c66140f2f9e25b8c63c5d",
+      "chunk_ids": [
+        "INC56851377#symptom",
+        "INC56851377#resolution",
+        "INC56851377#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:24.434388+00:00"
+    },
+    "INC40181935": {
+      "content_hash": "cf39c436bdfffdf39359131645b57808cd7020c4a6874169d4cb58bbdb4bea0e",
+      "chunk_ids": [
+        "INC40181935#symptom",
+        "INC40181935#resolution",
+        "INC40181935#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:24.918335+00:00"
+    },
+    "INC03326769": {
+      "content_hash": "93f80b9a555a8444df7e81c1d82e1490dbafabf110b439751e7947ccd3ed81ee",
+      "chunk_ids": [
+        "INC03326769#symptom",
+        "INC03326769#resolution",
+        "INC03326769#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:25.414690+00:00"
+    },
+    "INC28898923": {
+      "content_hash": "55811c62a595ac8a6b8d16df84a09624d357a6b50c654fd248e124743e79e396",
+      "chunk_ids": [
+        "INC28898923#symptom",
+        "INC28898923#resolution",
+        "INC28898923#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:25.925322+00:00"
+    },
+    "INC37385696": {
+      "content_hash": "3fc1bd82fd30b23f5fcbbcdc5bcf1d813cf5675edaa8dba64d29c11bcc943215",
+      "chunk_ids": [
+        "INC37385696#symptom",
+        "INC37385696#resolution",
+        "INC37385696#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:26.295790+00:00"
+    },
+    "INC89788677": {
+      "content_hash": "cadb07d79c8a3a9c82867075772ad8649105ed2a01b66062c0aa54e5aaad6958",
+      "chunk_ids": [
+        "INC89788677#symptom",
+        "INC89788677#resolution",
+        "INC89788677#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:26.779874+00:00"
+    },
+    "INC05197528": {
+      "content_hash": "563c66ad1f753704446e4ecdce4fc131f0a6defa012c8e8cbc939cbecb7201b3",
+      "chunk_ids": [
+        "INC05197528#symptom",
+        "INC05197528#resolution",
+        "INC05197528#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:27.205853+00:00"
+    },
+    "INC09583482": {
+      "content_hash": "d710aecdf72bd60afc333fd3709bb6d107d842654b8a19035bd56038d76e9d0b",
+      "chunk_ids": [
+        "INC09583482#symptom",
+        "INC09583482#resolution",
+        "INC09583482#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:28.076248+00:00"
+    },
+    "INC72383095": {
+      "content_hash": "ce9c20bb7c1aaf4d2bf5a386e6047c78202551d23736e2c9545e81040ecf7902",
+      "chunk_ids": [
+        "INC72383095#symptom",
+        "INC72383095#resolution",
+        "INC72383095#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:28.470121+00:00"
+    },
+    "INC54634663": {
+      "content_hash": "fde3d92ba0c481d9a33cb08c241ca3d79ed93f8023cdfb8b0ba0568c1d670509",
+      "chunk_ids": [
+        "INC54634663#symptom",
+        "INC54634663#resolution",
+        "INC54634663#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:29.255359+00:00"
+    },
+    "INC31726318": {
+      "content_hash": "29aa445f8004ee4aba7698ac57f9374044af899984c770a0cdd7915f04533aa5",
+      "chunk_ids": [
+        "INC31726318#symptom",
+        "INC31726318#resolution",
+        "INC31726318#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:29.738816+00:00"
+    },
+    "INC28688676": {
+      "content_hash": "f755adcdb272c578701707001e754a83cdde9b254bd026da69275db5f3ea6a84",
+      "chunk_ids": [
+        "INC28688676#symptom",
+        "INC28688676#resolution",
+        "INC28688676#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:30.179605+00:00"
+    },
+    "INC92274302": {
+      "content_hash": "0e1033fea80fb8297d20c45c653a063971f60f6f7dccdb227a68b38d971ac52d",
+      "chunk_ids": [
+        "INC92274302#symptom",
+        "INC92274302#resolution",
+        "INC92274302#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:30.590753+00:00"
+    },
+    "INC51343880": {
+      "content_hash": "1f11f9075337e76d99f18b1ded06c92072433d96ebc6c314dc4e220ec21603e3",
+      "chunk_ids": [
+        "INC51343880#symptom",
+        "INC51343880#resolution",
+        "INC51343880#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:31.110620+00:00"
+    },
+    "INC98046763": {
+      "content_hash": "0ffc83b2dd820a7049a637d4ce9a2e50aaf7af61ac10e62bd35e025a4029e12a",
+      "chunk_ids": [
+        "INC98046763#symptom",
+        "INC98046763#resolution",
+        "INC98046763#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:31.715456+00:00"
+    },
+    "INC91744214": {
+      "content_hash": "f344d06f010c6b632a41c17f12ebe03513c6543f2e464dea00f8500598dd6341",
+      "chunk_ids": [
+        "INC91744214#symptom",
+        "INC91744214#resolution",
+        "INC91744214#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:32.124523+00:00"
+    },
+    "INC78461803": {
+      "content_hash": "0ea07f88c2a975dacd81c9afa1013d4e07a9dfd39a6d5d7cdc6a387a90babb9b",
+      "chunk_ids": [
+        "INC78461803#symptom",
+        "INC78461803#resolution",
+        "INC78461803#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:32.547916+00:00"
+    },
+    "INC33374088": {
+      "content_hash": "439bd87054099dc54c0f75bc7972a63ace20a1351097d94c4a85e46cfb31a927",
+      "chunk_ids": [
+        "INC33374088#symptom",
+        "INC33374088#resolution",
+        "INC33374088#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:32.989316+00:00"
+    },
+    "INC36231783": {
+      "content_hash": "b8369664f034b7a576748fb96ed4a4e43e69ad7fe7eb675d9f421887782b78b2",
+      "chunk_ids": [
+        "INC36231783#symptom",
+        "INC36231783#resolution",
+        "INC36231783#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:33.386607+00:00"
+    },
+    "INC68137358": {
+      "content_hash": "7c841cd15066ba68df912baf8541c4e21f7d16cc16aa4704e3ff126a417ab910",
+      "chunk_ids": [
+        "INC68137358#symptom",
+        "INC68137358#resolution",
+        "INC68137358#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:33.826687+00:00"
+    },
+    "INC75563727": {
+      "content_hash": "8632e4f75162f04cca129b267084d8d8d3a39bd56632270df01852b63f94026f",
+      "chunk_ids": [
+        "INC75563727#symptom",
+        "INC75563727#resolution",
+        "INC75563727#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:34.357796+00:00"
+    },
+    "INC00289289": {
+      "content_hash": "ab005b5268cceba3a82e883487797edd2fb11aa119f2018d3b2d851d0899db8e",
+      "chunk_ids": [
+        "INC00289289#symptom",
+        "INC00289289#resolution",
+        "INC00289289#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:34.867265+00:00"
+    },
+    "INC56623995": {
+      "content_hash": "c2b95d456599cf0d784036d6ddde63fa73ad62cc6562d32867aec791ce84cb97",
+      "chunk_ids": [
+        "INC56623995#symptom",
+        "INC56623995#resolution",
+        "INC56623995#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:35.321395+00:00"
+    },
+    "INC96917555": {
+      "content_hash": "4c17bba1b312b3a1616a8c3dea8a0acfe57deea0d734bc5faff19b4e2537d84b",
+      "chunk_ids": [
+        "INC96917555#symptom",
+        "INC96917555#resolution",
+        "INC96917555#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:35.890893+00:00"
+    },
+    "INC74252722": {
+      "content_hash": "0f06e65114abe0e789e77a0321db178d2e6d86ecda64a14b590ce9faab5edaec",
+      "chunk_ids": [
+        "INC74252722#symptom",
+        "INC74252722#resolution",
+        "INC74252722#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:36.298656+00:00"
+    },
+    "INC47130035": {
+      "content_hash": "a7c96819a0042e74207038ccb5e335f87e6f86c5dc75fff236a7247367ad2b1e",
+      "chunk_ids": [
+        "INC47130035#symptom",
+        "INC47130035#resolution",
+        "INC47130035#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:36.775207+00:00"
+    },
+    "INC21682744": {
+      "content_hash": "c4995334a2015f079984361e7d9ef22e21b6e980b83a4dfb4e4163b524c9e875",
+      "chunk_ids": [
+        "INC21682744#symptom",
+        "INC21682744#resolution",
+        "INC21682744#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:37.152872+00:00"
+    },
+    "INC00872248": {
+      "content_hash": "64c8b738c42f7bbdc4ebae4470e4e7dc08a596fbcdd48f291c89bed4c012bb9b",
+      "chunk_ids": [
+        "INC00872248#symptom",
+        "INC00872248#resolution",
+        "INC00872248#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:37.569787+00:00"
+    },
+    "INC32857966": {
+      "content_hash": "c0bd36b469fb006ddeeea0d1376d8dabd3c70621cb278c64c522944d5d2d2353",
+      "chunk_ids": [
+        "INC32857966#symptom",
+        "INC32857966#resolution",
+        "INC32857966#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:38.140160+00:00"
+    },
+    "INC33491314": {
+      "content_hash": "5e1288646fbbd59dcb1809b07b5737d25236e57a15bb6589bc90cf1ac8fae167",
+      "chunk_ids": [
+        "INC33491314#symptom",
+        "INC33491314#resolution",
+        "INC33491314#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:38.520180+00:00"
+    },
+    "INC42235350": {
+      "content_hash": "aeefaa944f65a9e8db10402e2c4acd0ac9918fdff81aca1049bbf84022732b0a",
+      "chunk_ids": [
+        "INC42235350#symptom",
+        "INC42235350#resolution",
+        "INC42235350#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:39.009953+00:00"
+    },
+    "INC23978249": {
+      "content_hash": "f7a604e67552773356e6798c63d0e42d099fae6e899da5db2f7733d126777974",
+      "chunk_ids": [
+        "INC23978249#symptom",
+        "INC23978249#resolution",
+        "INC23978249#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:39.499688+00:00"
+    },
+    "INC21831063": {
+      "content_hash": "e9eafc94d9a6aed5e3aaf836682ac3de3baa6aeaf41b16eb8d0d61c8e8078e6c",
+      "chunk_ids": [
+        "INC21831063#symptom",
+        "INC21831063#resolution",
+        "INC21831063#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:40.022982+00:00"
+    },
+    "INC58353204": {
+      "content_hash": "3698c259c9f417f2db377c05ad9ca47432fd0638b10b0c52a1bcb1816d4a64d8",
+      "chunk_ids": [
+        "INC58353204#symptom",
+        "INC58353204#resolution",
+        "INC58353204#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:40.508514+00:00"
+    },
+    "INC40056581": {
+      "content_hash": "48f5e33d7f0175ad9be427ae7cad32775c2f2d33aa3e20a2789580b17d799007",
+      "chunk_ids": [
+        "INC40056581#symptom",
+        "INC40056581#resolution",
+        "INC40056581#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:40.949561+00:00"
+    },
+    "INC82097999": {
+      "content_hash": "9a8c80710489073484258cdcdb6af245bf47035dcfe7c9c77cca86b7c8c05df7",
+      "chunk_ids": [
+        "INC82097999#symptom",
+        "INC82097999#resolution",
+        "INC82097999#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:41.435376+00:00"
+    },
+    "INC56661351": {
+      "content_hash": "016af576537dc9d2b155b3b4413aa200f2f99e53aa66ef2a6432afea92f86fee",
+      "chunk_ids": [
+        "INC56661351#symptom",
+        "INC56661351#resolution",
+        "INC56661351#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:41.923257+00:00"
+    },
+    "INC32138745": {
+      "content_hash": "e4092e4127b244510518d6e2ba7b3378c6d76f76c898ca2cd62c0ee76687cf3f",
+      "chunk_ids": [
+        "INC32138745#symptom",
+        "INC32138745#resolution",
+        "INC32138745#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:42.456001+00:00"
+    },
+    "INC09510312": {
+      "content_hash": "7bcbda9cfc92103777867156f9b250108ec7737fcde0d7926e865e9518c498cf",
+      "chunk_ids": [
+        "INC09510312#symptom",
+        "INC09510312#resolution",
+        "INC09510312#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:42.808386+00:00"
+    },
+    "INC73863413": {
+      "content_hash": "f748bb6d2c39a23a87ceac11ff898b4fc8c620c6ff5c776ea34be5dfdc7ddcd9",
+      "chunk_ids": [
+        "INC73863413#symptom",
+        "INC73863413#resolution",
+        "INC73863413#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:43.238565+00:00"
+    },
+    "INC07634247": {
+      "content_hash": "eeb650c1060fc79d40a20aac7d3a8b4aca092c3e0b89e26c49d589b264e4e3e6",
+      "chunk_ids": [
+        "INC07634247#symptom",
+        "INC07634247#resolution",
+        "INC07634247#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:43.682898+00:00"
+    },
+    "INC88834863": {
+      "content_hash": "635031dfe6471087d0065dbba61f4fca1d5139f4c1968ae70438bf10b80c67b7",
+      "chunk_ids": [
+        "INC88834863#symptom",
+        "INC88834863#resolution",
+        "INC88834863#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:44.125406+00:00"
+    },
+    "INC74158663": {
+      "content_hash": "b639d6737c93320b29e3c851ffbc72ba521bfba03e0d9cf9b2d2abc37677a8a1",
+      "chunk_ids": [
+        "INC74158663#symptom",
+        "INC74158663#resolution",
+        "INC74158663#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:44.520236+00:00"
+    },
+    "INC71971316": {
+      "content_hash": "b3fc658cf56a076d1e3ebee806857ee2c125b6b5cd7ca60b21098735a35e791c",
+      "chunk_ids": [
+        "INC71971316#symptom",
+        "INC71971316#resolution",
+        "INC71971316#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:45.494732+00:00"
+    },
+    "INC35551614": {
+      "content_hash": "d350d6cbbbb74f23b3d2bb33d60882e7ff4c5fc4d9776a937c1d6f605312dc6b",
+      "chunk_ids": [
+        "INC35551614#symptom",
+        "INC35551614#resolution",
+        "INC35551614#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:45.850273+00:00"
+    },
+    "INC96125636": {
+      "content_hash": "83e141c56dd7e649336a8aa019a29e2e327c8e2e4014895b87cc987f1e04044c",
+      "chunk_ids": [
+        "INC96125636#symptom",
+        "INC96125636#resolution",
+        "INC96125636#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:46.400928+00:00"
+    },
+    "INC74252420": {
+      "content_hash": "d10f2f967c59d57440e4bcba0bd4b2b6f0445d0d68eaa348068b24969d8bc195",
+      "chunk_ids": [
+        "INC74252420#symptom",
+        "INC74252420#resolution",
+        "INC74252420#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:46.769631+00:00"
+    },
+    "INC61367643": {
+      "content_hash": "e73a8b7b8d3987de41cd93db9e27e53f8cc635f2ae4d3f9067d8ba7c68ff6075",
+      "chunk_ids": [
+        "INC61367643#symptom",
+        "INC61367643#resolution",
+        "INC61367643#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:47.236235+00:00"
+    },
+    "INC93494928": {
+      "content_hash": "a645ed335b440ceb4bf36af13f529236aec0a65682f9a1f999f49c4f9e43faf2",
+      "chunk_ids": [
+        "INC93494928#symptom",
+        "INC93494928#resolution",
+        "INC93494928#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:47.647654+00:00"
+    },
+    "INC56792612": {
+      "content_hash": "5b3d6e7b85decc6b6405c8a522109202f7fc88b2f13f3ec634c3ee6ba83a3076",
+      "chunk_ids": [
+        "INC56792612#symptom",
+        "INC56792612#resolution",
+        "INC56792612#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:48.127473+00:00"
+    },
+    "INC72070937": {
+      "content_hash": "e51f0379e2df151bafce7f9e6b243d8938495ee0a1ec08bc998e2e0181fcf9d7",
+      "chunk_ids": [
+        "INC72070937#symptom",
+        "INC72070937#resolution",
+        "INC72070937#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:48.619294+00:00"
+    },
+    "INC78961459": {
+      "content_hash": "950915635b9a243ccb89f8875d660a678cf3db57049758ac3beb1717f05c2c27",
+      "chunk_ids": [
+        "INC78961459#symptom",
+        "INC78961459#resolution",
+        "INC78961459#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:49.110248+00:00"
+    },
+    "INC40603163": {
+      "content_hash": "3b742e7c16668b0f77653ebed317ef2ad97980865e964d1680ad2fc4666c9739",
+      "chunk_ids": [
+        "INC40603163#symptom",
+        "INC40603163#resolution",
+        "INC40603163#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:49.518163+00:00"
+    },
+    "INC50864911": {
+      "content_hash": "ee32b8f35763ac8c93bb739fd7b9d7d07f1859cf032d5e14a98ccf5653ae3e1b",
+      "chunk_ids": [
+        "INC50864911#symptom",
+        "INC50864911#resolution",
+        "INC50864911#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:50.102614+00:00"
+    },
+    "INC18566572": {
+      "content_hash": "41377d7e9cfc08e765e25f4cc926c5965fdfb9acc01b5567b0073c9b438db6e0",
+      "chunk_ids": [
+        "INC18566572#symptom",
+        "INC18566572#resolution",
+        "INC18566572#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:50.506833+00:00"
+    },
+    "INC20005727": {
+      "content_hash": "48a8f49d013dc0f8348800b1fd541f72cd0ac84e8f91f513813f5ff4446b87e9",
+      "chunk_ids": [
+        "INC20005727#symptom",
+        "INC20005727#resolution",
+        "INC20005727#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:50.936100+00:00"
+    },
+    "INC62092888": {
+      "content_hash": "a2f7857f0d767c53aa947ddaba5028300c4d370c9724d14c3795b998fca68812",
+      "chunk_ids": [
+        "INC62092888#symptom",
+        "INC62092888#resolution",
+        "INC62092888#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:51.417440+00:00"
+    },
+    "INC96102525": {
+      "content_hash": "2abacd339451c0c100bd3860763993e0ce7cafcab1b7575f6f09bf8f6cb7e0ad",
+      "chunk_ids": [
+        "INC96102525#symptom",
+        "INC96102525#resolution",
+        "INC96102525#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:51.953417+00:00"
+    },
+    "INC41837852": {
+      "content_hash": "9d3fc96fd5fac6d9090bb67ebcc7e69505cdb7dec643240a32e399be8e727a13",
+      "chunk_ids": [
+        "INC41837852#symptom",
+        "INC41837852#resolution",
+        "INC41837852#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:52.405127+00:00"
+    },
+    "INC99990728": {
+      "content_hash": "385f17189a513377b77ab6e571cd09bed1a4f424fc55559c3556e3d3361a3787",
+      "chunk_ids": [
+        "INC99990728#symptom",
+        "INC99990728#resolution",
+        "INC99990728#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:52.924860+00:00"
+    },
+    "INC74346088": {
+      "content_hash": "e76eed32a6f94ec2703bbc5b903785e7e5d9f232e26280b2ffd6bc1f28341203",
+      "chunk_ids": [
+        "INC74346088#symptom",
+        "INC74346088#resolution",
+        "INC74346088#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:53.387410+00:00"
+    },
+    "INC53826716": {
+      "content_hash": "d906e6c344a16757d9630f45e264b0c472dbc95fcba786edfe8c3f98472ff5cf",
+      "chunk_ids": [
+        "INC53826716#symptom",
+        "INC53826716#resolution",
+        "INC53826716#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:53.818400+00:00"
+    },
+    "INC99645480": {
+      "content_hash": "6eca3603922dfda108634d5edd57fa27a7bc1d6c9d64dbd213b0ed17108a79f0",
+      "chunk_ids": [
+        "INC99645480#symptom",
+        "INC99645480#resolution",
+        "INC99645480#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:54.245055+00:00"
+    },
+    "INC38840994": {
+      "content_hash": "d493bedfef161539749dd872328f644141e75757e9618239d8edff66c27eb360",
+      "chunk_ids": [
+        "INC38840994#symptom",
+        "INC38840994#resolution",
+        "INC38840994#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:54.661434+00:00"
+    },
+    "INC63174945": {
+      "content_hash": "05e4ee5ebf8e24127c454a839b3de44af702b26a382b4d060a744d007b34c5c8",
+      "chunk_ids": [
+        "INC63174945#symptom",
+        "INC63174945#resolution",
+        "INC63174945#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:55.210028+00:00"
+    },
+    "INC44769200": {
+      "content_hash": "9caed8ad698a8ae5f89aee23b0ac7feed084b092625d6e869307556f7c98aa2f",
+      "chunk_ids": [
+        "INC44769200#symptom",
+        "INC44769200#resolution",
+        "INC44769200#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:55.691977+00:00"
+    },
+    "INC73140807": {
+      "content_hash": "db1db25014c967935360a90f5d57ed6e963b4ec266bd42033ab8684a461a0f1a",
+      "chunk_ids": [
+        "INC73140807#symptom",
+        "INC73140807#resolution",
+        "INC73140807#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:56.188889+00:00"
+    },
+    "INC45540424": {
+      "content_hash": "2b51953d3a9e5cb0f4992800af984d8ecaaf071cc11f3c99e2f0e71acee74468",
+      "chunk_ids": [
+        "INC45540424#symptom",
+        "INC45540424#resolution",
+        "INC45540424#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:56.670297+00:00"
+    },
+    "INC27415205": {
+      "content_hash": "ad509f3a60f241deb16b108917b69a5c0b1e2858f5788de7a9199677f436371b",
+      "chunk_ids": [
+        "INC27415205#symptom",
+        "INC27415205#resolution",
+        "INC27415205#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:57.342638+00:00"
+    },
+    "INC83303777": {
+      "content_hash": "c0975c473fe2e067eaa1482eefea50d38add66b952537cc497a92180ba01d877",
+      "chunk_ids": [
+        "INC83303777#symptom",
+        "INC83303777#resolution",
+        "INC83303777#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:57.889315+00:00"
+    },
+    "INC78183110": {
+      "content_hash": "a48049b9b8a61683bc3dd8b6e9355e1eee0f76462d580ef74f87885330bdf58e",
+      "chunk_ids": [
+        "INC78183110#symptom",
+        "INC78183110#resolution",
+        "INC78183110#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:58.377294+00:00"
+    },
+    "INC18814949": {
+      "content_hash": "90ce5d0085f798f18b4042c8b8d044f538d2fd1ef6fedaf5bebb04a6847061fe",
+      "chunk_ids": [
+        "INC18814949#symptom",
+        "INC18814949#resolution",
+        "INC18814949#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:58.801758+00:00"
+    },
+    "INC04216175": {
+      "content_hash": "8d24e55b8fb29ca9d36a40935d8592231b2acb649cd51678514974d4a49d2aa4",
+      "chunk_ids": [
+        "INC04216175#symptom",
+        "INC04216175#resolution",
+        "INC04216175#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:59.213310+00:00"
+    },
+    "INC77490893": {
+      "content_hash": "216f7d0ea8fb8fa5a5ac0be419748900f3255493d03ebc4c8183434ee8f8f315",
+      "chunk_ids": [
+        "INC77490893#symptom",
+        "INC77490893#resolution",
+        "INC77490893#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:45:59.882508+00:00"
+    },
+    "INC06729990": {
+      "content_hash": "0a3b6e439d7bcc1d31a412f1530aea45e4817e3b67745b7c7b5715d4cf983fcf",
+      "chunk_ids": [
+        "INC06729990#symptom",
+        "INC06729990#resolution",
+        "INC06729990#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:00.401067+00:00"
+    },
+    "INC47553014": {
+      "content_hash": "9ede2e0e1ef9e57b08148d276e1064388bf374deb4a06d7244e68938528183f5",
+      "chunk_ids": [
+        "INC47553014#symptom",
+        "INC47553014#resolution",
+        "INC47553014#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:00.818021+00:00"
+    },
+    "INC60211891": {
+      "content_hash": "59809553a60d2aea01cf5b6655a72ee7069322bebac1097ecd3166339c4fe26d",
+      "chunk_ids": [
+        "INC60211891#symptom",
+        "INC60211891#resolution",
+        "INC60211891#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:01.222160+00:00"
+    },
+    "INC30547349": {
+      "content_hash": "5d5171876b0ba319d7e569d49a33f8836ab3641f6c7367201864ccbc7cd6c294",
+      "chunk_ids": [
+        "INC30547349#symptom",
+        "INC30547349#resolution",
+        "INC30547349#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:01.655149+00:00"
+    },
+    "INC31568532": {
+      "content_hash": "51541ba00e0c4de83ef3f14e52dc56b4f94a9f09c0f20a2b5693d3ab293e6d9e",
+      "chunk_ids": [
+        "INC31568532#symptom",
+        "INC31568532#resolution",
+        "INC31568532#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:02.034044+00:00"
+    },
+    "INC56722344": {
+      "content_hash": "4bb5096fb28196220ae3bcbfd0c6b48292ee2094ab8a43b1631ae397bf0e2a32",
+      "chunk_ids": [
+        "INC56722344#symptom",
+        "INC56722344#resolution",
+        "INC56722344#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:02.798253+00:00"
+    },
+    "INC07849494": {
+      "content_hash": "bdb2efba73139aab9b808df5b8bc2c602df21a93e24ea184d6f122db5842c240",
+      "chunk_ids": [
+        "INC07849494#symptom",
+        "INC07849494#resolution",
+        "INC07849494#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:03.257490+00:00"
+    },
+    "INC78406989": {
+      "content_hash": "f63105b558e9aa2455d5027205e90f91c3af7950e81d288824c790adb8953aec",
+      "chunk_ids": [
+        "INC78406989#symptom",
+        "INC78406989#resolution",
+        "INC78406989#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:03.628081+00:00"
+    },
+    "INC92747083": {
+      "content_hash": "5c8c63e82dd1dc25345f800573cd91240c7b7c98c77f7e8467e11ec8e80394b1",
+      "chunk_ids": [
+        "INC92747083#symptom",
+        "INC92747083#resolution",
+        "INC92747083#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:04.018042+00:00"
+    },
+    "INC37393469": {
+      "content_hash": "dda98bed3f49266843d29924b38d538a17c9c8aaf718f53698dbb671b6402b19",
+      "chunk_ids": [
+        "INC37393469#symptom",
+        "INC37393469#resolution",
+        "INC37393469#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:04.463996+00:00"
+    },
+    "INC29436733": {
+      "content_hash": "fb8a66349b87d9101049f601dcbf950e0fbd8a92e6db4943ea43caf4257a94e1",
+      "chunk_ids": [
+        "INC29436733#symptom",
+        "INC29436733#resolution",
+        "INC29436733#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:04.899654+00:00"
+    },
+    "INC24073380": {
+      "content_hash": "c823ae0a66a0d1f5f36f6b5a0464ce0e07ce3656d59e0dbe0442dd7b39df0bef",
+      "chunk_ids": [
+        "INC24073380#symptom",
+        "INC24073380#resolution",
+        "INC24073380#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:05.363704+00:00"
+    },
+    "INC20743797": {
+      "content_hash": "0292ee13ef1ff4c4e631bcef71f088385304cd030a77cfb4f45316ad1064ec71",
+      "chunk_ids": [
+        "INC20743797#symptom",
+        "INC20743797#resolution",
+        "INC20743797#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:05.748328+00:00"
+    },
+    "INC55337219": {
+      "content_hash": "31c9696a7d04faf17eee1fe46bdc4b1239b6aeda48635e2f4f6ef7897df0916a",
+      "chunk_ids": [
+        "INC55337219#symptom",
+        "INC55337219#resolution",
+        "INC55337219#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:06.261901+00:00"
+    },
+    "INC65151231": {
+      "content_hash": "ae29bf2c761a081e0bd8177015bcb84ef64077062bfa2607cb1d3d048d6c9213",
+      "chunk_ids": [
+        "INC65151231#symptom",
+        "INC65151231#resolution",
+        "INC65151231#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:06.689784+00:00"
+    },
+    "INC87226012": {
+      "content_hash": "b2e9ed23ec1db440b9e9b9d8851e30b3590bcd3ed347cbdbfb7e4996b0d8b96d",
+      "chunk_ids": [
+        "INC87226012#symptom",
+        "INC87226012#resolution",
+        "INC87226012#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:07.042918+00:00"
+    },
+    "INC10709497": {
+      "content_hash": "02e1007210bcd9c1846440472107018d340f1750299e1e2e710b7e83c5f52478",
+      "chunk_ids": [
+        "INC10709497#symptom",
+        "INC10709497#resolution",
+        "INC10709497#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:07.528994+00:00"
+    },
+    "INC85758349": {
+      "content_hash": "a6cf6f4786d5713c435f6953ed0e1d4dc3421c7eb758d30e6cf15b789a5274c8",
+      "chunk_ids": [
+        "INC85758349#symptom",
+        "INC85758349#resolution",
+        "INC85758349#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:07.982117+00:00"
+    },
+    "INC28317637": {
+      "content_hash": "2ede264752f60d80495fd64a9942c57efd124abd84ececc7c6863680df429099",
+      "chunk_ids": [
+        "INC28317637#symptom",
+        "INC28317637#resolution",
+        "INC28317637#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:08.361756+00:00"
+    },
+    "INC71691040": {
+      "content_hash": "15b559c64b8b7d787c4386cf368b03615b34bcb02c80cb140a1b26f280f2573a",
+      "chunk_ids": [
+        "INC71691040#symptom",
+        "INC71691040#resolution",
+        "INC71691040#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:08.820091+00:00"
+    },
+    "INC38285503": {
+      "content_hash": "e1f125e72e1067df6d0c7c312dbe2e7a034e7faad307306677d3b3335de4d5ce",
+      "chunk_ids": [
+        "INC38285503#symptom",
+        "INC38285503#resolution",
+        "INC38285503#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:09.201416+00:00"
+    },
+    "INC91332642": {
+      "content_hash": "923f2c690d3e9cf9cc2cca858d75dcd72d7a6a9f5998c656276fadb866860456",
+      "chunk_ids": [
+        "INC91332642#symptom",
+        "INC91332642#resolution",
+        "INC91332642#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:09.568074+00:00"
+    },
+    "INC13009833": {
+      "content_hash": "1c52006933bbfcf1a893a59d17f370816179e86612c295e07787e90914e13c63",
+      "chunk_ids": [
+        "INC13009833#symptom",
+        "INC13009833#resolution",
+        "INC13009833#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:10.040487+00:00"
+    },
+    "INC48181396": {
+      "content_hash": "e0d81f58991be6f8caa28920fd0e647ee2418968b84e687c0d6f027cc8c7150c",
+      "chunk_ids": [
+        "INC48181396#symptom",
+        "INC48181396#resolution",
+        "INC48181396#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:10.423487+00:00"
+    },
+    "INC74752529": {
+      "content_hash": "7d9f990f6e680cdbfcbf4634fd81f41c9fafe80cc5b1b4133a2b5d2b76776868",
+      "chunk_ids": [
+        "INC74752529#symptom",
+        "INC74752529#resolution",
+        "INC74752529#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:10.818124+00:00"
+    },
+    "INC31944441": {
+      "content_hash": "b95451bdecfd8efddba9f33c9aaeb11184362879c1185e05ebe1b1d6444f0533",
+      "chunk_ids": [
+        "INC31944441#symptom",
+        "INC31944441#resolution",
+        "INC31944441#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:11.298174+00:00"
+    },
+    "INC71969657": {
+      "content_hash": "e8c21b90ae8695e97bda17847f0c36f3476e8ac868dbbdea6120978fe7f9e10a",
+      "chunk_ids": [
+        "INC71969657#symptom",
+        "INC71969657#resolution",
+        "INC71969657#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:11.675195+00:00"
+    },
+    "INC68371272": {
+      "content_hash": "082717781fe2483e1c2c7409840b25d6bdbc13930557fdc756c73d7018ff0a1e",
+      "chunk_ids": [
+        "INC68371272#symptom",
+        "INC68371272#resolution",
+        "INC68371272#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:12.162161+00:00"
+    },
+    "INC01049999": {
+      "content_hash": "0e05efde07066f73347d2d9e8cdaf541c76fe212199030ee87db130afa9f69cd",
+      "chunk_ids": [
+        "INC01049999#symptom",
+        "INC01049999#resolution",
+        "INC01049999#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:12.535183+00:00"
+    },
+    "INC57503414": {
+      "content_hash": "af9425b000954b37253752fcd7e8dad9796252967bcc734eed095960f6dc95a6",
+      "chunk_ids": [
+        "INC57503414#symptom",
+        "INC57503414#resolution",
+        "INC57503414#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:13.093698+00:00"
+    },
+    "INC88447167": {
+      "content_hash": "c7336d45dfccfa9425e299cb975bcd9343980c19fa13f888ceb6e28d92c3a1e2",
+      "chunk_ids": [
+        "INC88447167#symptom",
+        "INC88447167#resolution",
+        "INC88447167#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:13.611789+00:00"
+    },
+    "INC42462441": {
+      "content_hash": "ccc0e27519e79ad97dc0fda2b7119c1c366b5af7d76f65c847c1122d8ffa4b7b",
+      "chunk_ids": [
+        "INC42462441#symptom",
+        "INC42462441#resolution",
+        "INC42462441#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:14.160063+00:00"
+    },
+    "INC72340307": {
+      "content_hash": "be67715a6a6295de5e2e126b4b905d757451e57075fa61eca3d3417297f0a7f5",
+      "chunk_ids": [
+        "INC72340307#symptom",
+        "INC72340307#resolution",
+        "INC72340307#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:14.576314+00:00"
+    },
+    "INC17105448": {
+      "content_hash": "8af6e7756c6792b1e1ba66178e19f21ea45fe7e92d035cffebe7d5a109b63694",
+      "chunk_ids": [
+        "INC17105448#symptom",
+        "INC17105448#resolution",
+        "INC17105448#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:15.019521+00:00"
+    },
+    "INC30885476": {
+      "content_hash": "ee876b9b6642649ed1b817be76a5815b7bdd19647cd8443d37b54442e76e916a",
+      "chunk_ids": [
+        "INC30885476#symptom",
+        "INC30885476#resolution",
+        "INC30885476#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:15.416178+00:00"
+    },
+    "INC08135295": {
+      "content_hash": "1863b965c6e89929f6ac9cf6f36049c7734ad147d14f23fd712a8fe4ed634992",
+      "chunk_ids": [
+        "INC08135295#symptom",
+        "INC08135295#resolution",
+        "INC08135295#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:15.895260+00:00"
+    },
+    "INC81756179": {
+      "content_hash": "3d73648e1d3d6378055e5d1ebd708e2e0af27b4553b7e7fc302a06acb33866e1",
+      "chunk_ids": [
+        "INC81756179#symptom",
+        "INC81756179#resolution",
+        "INC81756179#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:16.314203+00:00"
+    },
+    "INC73793389": {
+      "content_hash": "c0f772d27bafe39846be4abda1e99977450c7dc9d1fdb7219103acf9fe772536",
+      "chunk_ids": [
+        "INC73793389#symptom",
+        "INC73793389#resolution",
+        "INC73793389#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:16.811736+00:00"
+    },
+    "INC13903144": {
+      "content_hash": "baedcae107315fa75232792af46be3cd54498e586e145f3a244658d5a495276f",
+      "chunk_ids": [
+        "INC13903144#symptom",
+        "INC13903144#resolution",
+        "INC13903144#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:17.266949+00:00"
+    },
+    "INC80388981": {
+      "content_hash": "484f89b204385d768dab93316711f2c22ac4937d0ae258fca8211ee02e0ae49f",
+      "chunk_ids": [
+        "INC80388981#symptom",
+        "INC80388981#resolution",
+        "INC80388981#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:17.678263+00:00"
+    },
+    "INC62820592": {
+      "content_hash": "004819bb7006f6bc64a3e5933b6947a664be0efd1d2479f55db66f1027d8a6bf",
+      "chunk_ids": [
+        "INC62820592#symptom",
+        "INC62820592#resolution",
+        "INC62820592#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:18.132269+00:00"
+    },
+    "INC67491435": {
+      "content_hash": "7cd75fa721880ee654af1f6e84671c870646aa11d3622f5f6c231515d0160cc9",
+      "chunk_ids": [
+        "INC67491435#symptom",
+        "INC67491435#resolution",
+        "INC67491435#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:18.495815+00:00"
+    },
+    "INC97086737": {
+      "content_hash": "54aa10b1ffe6b2add5d2496da7744c244d2dccb5b8062285224911141ed0793f",
+      "chunk_ids": [
+        "INC97086737#symptom",
+        "INC97086737#resolution",
+        "INC97086737#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:19.085315+00:00"
+    },
+    "INC81734598": {
+      "content_hash": "53ecaab2c9d96f1daa5cdf00dc0e6263a6344725ef460b119b59082eecacaad0",
+      "chunk_ids": [
+        "INC81734598#symptom",
+        "INC81734598#resolution",
+        "INC81734598#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:19.493019+00:00"
+    },
+    "INC98657752": {
+      "content_hash": "58d5c6d6252959c91338839d2f48b8baf6b5625e27d24f7d73941643c82c519d",
+      "chunk_ids": [
+        "INC98657752#symptom",
+        "INC98657752#resolution",
+        "INC98657752#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:19.957793+00:00"
+    },
+    "INC71286543": {
+      "content_hash": "a54cef610360a72e5d8102bda37eebbf264b2f11cffb98983f11c70559aae4b0",
+      "chunk_ids": [
+        "INC71286543#symptom",
+        "INC71286543#resolution",
+        "INC71286543#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:20.401504+00:00"
+    },
+    "INC28754377": {
+      "content_hash": "7c03e3026dda0d2fb40a27fa8cd6397c59decec65dd4b97bdefb50fd83ea1783",
+      "chunk_ids": [
+        "INC28754377#symptom",
+        "INC28754377#resolution",
+        "INC28754377#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:20.777707+00:00"
+    },
+    "INC71016525": {
+      "content_hash": "d6e7901e547f0b380417808244291be66f125f9ec4afc5528fe128ec6c8bf717",
+      "chunk_ids": [
+        "INC71016525#symptom",
+        "INC71016525#resolution",
+        "INC71016525#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:21.257692+00:00"
+    },
+    "INC91203377": {
+      "content_hash": "7f535e21569b1d2befceaf22ed1a43a671c669cca889a1bd747de35fc540fff5",
+      "chunk_ids": [
+        "INC91203377#symptom",
+        "INC91203377#resolution",
+        "INC91203377#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:21.715220+00:00"
+    },
+    "INC83370583": {
+      "content_hash": "13b62611851b8cf18020d787d9afa7a3374fe0ee46dcb0b5550da60953761be2",
+      "chunk_ids": [
+        "INC83370583#symptom",
+        "INC83370583#resolution",
+        "INC83370583#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:22.140524+00:00"
+    },
+    "INC35812670": {
+      "content_hash": "e0bf314fd4614dca445d8a9d4fb6f6a9cb6db95727cf794e26927d1a3bdb9e00",
+      "chunk_ids": [
+        "INC35812670#symptom",
+        "INC35812670#resolution",
+        "INC35812670#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:22.584564+00:00"
+    },
+    "INC68159587": {
+      "content_hash": "99f7a35e92efd489b6e07334d7dcd9588ed07290949828107b0a9606ae8d8530",
+      "chunk_ids": [
+        "INC68159587#symptom",
+        "INC68159587#resolution",
+        "INC68159587#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:23.017769+00:00"
+    },
+    "INC96593904": {
+      "content_hash": "3ed3ec5556d695b490489931d6968bbb431ab7ed6e38c107b9d89308e6a2576d",
+      "chunk_ids": [
+        "INC96593904#symptom",
+        "INC96593904#resolution",
+        "INC96593904#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:23.454742+00:00"
+    },
+    "INC83131979": {
+      "content_hash": "4a519ae06babe12a972e7efaca91af68f1648b66c5cc290b60e7fd031f4735bc",
+      "chunk_ids": [
+        "INC83131979#symptom",
+        "INC83131979#resolution",
+        "INC83131979#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:23.824962+00:00"
+    },
+    "INC51220073": {
+      "content_hash": "6292f9678a7a622d15c020e5582931e37ac2de388c2203f0e25e570a793a8f2b",
+      "chunk_ids": [
+        "INC51220073#symptom",
+        "INC51220073#resolution",
+        "INC51220073#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:25.530065+00:00"
+    },
+    "INC70823176": {
+      "content_hash": "363bfe34ae32413969e8a784f15a81e72b614cc7c485c642f8ac2d6b6a733053",
+      "chunk_ids": [
+        "INC70823176#symptom",
+        "INC70823176#resolution",
+        "INC70823176#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:25.937100+00:00"
+    },
+    "INC25556386": {
+      "content_hash": "c8e7b54cd521b7337aaffa3c8a02b84cefac31f6a6b034df5da936ccc62a8f31",
+      "chunk_ids": [
+        "INC25556386#symptom",
+        "INC25556386#resolution",
+        "INC25556386#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:26.707942+00:00"
+    },
+    "INC07270733": {
+      "content_hash": "754456167875a42660cee7d938ed17c321c4a4421aff16247cf6ec2736b94c4d",
+      "chunk_ids": [
+        "INC07270733#symptom",
+        "INC07270733#resolution",
+        "INC07270733#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:27.168028+00:00"
+    },
+    "INC97861742": {
+      "content_hash": "d9807d590864ddf57a143f144affcfed5273349764cb84956f7b1d26e2600c33",
+      "chunk_ids": [
+        "INC97861742#symptom",
+        "INC97861742#resolution",
+        "INC97861742#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:27.604843+00:00"
+    },
+    "INC84214382": {
+      "content_hash": "1d2e3b2d8cb0223a3bc206ebaa1e5bddd5dca424f551dfb191bb3d41abe46f8d",
+      "chunk_ids": [
+        "INC84214382#symptom",
+        "INC84214382#resolution",
+        "INC84214382#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:28.025847+00:00"
+    },
+    "INC16753883": {
+      "content_hash": "4dec13805775c71f4a25d1105fac0219772e3ee18ff19acc28a218d26fb0feb9",
+      "chunk_ids": [
+        "INC16753883#symptom",
+        "INC16753883#resolution",
+        "INC16753883#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:28.521027+00:00"
+    },
+    "INC28427073": {
+      "content_hash": "a78991c4b70b7b29f4a52c27a08a607ced032c80797e571ad97166400f3c10b9",
+      "chunk_ids": [
+        "INC28427073#symptom",
+        "INC28427073#resolution",
+        "INC28427073#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:28.970397+00:00"
+    },
+    "INC19175900": {
+      "content_hash": "5ba607f4c4fe593e139fb05b61acfb4958b3afef534d6a7f3a8681fb6ce31a9c",
+      "chunk_ids": [
+        "INC19175900#symptom",
+        "INC19175900#resolution",
+        "INC19175900#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:29.429401+00:00"
+    },
+    "INC28609087": {
+      "content_hash": "db52d9827d9e917f7c4fdbcc9353f2dd4b360b5c3b60ade427cb8c4806221f1d",
+      "chunk_ids": [
+        "INC28609087#symptom",
+        "INC28609087#resolution",
+        "INC28609087#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:29.839230+00:00"
+    },
+    "INC59476001": {
+      "content_hash": "a05879897d0415d5e9666aeaf2ec3be9c76e089a1f1450928c70c9c3efcb8443",
+      "chunk_ids": [
+        "INC59476001#symptom",
+        "INC59476001#resolution",
+        "INC59476001#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:30.334469+00:00"
+    },
+    "INC47469942": {
+      "content_hash": "f277a4a81066839ce904b80ee807bc8db8f180ee0adac469bd0710f810c3e478",
+      "chunk_ids": [
+        "INC47469942#symptom",
+        "INC47469942#resolution",
+        "INC47469942#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:30.837736+00:00"
+    },
+    "INC89889098": {
+      "content_hash": "00768a59e686cd1ea5d4a15578eaabea7a788b444d8a62e2ae78705300b261ad",
+      "chunk_ids": [
+        "INC89889098#symptom",
+        "INC89889098#resolution",
+        "INC89889098#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:31.298598+00:00"
+    },
+    "INC57403166": {
+      "content_hash": "660714bc4f5f0694b15c53357c89488e967f1f30e88af9e243502ecb849e4a2a",
+      "chunk_ids": [
+        "INC57403166#symptom",
+        "INC57403166#resolution",
+        "INC57403166#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:31.855201+00:00"
+    },
+    "INC61780854": {
+      "content_hash": "f90fa2d20eb1b5ef20a5e2b2780b0135ccad5768ed75cbd9368a79a0711d881d",
+      "chunk_ids": [
+        "INC61780854#symptom",
+        "INC61780854#resolution",
+        "INC61780854#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:32.282553+00:00"
+    },
+    "INC12660194": {
+      "content_hash": "aa7a08c12be470f561fb3bb08d9493423b8258ba0edd6d422bcad2d41d6667ac",
+      "chunk_ids": [
+        "INC12660194#symptom",
+        "INC12660194#resolution",
+        "INC12660194#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:32.811828+00:00"
+    },
+    "INC53843426": {
+      "content_hash": "443e864a38fd58ce7baaaafbb533fec3c820894b72d0031af8dfbaf71ecc6007",
+      "chunk_ids": [
+        "INC53843426#symptom",
+        "INC53843426#resolution",
+        "INC53843426#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:33.199177+00:00"
+    },
+    "INC14282218": {
+      "content_hash": "4cf9de6f8191a36029b15d45ca0a87cd274bfdf7a79f25a0ad1365de88903ae5",
+      "chunk_ids": [
+        "INC14282218#symptom",
+        "INC14282218#resolution",
+        "INC14282218#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:33.729682+00:00"
+    },
+    "INC97854904": {
+      "content_hash": "f5efeb9c695ca1bf4dfd338d5aa7825809d1b6022d3b8fffd03ca47d4a8bfb8b",
+      "chunk_ids": [
+        "INC97854904#symptom",
+        "INC97854904#resolution",
+        "INC97854904#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:34.252027+00:00"
+    },
+    "INC03704481": {
+      "content_hash": "aa85a25e1755bb9d867458d41abdbe633c42a6437033285b8d7e88e3227ed4d2",
+      "chunk_ids": [
+        "INC03704481#symptom",
+        "INC03704481#resolution",
+        "INC03704481#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:34.590417+00:00"
+    },
+    "INC50992979": {
+      "content_hash": "1690d7fce4b2103a8a460846feed0969e19e2d05ac6cb78674c61b96a443e33f",
+      "chunk_ids": [
+        "INC50992979#symptom",
+        "INC50992979#resolution",
+        "INC50992979#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:35.226368+00:00"
+    },
+    "INC94130244": {
+      "content_hash": "210048e6f053d4c00c2f449eb99633e611bbbd185615dde40d4a255ae93de7cd",
+      "chunk_ids": [
+        "INC94130244#symptom",
+        "INC94130244#resolution",
+        "INC94130244#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:35.674070+00:00"
+    },
+    "INC75146293": {
+      "content_hash": "72fb60b8c36f49db0880359e47dbe56ce9b5c3f2080f7d72d1b628e465ed3aae",
+      "chunk_ids": [
+        "INC75146293#symptom",
+        "INC75146293#resolution",
+        "INC75146293#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:36.289432+00:00"
+    },
+    "INC52401521": {
+      "content_hash": "626bcfc4df815f155eef1f9dad3380b5fc0b18e04f7b283bad9017700431c3fc",
+      "chunk_ids": [
+        "INC52401521#symptom",
+        "INC52401521#resolution",
+        "INC52401521#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:36.763390+00:00"
+    },
+    "INC40962024": {
+      "content_hash": "8b3740ef1a64d633a9757fbee46747cc6ba6ad2a70648cd8fc49256ba04c64c6",
+      "chunk_ids": [
+        "INC40962024#symptom",
+        "INC40962024#resolution",
+        "INC40962024#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:37.216075+00:00"
+    },
+    "INC75283645": {
+      "content_hash": "7677839f392520700f535f65ce76ce5763541fd89a07bbdff314c9d881861a82",
+      "chunk_ids": [
+        "INC75283645#symptom",
+        "INC75283645#resolution",
+        "INC75283645#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:37.702108+00:00"
+    },
+    "INC48024342": {
+      "content_hash": "6b69eca507416d81613372a1ecea818f5fb770aaf5251db3c26b2feef5ad152d",
+      "chunk_ids": [
+        "INC48024342#symptom",
+        "INC48024342#resolution",
+        "INC48024342#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:38.210175+00:00"
+    },
+    "INC55177213": {
+      "content_hash": "84ed2daaafd0dea75add9712d73ce3a92945a9e4d97e895792e9147952f2f521",
+      "chunk_ids": [
+        "INC55177213#symptom",
+        "INC55177213#resolution",
+        "INC55177213#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:38.648347+00:00"
+    },
+    "INC90377459": {
+      "content_hash": "37f7d59c11af0025505a9baf0585d6051b3fffaaa53b5b77dbd7a3d77078aabb",
+      "chunk_ids": [
+        "INC90377459#symptom",
+        "INC90377459#resolution",
+        "INC90377459#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:39.332359+00:00"
+    },
+    "INC58800797": {
+      "content_hash": "17625014e87246df2d161fd300f085a64a78d20a4ee7412fe48a7222f73c433a",
+      "chunk_ids": [
+        "INC58800797#symptom",
+        "INC58800797#resolution",
+        "INC58800797#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:39.761278+00:00"
+    },
+    "INC14972279": {
+      "content_hash": "6b17cb4d136aa88d1e4e18f531d0398a7d533382fffacd0e5a3ef638c4850598",
+      "chunk_ids": [
+        "INC14972279#symptom",
+        "INC14972279#resolution",
+        "INC14972279#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:40.167922+00:00"
+    },
+    "INC95690391": {
+      "content_hash": "c2058c77be398bd68b36ad2a759da971cb04500df2e55342fb570fdf66052da4",
+      "chunk_ids": [
+        "INC95690391#symptom",
+        "INC95690391#resolution",
+        "INC95690391#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:40.726840+00:00"
+    },
+    "INC97739173": {
+      "content_hash": "6cbd3a5168ef0331c128b62801d40bbac375871fdfc46c1133fd43e7a96a1c7b",
+      "chunk_ids": [
+        "INC97739173#symptom",
+        "INC97739173#resolution",
+        "INC97739173#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:41.193249+00:00"
+    },
+    "INC49684848": {
+      "content_hash": "4ad76173b05f0c71957cc76673153d77c5aa1d55fc7171aa6e118899ace989d1",
+      "chunk_ids": [
+        "INC49684848#symptom",
+        "INC49684848#resolution",
+        "INC49684848#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:41.609432+00:00"
+    },
+    "INC97942942": {
+      "content_hash": "12378f200aa951c86a89e2f5b59ef19be87b45cbf35f0f0cb53beb9f3a12752d",
+      "chunk_ids": [
+        "INC97942942#symptom",
+        "INC97942942#resolution",
+        "INC97942942#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:42.040129+00:00"
+    },
+    "INC19876811": {
+      "content_hash": "f391ae5a5b901f94a95158c12cde1cdeff7496ae15bea6e04a23aeee28958d1f",
+      "chunk_ids": [
+        "INC19876811#symptom",
+        "INC19876811#resolution",
+        "INC19876811#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:42.481712+00:00"
+    },
+    "INC12388090": {
+      "content_hash": "d8292bad445bdd6fa6eb1519bbf8c2f408154f1e53cc633f6eb4f854d54c9d18",
+      "chunk_ids": [
+        "INC12388090#symptom",
+        "INC12388090#resolution",
+        "INC12388090#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:42.954512+00:00"
+    },
+    "INC15480907": {
+      "content_hash": "cb6f7cd920f3ab2cb76e84729501579e9b698cd40cdeaf2a2e45e5cdf3fb4f39",
+      "chunk_ids": [
+        "INC15480907#symptom",
+        "INC15480907#resolution",
+        "INC15480907#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:43.354053+00:00"
+    },
+    "INC07869910": {
+      "content_hash": "4cd23f7e667e0a6028c0f25a764ba01bbf8d65806bae5c159a981e3386a2452d",
+      "chunk_ids": [
+        "INC07869910#symptom",
+        "INC07869910#resolution",
+        "INC07869910#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:43.777873+00:00"
+    },
+    "INC46843172": {
+      "content_hash": "90ffa5494acd846178dfde0c29084a05aef10256974f89ab432d3c56e8239edf",
+      "chunk_ids": [
+        "INC46843172#symptom",
+        "INC46843172#resolution",
+        "INC46843172#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:44.146936+00:00"
+    },
+    "INC90625494": {
+      "content_hash": "fd7380bbc721344f3960c4b8e4bf36dabd84b7aae82ed84742eb2fbb7dce77cb",
+      "chunk_ids": [
+        "INC90625494#symptom",
+        "INC90625494#resolution",
+        "INC90625494#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:44.540329+00:00"
+    },
+    "INC37816686": {
+      "content_hash": "285bb76784edd74015cbc46f2666398ab48c3cb1b3a73fe61778ff80baba346d",
+      "chunk_ids": [
+        "INC37816686#symptom",
+        "INC37816686#resolution",
+        "INC37816686#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:44.943219+00:00"
+    },
+    "INC54038913": {
+      "content_hash": "3bf88061dc2f835c4cd20ff66cc9277f254cc35071e2b6ff92680e331dfdad3d",
+      "chunk_ids": [
+        "INC54038913#symptom",
+        "INC54038913#resolution",
+        "INC54038913#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:45.368711+00:00"
+    },
+    "INC09736572": {
+      "content_hash": "683437313dfc2f588c84065c0a67592ff31eabd2dc7169e97b1639bdbf5b748b",
+      "chunk_ids": [
+        "INC09736572#symptom",
+        "INC09736572#resolution",
+        "INC09736572#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:45.733124+00:00"
+    },
+    "INC31244663": {
+      "content_hash": "197c7f6ba57f3021072081f5c67f4261a0114e8d02ab1daaa4cd2481f31cec71",
+      "chunk_ids": [
+        "INC31244663#symptom",
+        "INC31244663#resolution",
+        "INC31244663#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:46.082877+00:00"
+    },
+    "INC31774346": {
+      "content_hash": "5942d06fa89ac7a11c9b8e1186c58f55ab8f2fafef63764f92ca8405f5fff463",
+      "chunk_ids": [
+        "INC31774346#symptom",
+        "INC31774346#resolution",
+        "INC31774346#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:46.512563+00:00"
+    },
+    "INC87775215": {
+      "content_hash": "e73da48ca482526261f5d7ee0635a6d5c050ab1e88b094b51408283f95602b5c",
+      "chunk_ids": [
+        "INC87775215#symptom",
+        "INC87775215#resolution",
+        "INC87775215#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:46.992409+00:00"
+    },
+    "INC37295260": {
+      "content_hash": "91bdf592f0b0abb799080d7005b47e836bf38186f3de21769939fe77c326b9ad",
+      "chunk_ids": [
+        "INC37295260#symptom",
+        "INC37295260#resolution",
+        "INC37295260#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:47.436405+00:00"
+    },
+    "INC21367172": {
+      "content_hash": "54dda2dc8ed10701631fceec4744beb8cd76dbff70948799ac2bad3a9532ef35",
+      "chunk_ids": [
+        "INC21367172#symptom",
+        "INC21367172#resolution",
+        "INC21367172#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:48.112906+00:00"
+    },
+    "INC48537831": {
+      "content_hash": "d76c7950f3ce52322807d964d76fe3309a988b5318117069b98af7e504ac204e",
+      "chunk_ids": [
+        "INC48537831#symptom",
+        "INC48537831#resolution",
+        "INC48537831#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:48.497736+00:00"
+    },
+    "INC96733645": {
+      "content_hash": "32a092b80097bcfa76d28547895fe80994d04d362b6033fa6422a7786bfc9c26",
+      "chunk_ids": [
+        "INC96733645#symptom",
+        "INC96733645#resolution",
+        "INC96733645#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:48.962419+00:00"
+    },
+    "INC53481198": {
+      "content_hash": "c2477091fd5fa4f79cc9350ef24a28860e5770084979254f3d26e081e924b237",
+      "chunk_ids": [
+        "INC53481198#symptom",
+        "INC53481198#resolution",
+        "INC53481198#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:49.602710+00:00"
+    },
+    "INC32329237": {
+      "content_hash": "02c69522c9e8fb77afa765ce7f510b12131ce15e09e3befc2aad32a788581640",
+      "chunk_ids": [
+        "INC32329237#symptom",
+        "INC32329237#resolution",
+        "INC32329237#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:50.031496+00:00"
+    },
+    "INC01297845": {
+      "content_hash": "85ad6791755cd9f277192d3ecc3dc119d92a4a0008fe55b65f78a9bd640f7785",
+      "chunk_ids": [
+        "INC01297845#symptom",
+        "INC01297845#resolution",
+        "INC01297845#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:50.479889+00:00"
+    },
+    "INC00965138": {
+      "content_hash": "8432f69b8aab2c0b7ddfe3f461be81af18612c004c0af48eb162fd209e7f0776",
+      "chunk_ids": [
+        "INC00965138#symptom",
+        "INC00965138#resolution",
+        "INC00965138#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:50.908247+00:00"
+    },
+    "INC00076758": {
+      "content_hash": "fe1434a4655271f19469f18a90414a19e5a655ba425deeee279813c35c24d238",
+      "chunk_ids": [
+        "INC00076758#symptom",
+        "INC00076758#resolution",
+        "INC00076758#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:51.327798+00:00"
+    },
+    "INC57684996": {
+      "content_hash": "f3b56d712dde64ebf2e56d58b171ba5dc801bbc51e64ac263d058f1e2da5a02c",
+      "chunk_ids": [
+        "INC57684996#symptom",
+        "INC57684996#resolution",
+        "INC57684996#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:51.882260+00:00"
+    },
+    "INC91497616": {
+      "content_hash": "b8e4f19b55bd9d0ee431efe30a26bbbe21b1670d96ff3a7f62f7d1a060665c36",
+      "chunk_ids": [
+        "INC91497616#symptom",
+        "INC91497616#resolution",
+        "INC91497616#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:52.388845+00:00"
+    },
+    "INC20514014": {
+      "content_hash": "15247fc25b7d2dc03bd84411c3de68468d5a2f87b025b60ee1dc1737bf7bca36",
+      "chunk_ids": [
+        "INC20514014#symptom",
+        "INC20514014#resolution",
+        "INC20514014#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:52.925638+00:00"
+    },
+    "INC29476249": {
+      "content_hash": "efbd738df3c8871bd33fcc628ef27ff0faa37aa73330a9721dc6c263c3825cf8",
+      "chunk_ids": [
+        "INC29476249#symptom",
+        "INC29476249#resolution",
+        "INC29476249#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:53.406657+00:00"
+    },
+    "INC89949389": {
+      "content_hash": "c132c80e31c37f36b41307e72f66b6c06a7a56dff21e88f8729e0140968f36ac",
+      "chunk_ids": [
+        "INC89949389#symptom",
+        "INC89949389#resolution",
+        "INC89949389#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:53.863683+00:00"
+    },
+    "INC20776478": {
+      "content_hash": "fdfba7243ab115c99ad42f71af45b766c227f1c82acb1859667c8156b4d15d4f",
+      "chunk_ids": [
+        "INC20776478#symptom",
+        "INC20776478#resolution",
+        "INC20776478#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:54.307354+00:00"
+    },
+    "INC88550256": {
+      "content_hash": "01a4be2c953d5a195845361adc6245ab08c845c96062426ce8f96e42008721dd",
+      "chunk_ids": [
+        "INC88550256#symptom",
+        "INC88550256#resolution",
+        "INC88550256#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:54.740522+00:00"
+    },
+    "INC56775103": {
+      "content_hash": "63c51f5184cbedf0ffe79ae65cd57ba0073766d9e0307090b82c5ca3babfba2b",
+      "chunk_ids": [
+        "INC56775103#symptom",
+        "INC56775103#resolution",
+        "INC56775103#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:55.149515+00:00"
+    },
+    "INC36553958": {
+      "content_hash": "f13d069c7d96a8d1a49d54ce988d2bbf512861f8784da70e164fa3f1a7a2a2b2",
+      "chunk_ids": [
+        "INC36553958#symptom",
+        "INC36553958#resolution",
+        "INC36553958#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:55.531226+00:00"
+    },
+    "INC91887369": {
+      "content_hash": "0b29af77129280984031e8396b0dd3d2f044733573eeb716c9ece3ab465cf2ac",
+      "chunk_ids": [
+        "INC91887369#symptom",
+        "INC91887369#resolution",
+        "INC91887369#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:56.079966+00:00"
+    },
+    "INC01250299": {
+      "content_hash": "4bef563a69a9ab8be63ed225bd39c451d7c8ac5cdc7367b0825f30c38f17d3d8",
+      "chunk_ids": [
+        "INC01250299#symptom",
+        "INC01250299#resolution",
+        "INC01250299#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:56.517371+00:00"
+    },
+    "INC12201654": {
+      "content_hash": "682b98a69d1d07cfb45566ca46e08c1e42d6810c4af3565494bf8fdea9c2cc23",
+      "chunk_ids": [
+        "INC12201654#symptom",
+        "INC12201654#resolution",
+        "INC12201654#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:57.301421+00:00"
+    },
+    "INC71979055": {
+      "content_hash": "6682a7d2dbb2c29e293a2dfaaf18ac41700ab828e8eb3fd0e268802c44f1fd14",
+      "chunk_ids": [
+        "INC71979055#symptom",
+        "INC71979055#resolution",
+        "INC71979055#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:57.760218+00:00"
+    },
+    "INC33046464": {
+      "content_hash": "886877093b952171c45074829756287308fe67c11e6f03fbfb9d792b42527157",
+      "chunk_ids": [
+        "INC33046464#symptom",
+        "INC33046464#resolution",
+        "INC33046464#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:58.217884+00:00"
+    },
+    "INC86637649": {
+      "content_hash": "fb9c0f10313892a21fda3968b82d21d90fbe7c9490392401a325dc92cd5a8608",
+      "chunk_ids": [
+        "INC86637649#symptom",
+        "INC86637649#resolution",
+        "INC86637649#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:58.692572+00:00"
+    },
+    "INC04308421": {
+      "content_hash": "88aa93870d5c60100194f0ad9ee4b453e3eb82f2499752c239bfa4310b32f92d",
+      "chunk_ids": [
+        "INC04308421#symptom",
+        "INC04308421#resolution",
+        "INC04308421#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:59.099087+00:00"
+    },
+    "INC06323852": {
+      "content_hash": "57e0c1eb4c6b2f40e57f3686bbb9a8a3c0f4242b873f4c6c8b81e00908f432b8",
+      "chunk_ids": [
+        "INC06323852#symptom",
+        "INC06323852#resolution",
+        "INC06323852#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:59.512471+00:00"
+    },
+    "INC60597444": {
+      "content_hash": "3fcfca1a4d909e14bd1ca592248ee1954061daa8831879b22f2b52b14b3ff329",
+      "chunk_ids": [
+        "INC60597444#symptom",
+        "INC60597444#resolution",
+        "INC60597444#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:46:59.898604+00:00"
+    },
+    "INC41273847": {
+      "content_hash": "d30519808bd61b6038c36ee77e4aaa414fb5ebe202e64467af3265fb92e4c656",
+      "chunk_ids": [
+        "INC41273847#symptom",
+        "INC41273847#resolution",
+        "INC41273847#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:00.338646+00:00"
+    },
+    "INC35496015": {
+      "content_hash": "096117623fea2e76ad6080c86c8893cb97355846bdc7e8ad8c877cf7d5cc7f34",
+      "chunk_ids": [
+        "INC35496015#symptom",
+        "INC35496015#resolution",
+        "INC35496015#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:00.803003+00:00"
+    },
+    "INC24941004": {
+      "content_hash": "40a7d3c158c86e7d0b895f2d87b67c5fa944f6b59eed570c54a864b3c548377a",
+      "chunk_ids": [
+        "INC24941004#symptom",
+        "INC24941004#resolution",
+        "INC24941004#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:01.254922+00:00"
+    },
+    "INC22969840": {
+      "content_hash": "f001531f787fd7083b4812d2ff83ac1f3ed049edbe83bb01ecc53fb5a529b447",
+      "chunk_ids": [
+        "INC22969840#symptom",
+        "INC22969840#resolution",
+        "INC22969840#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:01.659689+00:00"
+    },
+    "INC61070189": {
+      "content_hash": "593eb56a20ec50536f892af8d3855dc0a5c28e40d27531c7ee3cef93d772fad8",
+      "chunk_ids": [
+        "INC61070189#symptom",
+        "INC61070189#resolution",
+        "INC61070189#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:02.052484+00:00"
+    },
+    "INC65569635": {
+      "content_hash": "2417a9906aa8ae5c3b1728fad9f34c02e4c5673b46735eb47c300e9aa1342f3c",
+      "chunk_ids": [
+        "INC65569635#symptom",
+        "INC65569635#resolution",
+        "INC65569635#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:02.558358+00:00"
+    },
+    "INC60897765": {
+      "content_hash": "b596e6200fe748441759a7daa96e1cede19f7e9e6c4b8283f56894a9517e2885",
+      "chunk_ids": [
+        "INC60897765#symptom",
+        "INC60897765#resolution",
+        "INC60897765#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:03.017615+00:00"
+    },
+    "INC09317495": {
+      "content_hash": "65fff780495f244c4647104770f33b9ed289bd7f3766be4578a9bc2214e26e1b",
+      "chunk_ids": [
+        "INC09317495#symptom",
+        "INC09317495#resolution",
+        "INC09317495#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:03.428890+00:00"
+    },
+    "INC74093639": {
+      "content_hash": "ef5e097ab86beb7ff3c2e827e748b29017ec633e4c8f1fa87adcd3370dc532c7",
+      "chunk_ids": [
+        "INC74093639#symptom",
+        "INC74093639#resolution",
+        "INC74093639#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:03.877131+00:00"
+    },
+    "INC53606628": {
+      "content_hash": "a7be9ccfe49bfcf7a22557c28bff8bfca2cca2f69f96215c8b633788d548bccf",
+      "chunk_ids": [
+        "INC53606628#symptom",
+        "INC53606628#resolution",
+        "INC53606628#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:04.222487+00:00"
+    },
+    "INC53121477": {
+      "content_hash": "91d10e2feb347c8b8a94d90156ebdab931c9fbe45c73e743c99774f1b129f6b2",
+      "chunk_ids": [
+        "INC53121477#symptom",
+        "INC53121477#resolution",
+        "INC53121477#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:04.750919+00:00"
+    },
+    "INC96316277": {
+      "content_hash": "4a7fcd5e117883fff0012d6c7764ffc1b0076f23eb0bd4c94d6bb9b86532e307",
+      "chunk_ids": [
+        "INC96316277#symptom",
+        "INC96316277#resolution",
+        "INC96316277#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:05.149624+00:00"
+    },
+    "INC88753260": {
+      "content_hash": "c6e3c322cd67c3d0d13a739d3221a391f36d34a1d504a36afc4c54477637edb4",
+      "chunk_ids": [
+        "INC88753260#symptom",
+        "INC88753260#resolution",
+        "INC88753260#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:05.567443+00:00"
+    },
+    "INC44058573": {
+      "content_hash": "b36d0f32761027547c13c9b918933c7c47a2be610495016b6c674e61921f92fd",
+      "chunk_ids": [
+        "INC44058573#symptom",
+        "INC44058573#resolution",
+        "INC44058573#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:05.944549+00:00"
+    },
+    "INC35503389": {
+      "content_hash": "4dab9112442deeef9d6d9058fcab369843e4c3318834860d0aea2363c41f3271",
+      "chunk_ids": [
+        "INC35503389#symptom",
+        "INC35503389#resolution",
+        "INC35503389#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:06.314022+00:00"
+    },
+    "INC41373735": {
+      "content_hash": "b19eab0366e7a01b0c027a252a92ae44b147338a6ee079b1aaa763c2f379b63c",
+      "chunk_ids": [
+        "INC41373735#symptom",
+        "INC41373735#resolution",
+        "INC41373735#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:06.720687+00:00"
+    },
+    "INC84374605": {
+      "content_hash": "3a113d304da92675e696e6d4bccb2f704acf14da926bdf352c538cd0ed36876e",
+      "chunk_ids": [
+        "INC84374605#symptom",
+        "INC84374605#resolution",
+        "INC84374605#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:07.189905+00:00"
+    },
+    "INC65181648": {
+      "content_hash": "4f9b48a4571e22bf0aaea1336d7f678a1eaa39877716c460616af5d64326356a",
+      "chunk_ids": [
+        "INC65181648#symptom",
+        "INC65181648#resolution",
+        "INC65181648#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:07.595354+00:00"
+    },
+    "INC42169044": {
+      "content_hash": "acc214b259deb614aa4fcd7acc729c869017c78f51f8b2a388969cada31277b1",
+      "chunk_ids": [
+        "INC42169044#symptom",
+        "INC42169044#resolution",
+        "INC42169044#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:08.036730+00:00"
+    },
+    "INC72394227": {
+      "content_hash": "c40a35f63709df4271717a8a4f341ff56b18b9a5d5597f2902244b66dfb38a2c",
+      "chunk_ids": [
+        "INC72394227#symptom",
+        "INC72394227#resolution",
+        "INC72394227#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:08.440411+00:00"
+    },
+    "INC74593961": {
+      "content_hash": "0314d587aecc14b889aeb6f179ed4e5bba4000e1c639f94c33039f77ef070083",
+      "chunk_ids": [
+        "INC74593961#symptom",
+        "INC74593961#resolution",
+        "INC74593961#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:08.939343+00:00"
+    },
+    "INC06150444": {
+      "content_hash": "f4889bac364854c8695496af9d6ad9eb8325a27a523bfd3b21daa30e655c1e47",
+      "chunk_ids": [
+        "INC06150444#symptom",
+        "INC06150444#resolution",
+        "INC06150444#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:09.481639+00:00"
+    },
+    "INC83926371": {
+      "content_hash": "dd3aae9a4a6378e87ccb9f15fbe8a90dde0500075a5597273996e323e76b4b49",
+      "chunk_ids": [
+        "INC83926371#symptom",
+        "INC83926371#resolution",
+        "INC83926371#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:09.911924+00:00"
+    },
+    "INC81178885": {
+      "content_hash": "3b13eb9d7a15dd5097e95d44ce5d55f71e959956305a2406125797839c580d1e",
+      "chunk_ids": [
+        "INC81178885#symptom",
+        "INC81178885#resolution",
+        "INC81178885#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:10.284506+00:00"
+    },
+    "INC09832887": {
+      "content_hash": "84a9b13f0b620bcdb7350d181465483e96eb5cc210e465ab5a19c571d1b6bd02",
+      "chunk_ids": [
+        "INC09832887#symptom",
+        "INC09832887#resolution",
+        "INC09832887#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:11.051159+00:00"
+    },
+    "INC56267415": {
+      "content_hash": "83f8d3f8df173f7160464cf90eedf1f3b26e778e3d00ef2232596421345ed1cf",
+      "chunk_ids": [
+        "INC56267415#symptom",
+        "INC56267415#resolution",
+        "INC56267415#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:11.469912+00:00"
+    },
+    "INC07507864": {
+      "content_hash": "c6ac6b5468204712546e9805c12793a274992b6babd6797891f284ffcb3a95e8",
+      "chunk_ids": [
+        "INC07507864#symptom",
+        "INC07507864#resolution",
+        "INC07507864#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:11.836985+00:00"
+    },
+    "INC15015458": {
+      "content_hash": "8103bf897757ad006b41545cff1f3ec92dbfb307427bae1624c485693c789a48",
+      "chunk_ids": [
+        "INC15015458#symptom",
+        "INC15015458#resolution",
+        "INC15015458#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:12.248439+00:00"
+    },
+    "INC50806024": {
+      "content_hash": "9f19fd6da170f6334b78e65bcf47c09c7e405f081661005ee7e29de28653db02",
+      "chunk_ids": [
+        "INC50806024#symptom",
+        "INC50806024#resolution",
+        "INC50806024#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:12.684829+00:00"
+    },
+    "INC51642594": {
+      "content_hash": "a984805a729ad02876c7827da75760c9e3db8850d2c80f77bced1f41e8ba6e29",
+      "chunk_ids": [
+        "INC51642594#symptom",
+        "INC51642594#resolution",
+        "INC51642594#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:13.136442+00:00"
+    },
+    "INC37308985": {
+      "content_hash": "9c60ab09267fd0884dc5d3880f142cc5d5dc90c7c70bb3da18f3eb051634c670",
+      "chunk_ids": [
+        "INC37308985#symptom",
+        "INC37308985#resolution",
+        "INC37308985#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:13.560155+00:00"
+    },
+    "INC01980765": {
+      "content_hash": "0f242388c41fea47ab168659a0ef3d38dd21046b6dbbc9cf217cd5b83c0b5bdf",
+      "chunk_ids": [
+        "INC01980765#symptom",
+        "INC01980765#resolution",
+        "INC01980765#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:13.940275+00:00"
+    },
+    "INC48718453": {
+      "content_hash": "25cd91d857427b6bf4df0732e0d4a1a899b5887b31a25b4ce95553b90f69f06d",
+      "chunk_ids": [
+        "INC48718453#symptom",
+        "INC48718453#resolution",
+        "INC48718453#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:14.337388+00:00"
+    },
+    "INC79864260": {
+      "content_hash": "54a755547c01e1facc02f5aadd60b24b02423005b4e77e6e3c6ba2cb7de3739e",
+      "chunk_ids": [
+        "INC79864260#symptom",
+        "INC79864260#resolution",
+        "INC79864260#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:14.725466+00:00"
+    },
+    "INC08593410": {
+      "content_hash": "18a7f2e53d78d0e43c6a67488b9c8d7e1bf96b4028f3dd9496670945189487af",
+      "chunk_ids": [
+        "INC08593410#symptom",
+        "INC08593410#resolution",
+        "INC08593410#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:15.202541+00:00"
+    },
+    "INC02614124": {
+      "content_hash": "6004346973a8e55c7b6c776a3934d2cff04ea4d2af45466fa28b8ee69cdb27d4",
+      "chunk_ids": [
+        "INC02614124#symptom",
+        "INC02614124#resolution",
+        "INC02614124#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:15.591204+00:00"
+    },
+    "INC39392920": {
+      "content_hash": "2bc22ad9c74352a4d57a22b06f42c3a514e7d679d1491e71f266a8810b8fcb22",
+      "chunk_ids": [
+        "INC39392920#symptom",
+        "INC39392920#resolution",
+        "INC39392920#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:15.985548+00:00"
+    },
+    "INC25529407": {
+      "content_hash": "a0f3a2d686f76c9e9199d268290c395845e887d2e355a0fc548a323d6ba35209",
+      "chunk_ids": [
+        "INC25529407#symptom",
+        "INC25529407#resolution",
+        "INC25529407#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:16.475839+00:00"
+    },
+    "INC21130263": {
+      "content_hash": "fdf41101daecf96873c2707eef404875fd9e7605cc50714ebc81eb811e79c171",
+      "chunk_ids": [
+        "INC21130263#symptom",
+        "INC21130263#resolution",
+        "INC21130263#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:16.881758+00:00"
+    },
+    "INC71498611": {
+      "content_hash": "b3bff79e4d0b6d0443e2c0207e29722b5d9420f4225b4a226289b9b5cde1a74f",
+      "chunk_ids": [
+        "INC71498611#symptom",
+        "INC71498611#resolution",
+        "INC71498611#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:17.275457+00:00"
+    },
+    "INC83016315": {
+      "content_hash": "d355ead131987f5e964ffa9f48c3ce3db4470f4b2c982a66b6a9034151ee2228",
+      "chunk_ids": [
+        "INC83016315#symptom",
+        "INC83016315#resolution",
+        "INC83016315#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:17.619655+00:00"
+    },
+    "INC30587988": {
+      "content_hash": "c901cd31e901ff28482185112d68c5c8602ad8a0be2dd29480275c164f50f188",
+      "chunk_ids": [
+        "INC30587988#symptom",
+        "INC30587988#resolution",
+        "INC30587988#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:17.979040+00:00"
+    },
+    "INC21429110": {
+      "content_hash": "3cc32581fc327371b3f2bba971c1dee22d050c31e8266536914e54be9a1f85cb",
+      "chunk_ids": [
+        "INC21429110#symptom",
+        "INC21429110#resolution",
+        "INC21429110#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:18.349531+00:00"
+    },
+    "INC15374874": {
+      "content_hash": "3efc3dbc76264179030e59e31b3cc62d73f46c7dfa7acb258bb61d1d5a3297be",
+      "chunk_ids": [
+        "INC15374874#symptom",
+        "INC15374874#resolution",
+        "INC15374874#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:18.709863+00:00"
+    },
+    "INC35833156": {
+      "content_hash": "7a68bcc726ff89818d0522b680bdefa3a584f810f24d46fdddc0c5a92544b8ac",
+      "chunk_ids": [
+        "INC35833156#symptom",
+        "INC35833156#resolution",
+        "INC35833156#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:19.334903+00:00"
+    },
+    "INC09289546": {
+      "content_hash": "018ffdcfd886def51c7ff8cda9d6493b97fe9fac699e504eccb7914a9f8cbfa5",
+      "chunk_ids": [
+        "INC09289546#symptom",
+        "INC09289546#resolution",
+        "INC09289546#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:19.651330+00:00"
+    },
+    "INC26998038": {
+      "content_hash": "7f52a0423b336ba12799c93b63181b32a8405e9d7e1114a01348172ed250d00f",
+      "chunk_ids": [
+        "INC26998038#symptom",
+        "INC26998038#resolution",
+        "INC26998038#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:20.085346+00:00"
+    },
+    "INC37463522": {
+      "content_hash": "f86971a0e10a11af8a98ab51db06a1f2b42ade8536ed96fdb592d2d2324c95c1",
+      "chunk_ids": [
+        "INC37463522#symptom",
+        "INC37463522#resolution",
+        "INC37463522#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:20.497883+00:00"
+    },
+    "INC71182864": {
+      "content_hash": "840d86b9e3428854c15c8109a401e027a42aeafbfdc2392668d487b5d39adb62",
+      "chunk_ids": [
+        "INC71182864#symptom",
+        "INC71182864#resolution",
+        "INC71182864#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:20.935495+00:00"
+    },
+    "INC76149359": {
+      "content_hash": "90b1bc4e0ae8789ddb14e44411758a5f9b35f2fb257951c1dc99fa83cab37621",
+      "chunk_ids": [
+        "INC76149359#symptom",
+        "INC76149359#resolution",
+        "INC76149359#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:21.369618+00:00"
+    },
+    "INC08181586": {
+      "content_hash": "5e6c4708fde96c42f2e7505405ffb29b6f7e35787aca77bed51ae8c6ad48c924",
+      "chunk_ids": [
+        "INC08181586#symptom",
+        "INC08181586#resolution",
+        "INC08181586#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:22.586906+00:00"
+    },
+    "INC43524491": {
+      "content_hash": "284eec60d398a390564a152a546eb052c15dfac8b90e60177cf32b609a9078f4",
+      "chunk_ids": [
+        "INC43524491#symptom",
+        "INC43524491#resolution",
+        "INC43524491#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:25.832088+00:00"
+    },
+    "INC20868105": {
+      "content_hash": "45d1020016f97baea17141d5b535e742036404cd76680c5d739cc60bfee06876",
+      "chunk_ids": [
+        "INC20868105#symptom",
+        "INC20868105#resolution",
+        "INC20868105#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:26.295811+00:00"
+    },
+    "INC25714784": {
+      "content_hash": "809c2e0483b735ebf9c43ced697258ab14ee39a35126a3093cbc7f800c9b5acb",
+      "chunk_ids": [
+        "INC25714784#symptom",
+        "INC25714784#resolution",
+        "INC25714784#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:26.880049+00:00"
+    },
+    "INC34999379": {
+      "content_hash": "9e83bc343ce997fcfbedce1a6f9de6472a503fcbe9d075ef3d0166148aea8076",
+      "chunk_ids": [
+        "INC34999379#symptom",
+        "INC34999379#resolution",
+        "INC34999379#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:27.335575+00:00"
+    },
+    "INC50929647": {
+      "content_hash": "f0ec0ae5d6f9125529e055fa22ed0850c6449c334ff1852f701d5d878b1dd832",
+      "chunk_ids": [
+        "INC50929647#symptom",
+        "INC50929647#resolution",
+        "INC50929647#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:27.791016+00:00"
+    },
+    "INC20863865": {
+      "content_hash": "f38de3b1c2dce6a0b885dec6bbcf5135f73f6be5b06f6ee45fd35d3e4be7e39e",
+      "chunk_ids": [
+        "INC20863865#symptom",
+        "INC20863865#resolution",
+        "INC20863865#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:28.201371+00:00"
+    },
+    "INC21687165": {
+      "content_hash": "024e8ed7dc9497df5d11e35585ae6255211cb58e594719a2ec0cd171d3e2957e",
+      "chunk_ids": [
+        "INC21687165#symptom",
+        "INC21687165#resolution",
+        "INC21687165#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:28.743040+00:00"
+    },
+    "INC74045292": {
+      "content_hash": "5f78b645754e0f1d255a4806bbc4449cfa3f309da0f6ac61a1c98922b47d33f0",
+      "chunk_ids": [
+        "INC74045292#symptom",
+        "INC74045292#resolution",
+        "INC74045292#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:29.150317+00:00"
+    },
+    "INC29854548": {
+      "content_hash": "6ba597a616688bd454a6658ed9dd17f492efee776f138a55518a2f0caf43a81a",
+      "chunk_ids": [
+        "INC29854548#symptom",
+        "INC29854548#resolution",
+        "INC29854548#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:29.520547+00:00"
+    },
+    "INC48942697": {
+      "content_hash": "13ea93a085a6fb7a4be8534b3d6b7170c94df1838045819bffbb988262735424",
+      "chunk_ids": [
+        "INC48942697#symptom",
+        "INC48942697#resolution",
+        "INC48942697#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:29.938620+00:00"
+    },
+    "INC09335534": {
+      "content_hash": "ccc53c9f8be2b4935dbc603a6b521b541da21a1c0fc3b856568206627034f43b",
+      "chunk_ids": [
+        "INC09335534#symptom",
+        "INC09335534#resolution",
+        "INC09335534#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:30.353116+00:00"
+    },
+    "INC63440831": {
+      "content_hash": "6b98ff77cb6d51b2436f75d950e782b052ea63619d4969b32559cad5b5cc164c",
+      "chunk_ids": [
+        "INC63440831#symptom",
+        "INC63440831#resolution",
+        "INC63440831#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:30.910620+00:00"
+    },
+    "INC65319931": {
+      "content_hash": "ac7651082e84f2873a2a309671e86ef6560bfed9298cca1cafcf1c9c73edbf70",
+      "chunk_ids": [
+        "INC65319931#symptom",
+        "INC65319931#resolution",
+        "INC65319931#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:31.444012+00:00"
+    },
+    "INC72909480": {
+      "content_hash": "f05ac9d0c7638a0c7e3932c7d7e9e8fc3e03e81c6d5ec9375a5fb2ac588c90f8",
+      "chunk_ids": [
+        "INC72909480#symptom",
+        "INC72909480#resolution",
+        "INC72909480#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:31.875693+00:00"
+    },
+    "INC67898694": {
+      "content_hash": "efc3ca91dce1ae1ea5ee292cfeec1128d1e53698c517063ad7e218c88a8ef7fe",
+      "chunk_ids": [
+        "INC67898694#symptom",
+        "INC67898694#resolution",
+        "INC67898694#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:32.217296+00:00"
+    },
+    "INC09528530": {
+      "content_hash": "8d0a6f17f5f0ca0d9bfc2f5d640ec5c8079f383ba215deddca2aac663ad7c034",
+      "chunk_ids": [
+        "INC09528530#symptom",
+        "INC09528530#resolution",
+        "INC09528530#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:32.648643+00:00"
+    },
+    "INC74437458": {
+      "content_hash": "c5dace2a784ee9e00c2eafa70b92c13eb995c4767fad4a5ef91f717477271725",
+      "chunk_ids": [
+        "INC74437458#symptom",
+        "INC74437458#resolution",
+        "INC74437458#full_narrative"
+      ],
+      "indexed_at": "2026-10-21T18:47:33.042553+00:00"
     }
   },
   "s3_objects": {
-    "s3://daimo-s3-clean/daimo-synthetic-5.json": "\"dd1bf85edbe80071c783e1efb8a9aad5\""
+    "s3://daimo-s3-clean/daimo-synthetic-5.json": "\"dd1bf85edbe80071c783e1efb8a9aad5\"",
+    "s3://daimo-s3-clean/ServiceNow_Synthetic_500.jsonl": "\"07bc31f6f74aa25c4fecd70099cee422\""
   },
-  "updated_at": "2026-10-14T03:56:08.873737+00:00",
-  "chunk_count": 15
+  "updated_at": "2026-10-21T18:47:33.046245+00:00",
+  "chunk_count": 1515
 }

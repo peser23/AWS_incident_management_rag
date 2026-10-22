@@ -1,0 +1,56 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "TitanEmbeddings",
+      "Effect": "Allow",
+      "Action": "bedrock:InvokeModel",
+      "Resource": "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-embed-text-v2:0"
+    },
+    {
+      "Sid": "SynthesisLlm",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:*::foundation-model/amazon.nova-pro-v1:0",
+        "arn:aws:bedrock:us-east-1:285331147756:inference-profile/us.amazon.nova-pro-v1:0"
+      ]
+    },
+    {
+      "Sid": "AossDataPlane",
+      "Effect": "Allow",
+      "Action": "aoss:APIAccessAll",
+      "Resource": "arn:aws:aoss:us-east-1:285331147756:collection/sbcurg5zzjoxvd3g19x3"
+    },
+    {
+      "Sid": "ReadConfig",
+      "Effect": "Allow",
+      "Action": "ssm:GetParametersByPath",
+      "Resource": "arn:aws:ssm:us-east-1:285331147756:parameter/daimo/retrieval/*"
+    },
+    {
+      "Sid": "Logs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:us-east-1:285331147756:log-group:/daimo/retrieval*:*"
+    },
+    {
+      "Sid": "Metrics",
+      "Effect": "Allow",
+      "Action": "cloudwatch:PutMetricData",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "cloudwatch:namespace": "DAIMO/Retrieval"
+        }
+      }
+    }
+  ]
+}

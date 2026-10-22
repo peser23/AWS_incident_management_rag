@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest
+pydantic>=2.7  # tests validate payloads against retrieval/src/daimo_retrieval/schemas.py

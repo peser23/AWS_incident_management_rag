@@ -4,10 +4,15 @@
 Reads redacted ServiceNow incident records (JSON array, single JSON object, or
 JSONL) from the S3 clean bucket (daimo-s3-clean), builds three chunk types per incident
 (symptom / resolution / full_narrative), embeds each chunk with Amazon Titan
-Text Embeddings V2 on Bedrock, and upserts them into a local FAISS index.
+Text Embeddings V2 on Bedrock, and upserts them into the OpenSearch Serverless
+collection (DAIMO_VECTOR_STORE=opensearch, default) or a local FAISS index
+(DAIMO_VECTOR_STORE=faiss).
 
-POC stand-ins (see DAIMO_Implementation_Context.md):
-  * Local FAISS index instead of the OpenSearch domain (not yet provisioned).
+POC notes (see DAIMO_Implementation_Context.md):
+  * The context doc specifies provisioned OpenSearch Service; this uses an
+    OpenSearch Serverless collection instead. Serverless vector collections do
+    not accept custom document IDs, so idempotency is delete-by-incident then
+    bulk insert rather than overwrite-by-_id.
   * Failures go to a local JSONL file, and to DynamoDB when
     DAIMO_FAILURES_TABLE is set.
 
@@ -46,6 +51,7 @@ import shutil
 import sys
 import time
 import uuid
+from urllib.parse import urlparse
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -90,6 +96,10 @@ class Settings:
     clean_bucket: str = _env("DAIMO_CLEAN_BUCKET", "daimo-s3-clean")
     clean_prefix: str = _env("DAIMO_CLEAN_PREFIX", "")
     pii_guard: str = _env("DAIMO_PII_GUARD", "warn").lower()  # warn | block | off
+    vector_store: str = _env("DAIMO_VECTOR_STORE", "opensearch").lower()  # opensearch | faiss
+    opensearch_endpoint: str = _env("DAIMO_OPENSEARCH_ENDPOINT", "")
+    opensearch_index: str = _env("DAIMO_OPENSEARCH_INDEX", "daimo-incidents")
+    opensearch_space_type: str = _env("DAIMO_OPENSEARCH_SPACE_TYPE", "innerproduct")
     index_dir: Path = Path(_env("DAIMO_INDEX_DIR", "/home/ec2-user/daimo/data/index"))
     index_name: str = _env("DAIMO_INDEX_NAME", "incidents")
     failures_file: Path = Path(_env("DAIMO_FAILURES_FILE", "/home/ec2-user/daimo/logs/embed_failures.jsonl"))
@@ -366,10 +376,37 @@ def iter_local_sources(paths: list[Path]) -> Iterator[Source]:
 # --------------------------------------------------------------------------- #
 # FAISS store + manifest
 # --------------------------------------------------------------------------- #
-class IncidentIndex:
-    """FAISS store plus a manifest of incident -> (content hash, chunk ids)."""
+class _ManifestIndex:
+    """Tracks incident -> (content hash, chunk ids) and S3 object ETags between runs."""
 
     MANIFEST = "manifest.json"
+    manifest: dict
+
+    def is_current(self, incident: str, content_hash: str) -> bool:
+        entry = self.manifest["incidents"].get(incident)
+        return bool(entry and entry["content_hash"] == content_hash)
+
+    def source_unchanged(self, source: Source) -> bool:
+        return bool(source.version) and self.manifest["s3_objects"].get(source.name) == source.version
+
+    def mark_source_done(self, source: Source) -> None:
+        if source.version:
+            self.manifest["s3_objects"][source.name] = source.version
+
+    def _record(self, incident: str, content_hash: str, ids: list[str]) -> None:
+        self.manifest["incidents"][incident] = {
+            "content_hash": content_hash,
+            "chunk_ids": ids,
+            "indexed_at": datetime.now(timezone.utc).isoformat(),
+        }
+
+    @property
+    def total(self) -> int:
+        return sum(len(e["chunk_ids"]) for e in self.manifest["incidents"].values())
+
+
+class IncidentIndex(_ManifestIndex):
+    """Local FAISS store (DAIMO_VECTOR_STORE=faiss)."""
 
     def __init__(self, settings: Settings, embeddings: BedrockEmbeddings):
         self.s = settings
@@ -397,16 +434,9 @@ class IncidentIndex:
                              "embedding_dimensions": settings.embed_dimensions,
                              "incidents": {}, "s3_objects": {}}
 
-    def is_current(self, incident: str, content_hash: str) -> bool:
-        entry = self.manifest["incidents"].get(incident)
-        return bool(entry and entry["content_hash"] == content_hash)
-
-    def source_unchanged(self, source: Source) -> bool:
-        return bool(source.version) and self.manifest["s3_objects"].get(source.name) == source.version
-
-    def mark_source_done(self, source: Source) -> None:
-        if source.version:
-            self.manifest["s3_objects"][source.name] = source.version
+    @property
+    def total(self) -> int:
+        return self.store.index.ntotal
 
     def upsert(self, incident: str, content_hash: str, docs: list[Document],
                vectors: list[list[float]]) -> None:
@@ -418,11 +448,7 @@ class IncidentIndex:
         ids = [d.id for d in docs]
         self.store.add_embeddings(text_embeddings=list(zip((d.page_content for d in docs), vectors)),
                                   metadatas=[d.metadata for d in docs], ids=ids)
-        self.manifest["incidents"][incident] = {
-            "content_hash": content_hash,
-            "chunk_ids": ids,
-            "indexed_at": datetime.now(timezone.utc).isoformat(),
-        }
+        self._record(incident, content_hash, ids)
 
     def save(self) -> None:
         """Write to a sibling temp dir, then swap it in so readers never see a half-written index."""
@@ -438,6 +464,120 @@ class IncidentIndex:
             self.dir.rename(old)
         tmp.rename(self.dir)
         shutil.rmtree(old, ignore_errors=True)
+
+
+class OpenSearchIndex(_ManifestIndex):
+    """OpenSearch Serverless vector collection (SigV4, service `aoss`)."""
+
+    _KEYWORDS = ["incident_number", "state", "priority", "category", "subcategory",
+                 "assignment_group", "affected_service", "affected_system_name", "affected_ci",
+                 "location_service_area", "initiative", "configuration_items",
+                 "related_kb_articles", "resolution_code", "technical_cause", "caused_by_change",
+                 "content_hash", "source_file", "embedding_model", "chunk_id", "chunk_type"]
+    _INTEGERS = ["priority_level", "impact_level", "urgency_level", "embedding_dimensions", "window"]
+    _DATES = ["first_note_at", "closed_at"]
+
+    def __init__(self, settings: Settings):
+        from opensearchpy import AWSV4SignerAuth, OpenSearch, RequestsHttpConnection
+
+        if not settings.opensearch_endpoint:
+            raise RuntimeError("DAIMO_OPENSEARCH_ENDPOINT is not set (collection endpoint, "
+                               "https://<id>.<region>.aoss.amazonaws.com)")
+        self.s = settings
+        self.name = settings.opensearch_index
+        self.dir = settings.index_dir
+        host = urlparse(settings.opensearch_endpoint).netloc or settings.opensearch_endpoint
+        auth = AWSV4SignerAuth(boto3.Session().get_credentials(), settings.aws_region, "aoss")
+        self.client = OpenSearch(hosts=[{"host": host, "port": 443}], http_auth=auth, use_ssl=True,
+                                 verify_certs=True, connection_class=RequestsHttpConnection,
+                                 timeout=60, max_retries=5, retry_on_timeout=True)
+
+        manifest_path = self.dir / self.MANIFEST
+        self.manifest = {"embedding_model": settings.embed_model_id,
+                         "embedding_dimensions": settings.embed_dimensions,
+                         "opensearch_index": self.name, "incidents": {}, "s3_objects": {}}
+        if manifest_path.exists():
+            saved = json.loads(manifest_path.read_text())
+            if saved.get("opensearch_index") == self.name:  # ignore a FAISS-era manifest
+                self.manifest = saved
+                self.manifest.setdefault("s3_objects", {})
+        self.created = self._ensure_index()
+        if self.created:  # collection/index was (re)created: the cached manifest is stale
+            self.manifest["incidents"], self.manifest["s3_objects"] = {}, {}
+
+    def _mapping(self) -> dict:
+        props: dict[str, Any] = {
+            "embedding": {"type": "knn_vector", "dimension": self.s.embed_dimensions,
+                          "method": {"name": "hnsw",  # Serverless picks the engine itself
+                                     "space_type": self.s.opensearch_space_type,
+                                     "parameters": {"ef_construction": 128, "m": 16}}},
+            "chunk_text": {"type": "text"},
+            "short_description": {"type": "text"},
+        }
+        props.update({k: {"type": "keyword"} for k in self._KEYWORDS})
+        props.update({k: {"type": "integer"} for k in self._INTEGERS})
+        props.update({k: {"type": "date", "ignore_malformed": True,
+                          "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time"}
+                      for k in self._DATES})
+        return {"settings": {"index.knn": True}, "mappings": {"properties": props}}
+
+    def _ensure_index(self) -> bool:
+        if self.client.indices.exists(index=self.name):
+            dim = (self.client.indices.get_mapping(index=self.name)[self.name]["mappings"]
+                   ["properties"]["embedding"]["dimension"])
+            if dim != self.s.embed_dimensions:
+                raise RuntimeError(f"OpenSearch index {self.name} has dimension {dim}; config is "
+                                   f"{self.s.embed_dimensions}. Use a new DAIMO_OPENSEARCH_INDEX.")
+            return False
+        self.client.indices.create(index=self.name, body=self._mapping())
+        LOG.info("created OpenSearch index %s", self.name)
+        return True
+
+    def _delete_incident(self, incident: str) -> None:
+        from opensearchpy import helpers
+
+        hits = self.client.search(index=self.name, body={
+            "size": 1000, "_source": False, "query": {"term": {"incident_number": incident}}
+        })["hits"]["hits"]
+        if hits:
+            _, errors = helpers.bulk(self.client, [{"_op_type": "delete", "_index": self.name,
+                                                    "_id": h["_id"]} for h in hits],
+                                     raise_on_error=False, stats_only=False)
+            if errors:
+                raise RuntimeError(f"could not delete old chunks for {incident}: "
+                                   f"{json.dumps(errors[:2])[:500]}")
+
+    def upsert(self, incident: str, content_hash: str, docs: list[Document],
+               vectors: list[list[float]]) -> None:
+        from opensearchpy import helpers
+
+        # Serverless vector collections reject custom _ids and _delete_by_query, so replace by
+        # looking up the incident's existing auto-generated ids and bulk-deleting them first.
+        if not self.created:
+            self._delete_incident(incident)
+        actions = [{"_index": self.name,
+                    "_source": {**d.metadata, "chunk_text": d.page_content, "embedding": vec}}
+                   for d, vec in zip(docs, vectors)]
+        _, errors = helpers.bulk(self.client, actions, raise_on_error=False, stats_only=False)
+        if errors:
+            raise RuntimeError(f"bulk index failed for {incident}: {json.dumps(errors[:2])[:800]}")
+        self._record(incident, content_hash, [d.id for d in docs])
+
+    def save(self) -> None:
+        self.dir.mkdir(parents=True, exist_ok=True)
+        self.manifest["updated_at"] = datetime.now(timezone.utc).isoformat()
+        self.manifest["chunk_count"] = self.total
+        tmp = self.dir / f".{self.MANIFEST}.tmp-{os.getpid()}"
+        tmp.write_text(json.dumps(self.manifest, indent=2))
+        tmp.replace(self.dir / self.MANIFEST)
+
+
+def make_index(settings: Settings, embeddings: BedrockEmbeddings) -> _ManifestIndex:
+    if settings.vector_store == "opensearch":
+        return OpenSearchIndex(settings)
+    if settings.vector_store == "faiss":
+        return IncidentIndex(settings, embeddings)
+    raise RuntimeError(f"DAIMO_VECTOR_STORE must be opensearch or faiss, got {settings.vector_store!r}")
 
 
 # --------------------------------------------------------------------------- #
@@ -477,7 +617,12 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
                                               chunk_overlap=settings.narrative_overlap_chars,
                                               separators=["\n", ". ", " ", ""])
     embeddings = make_embeddings(settings)
-    index = None if args.dry_run else IncidentIndex(settings, embeddings)
+    try:
+        index = None if args.dry_run else make_index(settings, embeddings)
+    except Exception as exc:  # noqa: BLE001 - startup failures must also reach the failures sink
+        failures.record(None, "vector_store_init_error", exc, settings.vector_store)
+        LOG.critical("cannot open vector store (%s); aborting run", settings.vector_store)
+        return 2
     dirty = 0
     aborted = False
 
@@ -488,8 +633,9 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
         input_desc = f"s3://{settings.clean_bucket}/{settings.clean_prefix}"
         s3 = boto3.client("s3", region_name=settings.aws_region)
         sources = iter_s3_sources(s3, settings.clean_bucket, settings.clean_prefix)
-    LOG.info("run %s start input=%s index=%s model=%s dim=%d pii_guard=%s dry_run=%s", run_id,
-             input_desc, settings.index_dir, settings.embed_model_id, settings.embed_dimensions,
+    LOG.info("run %s start input=%s store=%s index=%s model=%s dim=%d pii_guard=%s dry_run=%s", run_id,
+             input_desc, settings.vector_store,
+             settings.opensearch_index if settings.vector_store == "opensearch" else settings.index_dir, settings.embed_model_id, settings.embed_dimensions,
              settings.pii_guard, args.dry_run)
 
     try:
@@ -579,7 +725,7 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
         stats.failures = failures.count
         summary = {"event": "run_summary", "run_id": run_id, "aborted": aborted,
                    "duration_seconds": round(time.monotonic() - started, 2),
-                   "index_chunk_total": index.store.index.ntotal if index else None,
+                   "index_chunk_total": index.total if index else None,
                    **{k: (round(v, 2) if isinstance(v, float) else v)
                       for k, v in stats.__dict__.items()}}
         LOG.info("run_summary %s", json.dumps(summary))

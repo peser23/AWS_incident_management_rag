@@ -1,0 +1,70 @@
+{
+  "request_id": "mock-1",
+  "status": "answered",
+  "message": null,
+  "config_version": "mock",
+  "model": {
+    "llm": "amazon.nova-pro-v1:0",
+    "embedding": "amazon.titan-embed-text-v2:0"
+  },
+  "answer": {
+    "summary": "Matches VistA login timeouts after patch windows [INC41220398].",
+    "likely_cause": {
+      "text": "RPC broker listener not restarted after the patch [INC41220398].",
+      "citations": [
+        "INC41220398"
+      ]
+    },
+    "recommended_actions": [
+      {
+        "step": "Restart the RPC broker listener on the affected nodes.",
+        "citations": [
+          "INC41220398"
+        ]
+      }
+    ],
+    "caveats": "Past incidents involved a single site.",
+    "insufficient_evidence": false,
+    "cited_incidents": [
+      "INC41220398"
+    ]
+  },
+  "confidence": {
+    "overall": 0.82,
+    "label": "high",
+    "threshold": 0.55,
+    "passed": 1,
+    "withheld": 4
+  },
+  "citations": [
+    {
+      "incident_number": "INC41220398",
+      "title": "VistA logins timing out at VAMC after patch",
+      "priority": "2 - High",
+      "affected_service": "VistA",
+      "affected_ci": "VistA-RPC-Broker",
+      "category": "Software",
+      "state": "Closed",
+      "resolution_code": "Solved (Permanently)",
+      "closed_at": "2025-11-04 16:05:00",
+      "related_kb_articles": [
+        "KB0010231"
+      ],
+      "snippet": "Users unable to log in; RPC broker connections stale after patch\u2026",
+      "confidence": 0.82,
+      "confidence_label": "high",
+      "match_reason": "semantic+keyword",
+      "matched_chunk_type": "symptom",
+      "cited_in_answer": true,
+      "url": "https://INSTANCE.service-now.com/nav_to.do?uri=incident.do?sysparm_query=number=INC41220398"
+    }
+  ],
+  "metrics": {
+    "latency_ms": {
+      "embed": 140,
+      "retrieve": 310,
+      "synthesize": 2900,
+      "total": 3450
+    }
+  }
+}

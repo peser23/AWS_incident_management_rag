@@ -1,0 +1,26 @@
+{
+  "request_id": "mock-2",
+  "status": "no_match",
+  "answer": null,
+  "config_version": "mock",
+  "model": {
+    "llm": "amazon.nova-pro-v1:0",
+    "embedding": "amazon.titan-embed-text-v2:0"
+  },
+  "message": "No historical incident matched this query with enough confidence (best score 0.31; threshold 0.55).",
+  "confidence": {
+    "overall": 0.31,
+    "label": "low",
+    "threshold": 0.55,
+    "passed": 0,
+    "withheld": 5
+  },
+  "citations": [],
+  "metrics": {
+    "latency_ms": {
+      "embed": 130,
+      "retrieve": 290,
+      "total": 440
+    }
+  }
+}

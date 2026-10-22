@@ -1,0 +1,7 @@
+{
+  "_comment": "Fallback filter values, used only when GET /v1/facets fails. Refresh from the live endpoint when the corpus changes.",
+  "category": ["Affected Service", "Service", "Software"],
+  "affected_service": ["Member Profile", "Member Profile Service"],
+  "assignment_group": ["Benefits Determination", "EHR Platform Support", "Enrollment Services", "Identity Registry", "Member Profile"],
+  "priority_levels": [1, 2, 3, 4, 5]
+}

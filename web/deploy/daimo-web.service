@@ -1,0 +1,31 @@
+[Unit]
+Description=DAIMO Incident management UI (Streamlit)
+After=network-online.target daimo-retrieval.service
+Wants=network-online.target
+
+[Service]
+User=daimo
+Group=daimo
+WorkingDirectory=/opt/daimo-web/app
+# Streamlit writes ~/.streamlit/machine_id_v4; give it a private writable home under /var/lib
+StateDirectory=daimo-web
+StateDirectoryMode=0750
+Environment=HOME=/var/lib/daimo-web
+Environment=XDG_CACHE_HOME=/var/lib/daimo-web/.cache
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=DAIMO_RETRIEVAL_URL=http://127.0.0.1:8000
+Environment=DAIMO_UI_USER=streamlit.operator
+ExecStart=/opt/daimo-web/venv/bin/streamlit run app.py --server.address 127.0.0.1 --server.port 8501 --server.headless true --server.fileWatcherType none --browser.gatherUsageStats false
+Restart=always
+RestartSec=3
+TimeoutStartSec=60
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target
