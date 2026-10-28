@@ -1,0 +1,26 @@
+{
+  "request_id": "req-fixture",
+  "status": "greeting",
+  "answer": null,
+  "message": "Hello! I'm DAIMO, the incident triage assistant. I can help you:\n- find past incidents similar to the one you're working on\n- see likely causes and the actions that resolved them, with citations to the incident records\n- narrow results by priority, category, affected service, assignment group or closed date (sidebar filters)\n\nDescribe the symptom, error message or affected system to get started.",
+  "notice": null,
+  "confidence": null,
+  "citations": [],
+  "model": null,
+  "metrics": {
+    "latency_ms": {
+      "guard": 0,
+      "total": 0
+    },
+    "tokens": null,
+    "est_cost_usd": null
+  },
+  "config_version": "2026-10-27.1",
+  "guard": {
+    "intent": "greeting",
+    "layer": "rule",
+    "reason_code": null,
+    "redacted": []
+  },
+  "debug": null
+}

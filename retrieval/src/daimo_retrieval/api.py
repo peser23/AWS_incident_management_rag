@@ -130,7 +130,11 @@ def triage(req: TriageRequest):
                                                   else "internal_error", stage=stage).model_dump())
     resp = state["response"]
     log.info("triage", request_id=req.request_id, session_id=req.session_id, user=req.user.id if req.user else None,
-             status=resp.status, top_confidence=resp.confidence.overall, passed=resp.confidence.passed,
-             withheld=resp.confidence.withheld, latency_ms=resp.metrics.latency_ms, tokens=resp.metrics.tokens,
+             status=resp.status, top_confidence=resp.confidence.overall if resp.confidence else None,
+             passed=resp.confidence.passed if resp.confidence else None,
+             withheld=resp.confidence.withheld if resp.confidence else None,
+             guard_intent=state.get("guard_intent"), guard_layer=state.get("guard_layer"),
+             guard_reason_code=state.get("guard_reason_code"), output_guard_hits=state.get("output_guard_hits"), redactions=state.get("redactions"),
+             latency_ms=resp.metrics.latency_ms, tokens=resp.metrics.tokens,
              invalid_citations=state.get("invalid_citations", 0), config_version=resp.config_version)
     return resp

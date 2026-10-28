@@ -83,9 +83,15 @@ class Settings(BaseSettings):
     price_table: dict = Field(default_factory=lambda: dict(DEFAULT_PRICE_TABLE))
     facets_ttl_s: int = 600
     facets_max_terms: int = 200
+    guard_enabled: bool = True
+    guard_messages_version: str = "messages_v1"
+    guard_llm_enabled: bool = True
+    guard_model_id: str = "amazon.nova-micro-v1:0"  # settings only, never selectable by callers
+    guard_timeout_s: int = 3
+    output_guard_enabled: bool = True
     allow_debug: bool = False
     log_answer_text: bool = False
-    config_version: str = "2026-10-21.1"
+    config_version: str = "2026-10-27.1"
 
     @field_validator("field_map", "price_table", mode="before")
     @classmethod

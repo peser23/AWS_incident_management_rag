@@ -78,6 +78,49 @@ def test_withheld(fixture_response):
     assert len(at.expander) == 1  # evidence still shown
 
 
+def _guard_response(status, message, **extra):
+    return {"request_id": "g-1", "status": status, "answer": None, "message": message, "notice": None,
+            "confidence": None, "citations": [], "model": None, "metrics": {"latency_ms": {"total": 0}},
+            "config_version": "x", "guard": {"intent": status, "layer": "rule", "reason_code": None, "redacted": []},
+            **extra}
+
+
+def test_greeting_has_no_confidence_or_box(fixture_response):
+    at = _render({"query": "hi", "filters": {}, "response": fixture_response("greeting")})
+    text = _all_text(at)
+    assert "incident triage assistant" in text and "confidence" not in text.lower()
+    assert not (at.info or at.warning or at.error or at.expander)
+
+
+def test_out_of_scope_is_info(fixture_response):
+    at = _render({"query": "joke", "filters": {}, "response": fixture_response("out_of_scope")})
+    assert len(at.info) == 1 and "IT incident triage" in at.info[0].value and "confidence" not in _all_text(at).lower()
+
+
+def test_blocked_is_warning(fixture_response):
+    at = _render({"query": "x", "filters": {}, "response": fixture_response("blocked")})
+    assert len(at.warning) == 1 and "can't process" in at.warning[0].value
+
+
+def test_unknown_future_status_falls_back_to_info():
+    at = _render({"query": "q", "filters": {}, "response": _guard_response("brand_new", "Something new.")})
+    assert len(at.info) == 1 and "Something new" in at.info[0].value
+
+
+def test_redaction_notice_shown_above_answer(fixture_response):
+    at = _render({"query": "q", "filters": {}, "response": fixture_response("answered_redacted")})
+    assert "🔒 Sensitive personal data" in _all_text(at)
+    values = [getattr(e, "value", "") for e in at.chat_message[1].children.values()]  # document order
+    first = next(i for i, v in enumerate(values) if "Sensitive personal data" in v)
+    badge = next(i for i, v in enumerate(values) if "High confidence" in v)
+    assert first < badge
+
+
+def test_notice_text_is_escaped():
+    r = _guard_response("greeting", "hello", notice="[click](https://evil.example)")
+    assert "\\[click\\]" in _all_text(_render({"query": "q", "filters": {}, "response": r}))
+
+
 def test_error_turn():
     at = _render({"query": "x" * 5, "filters": {},
                   "error": {"kind": "busy", "message": "The service is busy.", "request_id": "r-9"}})
@@ -130,11 +173,17 @@ def test_conversation_threads_and_persists(mocked):
     assert mocked[0]["options"] == {"top_k": 5}
 
 
-def test_short_query_not_sent(mocked):
+def test_blank_query_not_sent(mocked):
     at = AppTest.from_file(APP).run()
-    at.chat_input[0].set_value("ab").run()
-    assert mocked == [] and len(at.error) == 1
+    at.chat_input[0].set_value("   ").run()
+    assert mocked == [] and len(at.error) == 1 and "enter a message" in at.error[0].value
     assert at.session_state.turns[0].status == "error"
+
+
+def test_two_character_greeting_is_sent(mocked):
+    at = AppTest.from_file(APP).run()
+    at.chat_input[0].set_value("hi").run()
+    assert [c["query"] for c in mocked] == ["hi"] and at.session_state.turns[0].status == "answered"
 
 
 def test_client_error_becomes_turn(monkeypatch):

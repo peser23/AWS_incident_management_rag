@@ -18,7 +18,7 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.setuptools.package-data]
-daimo_retrieval = ["prompts/*.txt"]
+daimo_retrieval = ["prompts/*.txt", "prompts/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

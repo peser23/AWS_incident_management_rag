@@ -20,6 +20,17 @@
       ]
     },
     {
+      "Sid": "GuardClassifierLlm",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:*::foundation-model/amazon.nova-micro-v1:0",
+        "arn:aws:bedrock:us-east-1:285331147756:inference-profile/us.amazon.nova-micro-v1:0"
+      ]
+    },
+    {
       "Sid": "AossDataPlane",
       "Effect": "Allow",
       "Action": "aoss:APIAccessAll",

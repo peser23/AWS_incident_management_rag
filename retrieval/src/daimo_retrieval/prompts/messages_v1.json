@@ -1,0 +1,12 @@
+{
+  "greeting": {
+    "hello": "Hello! I'm DAIMO, the incident triage assistant. I can help you:\n- find past incidents similar to the one you're working on\n- see likely causes and the actions that resolved them, with citations to the incident records\n- narrow results by priority, category, affected service, assignment group or closed date (sidebar filters)\n\nDescribe the symptom, error message or affected system to get started.",
+    "thanks": "You're welcome. Describe another incident any time.",
+    "bye": "Goodbye. Good luck with the incident."
+  },
+  "out_of_scope": "Sorry, I can only help with IT incident triage based on historical incident records, so I can't answer that. Try describing an incident's symptom, error text or affected system.",
+  "redaction_notice": "Sensitive personal data (for example an SSN or card number) was removed from your message before it was processed. Please avoid including personal details in incident descriptions.",
+  "blocked": {
+    "prompt_injection": "I can't process that request. Please describe the incident you're working on."
+  }
+}

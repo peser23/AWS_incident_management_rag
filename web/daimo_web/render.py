@@ -103,13 +103,23 @@ def render_turn_body(turn: Turn) -> None:
         render_footer(turn)
         return
     r = turn.response
-    confidence_badge(r["confidence"])
-    if r["status"] == "answered":
+    if r.get("notice"):
+        st.caption("🔒 " + md(r["notice"]))
+    if r.get("confidence"):  # absent for greeting / out_of_scope / blocked
+        confidence_badge(r["confidence"])
+    status = r["status"]
+    if status == "answered":
         render_answer(r["answer"])
-    elif r["status"] == "no_match":
+    elif status == "greeting":
+        st.markdown(md(r.get("message") or "Hello."))
+    elif status == "no_match":
         st.info(md(r.get("message") or "No matching incidents."))
-    else:
+    elif status == "answer_withheld":
         st.warning(md(r.get("message") or "The answer was withheld."))
+    elif status == "blocked":
+        st.warning(md(r.get("message") or "This request can't be processed."))
+    else:  # out_of_scope, and any status added later
+        st.info(md(r.get("message") or "This request is outside what I can help with."))
     render_evidence(r.get("citations") or [])
     render_footer(turn)
 

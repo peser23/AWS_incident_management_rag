@@ -1,7 +1,8 @@
 """Final response builder: citation cards (from OpenSearch metadata, never LLM text) and JSON for every status."""
 from ..models import Incident
-from ..schemas import (CitationCard, Confidence, Metrics, ModelInfo, TriageAnswer, TriageResponse)
+from ..schemas import (CitationCard, Confidence, GuardInfo, Metrics, ModelInfo, TriageAnswer, TriageResponse)
 from ..settings import get_settings
+from .guard import messages
 
 SNIPPET_CHARS = 240
 NO_MATCH_MSG = ("No historical incident matched this query with enough confidence (best score {best:.2f}; "
@@ -28,7 +29,43 @@ def build_card(inc: Incident, cited: set[str]) -> CitationCard:
         url=s.sn_link_template.format(instance=s.sn_instance, incident_number=inc.incident_number))
 
 
+def _guard_info(state: dict) -> GuardInfo | None:
+    if "guard_intent" not in state or state.get("guard_layer") == "off":
+        return None
+    return GuardInfo(intent=state["guard_intent"], layer=state["guard_layer"],
+                     reason_code=state.get("guard_reason_code"), redacted=sorted(state.get("redactions") or {}))
+
+
+def _notice(state: dict) -> str | None:
+    return messages()["redaction_notice"] if state.get("redactions") else None
+
+
+def _guard_message(state: dict) -> str:
+    m, intent = messages(), state["guard_intent"]
+    if intent == "greeting":
+        return m["greeting"][state.get("guard_greeting_kind") or "hello"]
+    if intent == "blocked":
+        return m["blocked"][state["guard_reason_code"]]
+    return m["out_of_scope"]
+
+
+def build_guard_response(state: dict) -> dict:
+    """greeting / out_of_scope / blocked: a fixed message, no retrieval, no confidence, no citations."""
+    s, req = get_settings(), state["request"]
+    timings = dict(state.get("timings", {}))
+    timings["total"] = sum(v for k, v in timings.items() if k != "total")
+    intent = state["guard_intent"]
+    resp = TriageResponse(request_id=req.request_id, status=intent, message=_guard_message(state),
+                          notice=_notice(state), metrics=Metrics(latency_ms=timings),
+                          config_version=s.config_version, guard=_guard_info(state))
+    if req.options.include_debug:
+        resp.debug = {"timings_ms": timings, "guard_reason": state.get("guard_reason")}
+    return {"status": intent, "response": resp}
+
+
 def build_response(state: dict) -> dict:
+    if state.get("guard_intent", "triage") != "triage":
+        return build_guard_response(state)
     s, req = get_settings(), state["request"]
     passed: list[Incident] = state.get("passed") or []
     answer: TriageAnswer | None = state.get("answer")
@@ -61,11 +98,13 @@ def build_response(state: dict) -> dict:
                               passed=len(passed), withheld=withheld),
         citations=cards, model=ModelInfo(llm=s.model_id if status != "no_match" else None, embedding=s.embed_model_id),
         metrics=Metrics(latency_ms=timings, tokens=state.get("tokens"), est_cost_usd=state.get("est_cost_usd")),
-        config_version=s.config_version)
+        notice=_notice(state), guard=_guard_info(state), config_version=s.config_version)
     if req.options.include_debug:
         resp.debug = {"query": state.get("debug_query"), "timings_ms": timings,
                       "prompt_version": state.get("prompt_version"),
                       "invalid_citations": state.get("invalid_citations", 0),
+                      "output_guard_hits": state.get("output_guard_hits", []),
+                      "guard_reason": state.get("guard_reason"),
                       "candidates": [{"incident_number": i.incident_number, "rank": i.rank,
                                       "confidence": round(i.confidence, 4), "match_reason": i.match_reason,
                                       "chunks": [{"chunk_id": c.chunk_id, "hybrid_score": c.hybrid_score,

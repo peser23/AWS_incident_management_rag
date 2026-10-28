@@ -67,7 +67,7 @@ def test_turn_status_and_request_id(fixture_response):
     assert t.status == "error" and t.request_id == "r1"
 
 
-@pytest.mark.parametrize("text,ok", [("ab", False), ("  ab  ", False), ("abc", True), ("x" * 1001, False)])
+@pytest.mark.parametrize("text,ok", [("", False), ("   ", False), ("hi", True), ("  ab  ", True), ("x" * 1001, False)])
 def test_validate_query(text, ok):
     assert (validate_query(text) is None) == ok
 

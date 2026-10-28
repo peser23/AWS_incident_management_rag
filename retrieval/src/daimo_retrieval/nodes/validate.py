@@ -6,9 +6,12 @@ valid inline citation. One retry with the errors appended; a second failure or i
 import re
 
 from ..schemas import ActionStep, Cited, TriageAnswer
+from ..settings import get_settings
+from ..text import output_guard_hits
 
 INLINE = re.compile(r"\[(INC\d+)\]")
 WITHHELD_MSG = "The generated answer could not be validated against the retrieved incidents."
+SAFETY_MSG = "The generated answer was withheld by a content safety check."
 
 
 def _strip_unknown(text: str, valid: set[str]) -> tuple[str, int]:
@@ -28,6 +31,20 @@ def _clean_ids(ids: list[str], valid: set[str]) -> tuple[list[str], int]:
     return kept, len(ids) - len([i for i in ids if i in valid])
 
 
+def _answer_texts(a: TriageAnswer) -> list[str]:
+    return [a.summary, a.caveats, a.likely_cause.text if a.likely_cause else "", *(x.step for x in a.recommended_actions)]
+
+
+def _context_text(state: dict) -> str:
+    """Everything the model was shown for the incidents that were sent (all chunks, plus metadata values)."""
+    sent = set(state.get("context_incidents") or [])
+    parts: list[str] = []
+    for inc in state.get("passed") or []:
+        if inc.incident_number in sent:
+            parts += [c.text for c in inc.chunks] + [str(v) for v in inc.meta.values() if isinstance(v, (str, int))]
+    return "\n".join(parts)
+
+
 def validate_answer(state: dict) -> dict:
     valid = set(state["context_incidents"])
     errors: list[str] = []
@@ -37,6 +54,10 @@ def validate_answer(state: dict) -> dict:
     if answer is None:
         errors.append(f"The tool call did not match the TriageAnswer schema ({state.get('schema_error') or 'no output'}).")
     else:
+        hits = output_guard_hits(_answer_texts(answer), _context_text(state)) if get_settings().output_guard_enabled else []
+        if hits:  # withhold at once, no retry: the offending text must not be echoed back into the prompt
+            return {"answer": None, "status": "answer_withheld", "message": SAFETY_MSG, "validation_errors": [],
+                    "output_guard_hits": hits, "invalid_citations": state.get("invalid_citations", 0)}
         summary, n = _strip_unknown(answer.summary, valid)
         invalid += n
         cause = answer.likely_cause

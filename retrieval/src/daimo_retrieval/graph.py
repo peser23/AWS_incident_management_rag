@@ -1,4 +1,4 @@
-"""LangGraph wiring: embed -> retrieve -> gate -> (synthesize -> validate)* -> respond. Every path ends in respond."""
+"""LangGraph wiring: guard -> embed -> retrieve -> gate -> (synthesize -> validate)* -> respond. Every path ends in respond."""
 import time
 from functools import wraps
 from typing import Literal, TypedDict
@@ -7,6 +7,7 @@ from langgraph.graph import END, START, StateGraph
 
 from .nodes.embed import embed_query
 from .nodes.gate import score_and_gate
+from .nodes.guard import guard
 from .nodes.respond import build_response
 from .nodes.retrieve import hybrid_retrieve
 from .nodes.synthesize import synthesize
@@ -23,6 +24,13 @@ class StageError(Exception):
 
 class TriageState(TypedDict, total=False):
     request: object
+    guard_intent: Literal["triage", "greeting", "out_of_scope", "blocked"]
+    guard_layer: str
+    guard_reason: str | None
+    output_guard_hits: list[str]
+    guard_reason_code: str | None
+    guard_greeting_kind: str | None
+    redactions: dict[str, int]
     query_vector: list[float]
     candidates: list
     knn_scores: dict[str, float]
@@ -40,7 +48,7 @@ class TriageState(TypedDict, total=False):
     tokens: dict
     est_cost_usd: float
     prompt_version: str
-    status: Literal["answered", "no_match", "answer_withheld"]
+    status: Literal["answered", "no_match", "answer_withheld", "greeting", "out_of_scope", "blocked"]
     response: object
     timings: dict[str, int]
 
@@ -64,6 +72,7 @@ def timed(stage: str, fn, record: bool = True):
 
 def build_graph():
     g = StateGraph(TriageState)
+    g.add_node("guard", timed("guard", guard))
     g.add_node("embed", timed("embed", embed_query))
     g.add_node("retrieve", timed("retrieve", hybrid_retrieve))
     g.add_node("gate", timed("gate", score_and_gate))
@@ -71,7 +80,9 @@ def build_graph():
     g.add_node("validate", timed("validate", validate_answer))
     g.add_node("respond", timed("respond", build_response, record=False))
 
-    g.add_edge(START, "embed")
+    g.add_edge(START, "guard")
+    g.add_conditional_edges("guard", lambda s: "embed" if s["guard_intent"] == "triage" else "respond",
+                            {"embed": "embed", "respond": "respond"})
     g.add_edge("embed", "retrieve")
     g.add_edge("retrieve", "gate")
     g.add_conditional_edges("gate", lambda s: "synthesize" if s["passed"] else "respond",

@@ -17,6 +17,15 @@ def bedrock_runtime():
 
 
 @lru_cache
+def guard_bedrock_runtime():
+    """Short timeout, one attempt: a slow classifier must fail open quickly instead of stalling the request."""
+    s = get_settings()
+    cfg = Config(region_name=s.aws_region, retries={"max_attempts": 1, "mode": "standard"},
+                 connect_timeout=s.guard_timeout_s, read_timeout=s.guard_timeout_s)
+    return boto3.client("bedrock-runtime", config=cfg)
+
+
+@lru_cache
 def opensearch() -> OpenSearch:
     s = get_settings()
     auth = AWSV4SignerAuth(boto3.Session().get_credentials(), s.aws_region, "aoss")

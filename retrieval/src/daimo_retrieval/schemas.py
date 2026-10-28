@@ -33,7 +33,7 @@ class TriageRequest(_Strict):
     request_id: str | None = None
     session_id: str | None = None
     user: User | None = None
-    query: str = Field(min_length=3, max_length=1000)
+    query: str = Field(min_length=1, max_length=1000)
     options: Options = Options()
 
 
@@ -96,16 +96,25 @@ class Metrics(_Strict):
     est_cost_usd: float | None = None
 
 
+class GuardInfo(_Strict):
+    intent: Literal["triage", "greeting", "out_of_scope", "blocked"]
+    layer: str
+    reason_code: Literal["prompt_injection", "off_topic"] | None = None
+    redacted: list[str] = []
+
+
 class TriageResponse(_Strict):
     request_id: str
-    status: Literal["answered", "no_match", "answer_withheld"]
+    status: Literal["answered", "no_match", "answer_withheld", "greeting", "out_of_scope", "blocked"]
     answer: TriageAnswer | None = None
     message: str | None = None
-    confidence: Confidence
+    notice: str | None = None
+    confidence: Confidence | None = None
     citations: list[CitationCard] = []
     model: ModelInfo | None = None
     metrics: Metrics = Metrics()
     config_version: str
+    guard: GuardInfo | None = None
     debug: dict | None = None
 
 

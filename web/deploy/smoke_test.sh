@@ -11,3 +11,4 @@ echo "ui listens on:  $listen"
 [[ "$listen" == "127.0.0.1:8501 " ]] || { echo "FAIL: 8501 must listen on 127.0.0.1 only"; exit 1; }
 echo "service ready:  $(curl -s "$API/readyz" | python3 -c 'import json,sys; print(json.load(sys.stdin)["ready"])')"
 echo "facets:         $(curl -sf "$API/v1/facets" | python3 -c 'import json,sys; d=json.load(sys.stdin); print({k: len(v) for k, v in d.items()})')"
+echo "service guard:  $(curl -sf -m 30 -H 'content-type: application/json' -d '{"query": "hi"}' "$API/v1/triage" | python3 -c 'import json,sys; print(json.load(sys.stdin)["status"])') (expect greeting)"

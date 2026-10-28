@@ -6,7 +6,7 @@ from collections.abc import MutableMapping
 from dataclasses import dataclass, field
 from datetime import date
 
-QUERY_MIN, QUERY_MAX = 3, 1000  # TriageRequest.query bounds
+QUERY_MIN, QUERY_MAX = 1, 1000  # TriageRequest.query bounds
 
 
 def default_filters(top_k: int = 5) -> dict:
@@ -55,7 +55,7 @@ def validate_query(text: str) -> str | None:
     """Error message for a query the service would reject, else None."""
     n = len(text.strip())
     if n < QUERY_MIN:
-        return f"Please enter at least {QUERY_MIN} characters."
+        return "Please enter a message."
     if n > QUERY_MAX:
         return f"Please keep the description under {QUERY_MAX} characters (currently {n})."
     return None

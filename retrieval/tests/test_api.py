@@ -12,7 +12,7 @@ def test_healthz():
 
 
 def test_query_length_bounds():
-    assert c.post("/v1/triage", json={"query": "ab"}).status_code == 422
+    assert c.post("/v1/triage", json={"query": ""}).status_code == 422
     assert c.post("/v1/triage", json={"query": "x" * 1001}).status_code == 422
 
 
